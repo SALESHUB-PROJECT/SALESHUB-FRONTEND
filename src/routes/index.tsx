@@ -4,6 +4,8 @@ import { ArrowRight, Bot, Check, ChevronDown, Clock3, Globe2, Menu, ShieldCheck,
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/saleshub-logo.png";
 import homeBackground from "@/assets/saleshub-home-background.jpg";
+import agentPortraits from "@/assets/ai-agent-portraits.jpg";
+import teamCollaboration from "@/assets/team-collaboration.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,10 +35,14 @@ const translations = {
 };
 
 const agents = [
-  ["AR", "Archer", "Le chasseur de prospects", "+50 leads/sem"], ["LY", "Lyra", "La coach en direct", "+15% RDV"],
-  ["AT", "Atlas", "L’assistant 24/7", "80% résolus"], ["ME", "Mentor", "Le rédacteur intelligent", "−15h saisie"],
-  ["TE", "Tenax", "Le recouvreur tenace", "+25% récupéré"], ["LE", "Legio", "Le recruteur d’élite", "×4 plus rapide"],
-  ["AG", "Argus", "Le veilleur stratégique", "0 raté"], ["MY", "Mythos", "Le créateur de visibilité", "+40% trafic"],
+  ["Archer", "Prospection", "Identifie les entreprises les plus susceptibles d’acheter et prépare une approche adaptée à chaque décideur.", "+50 leads/sem", "0% 0%"],
+  ["Lyra", "Coaching commercial", "Écoute vos échanges, suggère la prochaine question et aide chaque commercial à progresser appel après appel.", "+15% RDV", "33.33% 0%"],
+  ["Atlas", "Relation client", "Répond aux demandes courantes jour et nuit, puis transmet à la bonne personne lorsque l’humain doit reprendre la main.", "80% résolus", "66.66% 0%"],
+  ["Mentor", "Rédaction", "Transforme vos notes en emails, comptes rendus et propositions clairs, fidèles au ton de votre entreprise.", "−15h saisie", "100% 0%"],
+  ["Tenax", "Recouvrement", "Relance avec tact selon l’historique client et signale les situations qui nécessitent une conversation personnelle.", "+25% récupéré", "0% 100%"],
+  ["Legio", "Recrutement", "Repère les profils pertinents, prépare les entretiens et centralise les retours de votre équipe.", "×4 plus rapide", "33.33% 100%"],
+  ["Argus", "Veille stratégique", "Surveille vos marchés et vos comptes clés pour faire remonter les signaux utiles au bon moment.", "0 opportunité oubliée", "66.66% 100%"],
+  ["Mythos", "Visibilité", "Décline votre expertise en contenus utiles et cohérents pour nourrir la confiance avant le premier échange.", "+40% trafic", "100% 100%"],
 ];
 
 const plans = [

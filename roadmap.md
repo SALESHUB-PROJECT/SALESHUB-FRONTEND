@@ -8,3 +8,4 @@
 - [x] Optimiser les contenus et métadonnées pour le référencement et les moteurs IA
 - [x] Ajouter uniquement des preuves clients et distinctions clairement présentées comme à confirmer
 - [x] Vérifier la page sur ordinateur et mobile
+- [x] Harmoniser la typographie et humaniser la page avec plus de photos et descriptions

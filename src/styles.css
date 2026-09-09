@@ -19,8 +19,8 @@
  */
 
 @theme inline {
-  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -73,31 +73,31 @@
 
 :root {
   --radius: 0.5rem;
-  --background: oklch(0.105 0.028 254);
-  --foreground: oklch(0.96 0.012 238);
-  --card: oklch(0.155 0.036 252);
-  --card-foreground: oklch(0.96 0.012 238);
-  --popover: oklch(0.155 0.036 252);
-  --popover-foreground: oklch(0.96 0.012 238);
-  --primary: oklch(0.68 0.16 230);
-  --primary-strong: oklch(0.61 0.19 238);
+  --background: oklch(0.978 0.004 240);
+  --foreground: oklch(0.198 0.043 243);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.198 0.043 243);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.198 0.043 243);
+  --primary: oklch(0.507 0.108 232);
+  --primary-strong: oklch(0.43 0.105 232);
   --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.2 0.045 254);
-  --secondary-foreground: oklch(0.92 0.018 240);
-  --muted: oklch(0.18 0.032 252);
-  --muted-foreground: oklch(0.68 0.035 242);
-  --accent: oklch(0.22 0.052 247);
-  --accent-foreground: oklch(0.96 0.012 238);
+  --secondary: oklch(0.94 0.012 235);
+  --secondary-foreground: oklch(0.198 0.043 243);
+  --muted: oklch(0.94 0.009 235);
+  --muted-foreground: oklch(0.48 0.025 240);
+  --accent: oklch(0.693 0.184 27);
+  --accent-foreground: oklch(1 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.31 0.06 246 / 70%);
-  --input: oklch(0.25 0.05 248);
-  --ring: oklch(0.68 0.16 230);
-  --surface: oklch(0.145 0.034 253);
-  --surface-strong: oklch(0.2 0.046 250);
-  --gold: oklch(0.73 0.135 79);
-  --gold-strong: oklch(0.67 0.15 72);
-  --gold-foreground: oklch(0.16 0.028 75);
+  --border: oklch(0.86 0.016 235);
+  --input: oklch(0.9 0.012 235);
+  --ring: oklch(0.507 0.108 232);
+  --surface: oklch(0.95 0.009 235);
+  --surface-strong: oklch(0.91 0.018 234);
+  --gold: oklch(0.693 0.184 27);
+  --gold-strong: oklch(0.63 0.19 27);
+  --gold-foreground: oklch(1 0 0);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -171,4 +171,10 @@
     linear-gradient(color-mix(in oklab, var(--primary) 7%, transparent) 1px, transparent 1px),
     linear-gradient(90deg, color-mix(in oklab, var(--primary) 7%, transparent) 1px, transparent 1px);
   background-size: 48px 48px;
+}
+
+@utility agent-portrait {
+  background-image: var(--agent-portrait-image);
+  background-size: 400% 200%;
+  background-position: var(--agent-position);
 }
