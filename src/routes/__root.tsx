@@ -77,7 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
+      { title: "Saleshub.buisness | CRM IA" },
       { name: "description", content: "Saleshub.buisness, CRM tout-en-un piloté par 8 agents IA." },
       { name: "author", content: "Saleshub.buisness" },
       { property: "og:title", content: "Saleshub.buisness" },
