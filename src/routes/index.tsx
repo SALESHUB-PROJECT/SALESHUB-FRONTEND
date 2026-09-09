@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ArrowRight, Bot, Check, ChevronDown, Clock3, Globe2, Menu, ShieldCheck, Sparkle, Star, Trophy, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/saleshub-logo.png";
-import agentsImage from "@/assets/saleshub-agents.png.asset.json";
+import homeBackground from "@/assets/saleshub-home-background.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -79,18 +79,16 @@ function LandingPage() {
         {mobileOpen && <nav className="border-t border-border bg-background p-5 lg:hidden"><div className="grid gap-4">{[["agents",t.agents],["results",t.results],["compare",t.compare],["pricing",t.pricing]].map(([id,label]) => <a key={id} href={`#${id}`} onClick={() => setMobileOpen(false)}>{label}</a>)}</div></nav>}
       </header>
 
-      <section id="top" className="cinematic-grid relative min-h-[92vh] pt-18">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,color-mix(in_oklab,var(--primary)_16%,transparent),transparent_52%)]" />
-        <div className="relative mx-auto flex min-h-[92vh] max-w-7xl flex-col items-center px-5 pt-16 text-center lg:px-8 lg:pt-24">
+      <section id="top" className="relative min-h-screen overflow-hidden pt-18">
+        <img src={homeBackground} alt="" aria-hidden="true" className="absolute inset-0 size-full object-cover object-center" />
+        <div className="absolute inset-0 bg-background/35" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/20 to-background" />
+        <div className="relative mx-auto flex min-h-[calc(100vh-4.5rem)] max-w-7xl flex-col items-center px-5 pt-14 text-center lg:px-8 lg:pt-20">
           <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-xs font-bold text-primary"><span className="size-2 animate-pulse rounded-full bg-gold" /> LA PLATEFORME IA TOUT-EN-UN</div>
           <h1 className="mt-7 max-w-5xl text-balance text-4xl font-extrabold leading-[1.08] sm:text-6xl lg:text-7xl">{t.hero}</h1>
           <p className="mt-6 max-w-2xl text-balance text-base text-muted-foreground sm:text-xl">{t.sub}</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3"><Button size="lg" onClick={() => document.querySelector("#pricing")?.scrollIntoView()}>{t.start}<ArrowRight className="size-4" /></Button><Button variant="outline" size="lg" onClick={() => setContactOpen(true)}>{t.demo}</Button></div>
-          <div className="mt-8 flex flex-wrap justify-center gap-x-7 gap-y-2 text-xs font-semibold text-muted-foreground"><span className="flex items-center gap-2"><Clock3 className="size-4 text-gold" />8 agents IA 24h/24 • 7j/7</span><span className="flex items-center gap-2"><Sparkle className="size-4 text-primary" />Prise en main &lt; 10 min</span><span className="flex items-center gap-2"><Check className="size-4 text-primary" />0 saisie manuelle</span></div>
-          <div className="relative mt-auto w-full pt-12">
-            <img src={agentsImage.url} alt="Équipe internationale des agents IA Saleshub.buisness" className="mx-auto w-full max-w-6xl object-contain object-bottom" width={1243} height={302} />
-            <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-background to-transparent" />
-          </div>
+          <div className="mt-8 flex flex-wrap justify-center gap-x-7 gap-y-2 text-xs font-semibold text-foreground/80"><span className="flex items-center gap-2"><Clock3 className="size-4 text-gold" />8 agents IA 24h/24 • 7j/7</span><span className="flex items-center gap-2"><Sparkle className="size-4 text-primary" />Prise en main &lt; 10 min</span><span className="flex items-center gap-2"><Check className="size-4 text-primary" />0 saisie manuelle</span></div>
         </div>
       </section>
 
