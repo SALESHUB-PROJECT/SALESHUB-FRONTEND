@@ -1,19 +1,63 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState, type CSSProperties } from "react";
-import { ArrowRight, Bot, Check, ChevronDown, Clock3, Globe2, Menu, ShieldCheck, Sparkle, Star, Trophy, X } from "lucide-react";
+import { useEffect, useState, type CSSProperties } from "react";
+import {
+  ArrowRight,
+  BadgeCheck,
+  Bot,
+  Check,
+  ChevronDown,
+  Clock3,
+  FileCheck,
+  Globe2,
+  GraduationCap,
+  Handshake,
+  KeyRound,
+  LockKeyhole,
+  Menu,
+  Server,
+  ShieldCheck,
+  Sparkle,
+  Star,
+  Trophy,
+  Wrench,
+  X,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/saleshub-logo.png";
 import homeBackground from "@/assets/saleshub-home-background.jpg";
+import crmPreview from "@/assets/demo_crm.png";
+import crmMobilePreview from "@/assets/demo_crm_mobil.png";
+import analyticsDashboardPreview from "@/assets/Tableau_de_bord_analytique.png";
 import agentPortraits from "@/assets/ai-agent-portraits.jpg";
 import teamCollaboration from "@/assets/team-collaboration.jpg";
+import agentArcher from "@/assets/2a1dfe43-a9e4-4249-9fa8-0045331666c8.png";
+import agentLyra from "@/assets/a76fb61d-835b-401f-8962-94851c9fe7f0.png";
+import agentAtlas from "@/assets/2a7470dc-33fe-41fc-9ce9-4c8c46add9e5.png";
+import agentMentor from "@/assets/b5da4f2b-14dc-4e53-a6de-138e48530d87.png";
+import agentTenax from "@/assets/537b165f-2673-4645-8630-1b996be3d32a.png";
+import agentLegio from "@/assets/bd1ed936-4147-4a8c-bde2-1b5cd3231085.png";
+import agentArgus from "@/assets/66a69f21-f2dc-4a0a-90bc-03db38c2ea01.png";
+import agentMythos from "@/assets/343b8783-62b1-4692-b4c9-90d5aac77de1.png";
+import aircallLogo from "@/assets/integrations/aircall.svg";
+import brevoLogo from "@/assets/integrations/brevo.svg";
+import cloudtalkLogo from "@/assets/integrations/cloudtalk.svg";
+import gmailLogo from "@/assets/integrations/gmail.svg";
+import googleMapsLogo from "@/assets/integrations/google-maps.svg";
+import kavkomLogo from "@/assets/integrations/kavkom.webp";
+import mtargetLogo from "@/assets/integrations/mtarget.png";
+import ringoverLogo from "@/assets/integrations/ringover.svg";
+import smsboxLogo from "@/assets/integrations/smsbox.png";
+import ultraSmsLogo from "@/assets/integrations/ultra-sms.png";
+import zapierLogo from "@/assets/integrations/zapier.svg";
+import { billingCycles, fr, translations, type BillingCycle } from "@/lib/translations";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Saleshub.buisness | CRM IA tout-en-un" },
-      { name: "description", content: "Automatisez prospection, qualification, devis et encaissement avec 8 agents IA Saleshub.buisness disponibles 24h/24." },
-      { property: "og:title", content: "Saleshub.buisness | CRM IA tout-en-un" },
-      { property: "og:description", content: "8 agents IA pour automatiser votre cycle de vente, du premier contact au paiement." },
+      { title: fr.seo.title },
+      { name: "description", content: fr.seo.description },
+      { property: "og:title", content: fr.seo.title },
+      { property: "og:description", content: fr.seo.ogDescription },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -21,122 +65,872 @@ export const Route = createFileRoute("/")({
   component: LandingPage,
 });
 
-const translations = {
-  fr: { label: "Français", hero: "L’unique CRM qui pense, prospecte et encaisse à votre place.", sub: "L’équipe IA qui fait grandir votre entreprise pendant que vous dirigez.", start: "Démarrer gratuitement", demo: "Réserver une démo", agents: "Vos 8 agents IA", pricing: "Tarifs", results: "Résultats", compare: "Comparatif" },
-  en: { label: "English", hero: "The only CRM that thinks, prospects and collects for you.", sub: "The AI team that grows your business while you lead.", start: "Start for free", demo: "Book a demo", agents: "Your 8 AI agents", pricing: "Pricing", results: "Results", compare: "Comparison" },
-  zh: { label: "中文", hero: "唯一替您思考、获客并收款的 CRM。", sub: "在您管理企业时，AI 团队持续推动业务增长。", start: "免费开始", demo: "预约演示", agents: "您的 8 位 AI 助手", pricing: "价格", results: "成果", compare: "对比" },
-  hi: { label: "हिन्दी", hero: "एकमात्र CRM जो आपके लिए सोचता, ग्राहक खोजता और भुगतान लेता है।", sub: "आप नेतृत्व करें, आपकी AI टीम व्यवसाय बढ़ाए।", start: "मुफ़्त शुरू करें", demo: "डेमो बुक करें", agents: "आपके 8 AI एजेंट", pricing: "मूल्य", results: "परिणाम", compare: "तुलना" },
-  es: { label: "Español", hero: "El único CRM que piensa, prospecta y cobra por ti.", sub: "El equipo de IA que hace crecer tu empresa mientras tú diriges.", start: "Empezar gratis", demo: "Reservar demo", agents: "Tus 8 agentes IA", pricing: "Precios", results: "Resultados", compare: "Comparativa" },
-  ar: { label: "العربية", hero: "نظام CRM الوحيد الذي يفكر ويستقطب العملاء ويحصّل المدفوعات نيابةً عنك.", sub: "فريق الذكاء الاصطناعي الذي ينمّي أعمالك بينما تقودها.", start: "ابدأ مجاناً", demo: "احجز عرضاً", agents: "وكلاء الذكاء الاصطناعي", pricing: "الأسعار", results: "النتائج", compare: "مقارنة" },
-  pt: { label: "Português", hero: "O único CRM que pensa, prospecta e recebe por você.", sub: "A equipe de IA que faz sua empresa crescer enquanto você lidera.", start: "Começar grátis", demo: "Agendar demo", agents: "Seus 8 agentes de IA", pricing: "Preços", results: "Resultados", compare: "Comparação" },
-  ru: { label: "Русский", hero: "Единственная CRM, которая думает, ищет клиентов и принимает оплату за вас.", sub: "ИИ-команда развивает ваш бизнес, пока вы им управляете.", start: "Начать бесплатно", demo: "Заказать демо", agents: "Ваши 8 ИИ-агентов", pricing: "Тарифы", results: "Результаты", compare: "Сравнение" },
-  ja: { label: "日本語", hero: "思考・営業・回収を代行する唯一のCRM。", sub: "経営に集中する間、AIチームがビジネスを成長させます。", start: "無料で始める", demo: "デモを予約", agents: "8人のAIエージェント", pricing: "料金", results: "実績", compare: "比較" },
-  de: { label: "Deutsch", hero: "Das einzige CRM, das für Sie denkt, akquiriert und kassiert.", sub: "Das KI-Team, das Ihr Unternehmen wachsen lässt, während Sie führen.", start: "Kostenlos starten", demo: "Demo buchen", agents: "Ihre 8 KI-Agenten", pricing: "Preise", results: "Ergebnisse", compare: "Vergleich" },
-};
-
-const agents = [
-  ["Archer", "Prospection", "Identifie les entreprises les plus susceptibles d’acheter et prépare une approche adaptée à chaque décideur.", "+50 leads/sem", "0% 0%"],
-  ["Lyra", "Coaching commercial", "Écoute vos échanges, suggère la prochaine question et aide chaque commercial à progresser appel après appel.", "+15% RDV", "33.33% 0%"],
-  ["Atlas", "Relation client", "Répond aux demandes courantes jour et nuit, puis transmet à la bonne personne lorsque l’humain doit reprendre la main.", "80% résolus", "66.66% 0%"],
-  ["Mentor", "Rédaction", "Transforme vos notes en emails, comptes rendus et propositions clairs, fidèles au ton de votre entreprise.", "−15h saisie", "100% 0%"],
-  ["Tenax", "Recouvrement", "Relance avec tact selon l’historique client et signale les situations qui nécessitent une conversation personnelle.", "+25% récupéré", "0% 100%"],
-  ["Legio", "Recrutement", "Repère les profils pertinents, prépare les entretiens et centralise les retours de votre équipe.", "×4 plus rapide", "33.33% 100%"],
-  ["Argus", "Veille stratégique", "Surveille vos marchés et vos comptes clés pour faire remonter les signaux utiles au bon moment.", "0 opportunité oubliée", "66.66% 100%"],
-  ["Mythos", "Visibilité", "Décline votre expertise en contenus utiles et cohérents pour nourrir la confiance avant le premier échange.", "+40% trafic", "100% 100%"],
+const heroProofIcons = [Clock3, Sparkle, Globe2, Check];
+const agentImages = [
+  agentArcher,
+  agentLyra,
+  agentAtlas,
+  agentMentor,
+  agentTenax,
+  agentLegio,
+  agentArgus,
+  agentMythos,
+];
+const partnerLevelIcons = [GraduationCap, Wrench, BadgeCheck];
+const securityIcons = [KeyRound, LockKeyhole, Server, FileCheck];
+const footerHighlightIcons = [Bot, ShieldCheck, Globe2];
+const planPrices: Array<Record<BillingCycle, number | null> & { popular?: boolean }> = [
+  { monthly: 0, annual: 0, biennial: 0 },
+  { monthly: 19, annual: 16, biennial: 14, popular: true },
+  { monthly: null, annual: null, biennial: null },
 ];
 
-const plans = [
-  { name: "Solo", monthly: 0, annual: 0, biennial: 0, desc: "Indépendant & découverte", features: ["1 agent IA actif (Atlas)", "1 utilisateur", "500 crédits/mois", "CRM de base inclus"] },
-  { name: "TPE", monthly: 79, annual: 67, biennial: 59, desc: "Moins de 10 salariés", features: ["4 agents IA actifs", "Jusqu’à 10 utilisateurs", "20 000 crédits/mois", "Support inclus"], popular: true },
-  { name: "PME", monthly: 149, annual: 127, biennial: 112, desc: "10 à 50 salariés", features: ["8 agents IA", "Utilisateurs illimités", "100 000 crédits/mois", "Accompagnement dédié"] },
-  { name: "ETI / Groupe", monthly: null, annual: null, biennial: null, desc: "Plus de 50 salariés", features: ["Crédits & API illimités", "Sécurité renforcée", "Multi-pays", "Account manager dédié"] },
+const integrations = [
+  { name: "Zapier", logo: zapierLogo },
+  { name: "Brevo", logo: brevoLogo },
+  { name: "", logo: cloudtalkLogo, wide: true },
+  { name: "Gmail", logo: gmailLogo },
+  { name: "Google Maps", logo: googleMapsLogo },
+  { name: "", logo: kavkomLogo, wide: true },
+  { name: "", logo: aircallLogo, wide: true },
+  { name: "Ringover", logo: ringoverLogo, wide: true },
+  { name: "SMSBOX", logo: smsboxLogo },
+  { name: "Ultra SMS", logo: ultraSmsLogo },
+  { name: "", logo: mtargetLogo, dark: true, wide: true },
 ];
 
 function LandingPage() {
   const [lang, setLang] = useState<keyof typeof translations>("fr");
-  const [billing, setBilling] = useState<"monthly" | "annual" | "biennial">("annual");
+  const [billing, setBilling] = useState<BillingCycle>("annual");
   const [mobileOpen, setMobileOpen] = useState(false);
   const [contactOpen, setContactOpen] = useState(false);
   const t = translations[lang];
   const rtl = lang === "ar";
+  const navLinks = [
+    { id: "agents", label: t.nav.agents },
+    { id: "results", label: t.nav.results },
+    { id: "compare", label: t.nav.compare },
+    { id: "partners", label: t.nav.partners },
+    { id: "pricing", label: t.nav.pricing },
+  ];
+
+  useEffect(() => {
+    document.title = t.seo.title;
+
+    const updateMeta = (selector: string, content: string) => {
+      const element = document.querySelector<HTMLMetaElement>(selector);
+      if (element) element.content = content;
+    };
+
+    updateMeta('meta[name="description"]', t.seo.description);
+    updateMeta('meta[property="og:title"]', t.seo.title);
+    updateMeta('meta[property="og:description"]', t.seo.ogDescription);
+  }, [t.seo.description, t.seo.ogDescription, t.seo.title]);
 
   return (
-    <main dir={rtl ? "rtl" : "ltr"} className="min-h-screen overflow-hidden bg-background text-foreground">
+    <main
+      dir={rtl ? "rtl" : "ltr"}
+      className="min-h-screen overflow-hidden bg-background text-foreground"
+    >
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-background/90 backdrop-blur-xl">
         <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 lg:px-8">
-          <a href="#top" aria-label="Saleshub.buisness - accueil"><img src={logo} alt="Saleshub.buisness" className="h-9 w-auto" width={1408} height={512} /></a>
-          <nav className="hidden items-center gap-7 lg:flex" aria-label="Navigation principale">
-            <a href="#agents" className="text-sm text-muted-foreground transition hover:text-foreground">{t.agents}</a>
-            <a href="#results" className="text-sm text-muted-foreground transition hover:text-foreground">{t.results}</a>
-            <a href="#compare" className="text-sm text-muted-foreground transition hover:text-foreground">{t.compare}</a>
-            <a href="#pricing" className="text-sm text-muted-foreground transition hover:text-foreground">{t.pricing}</a>
+          <a href="#top" aria-label={t.a11y.home}>
+            <img
+              src={logo}
+              alt="Saleshub.business"
+              className="h-12 w-auto sm:h-14"
+              width={3000}
+              height={1000}
+            />
+          </a>
+          <nav className="hidden items-center gap-7 lg:flex" aria-label={t.a11y.primaryNavigation}>
+            {navLinks.map(({ id, label }) => (
+              <a
+                key={id}
+                href={`#${id}`}
+                className="text-sm text-muted-foreground transition hover:text-foreground"
+              >
+                {label}
+              </a>
+            ))}
           </nav>
           <div className="hidden items-center gap-2 sm:flex">
             <label className="relative flex items-center">
               <Globe2 className="pointer-events-none absolute left-3 size-4 text-primary" />
-              <select aria-label="Choisir la langue" value={lang} onChange={(e) => setLang(e.target.value as keyof typeof translations)} className="h-10 appearance-none rounded-md border border-border bg-surface py-0 pl-9 pr-8 text-xs text-foreground outline-none focus:border-primary">
-                {Object.entries(translations).map(([code, value]) => <option key={code} value={code}>{value.label}</option>)}
-              </select><ChevronDown className="pointer-events-none absolute right-2 size-3 text-muted-foreground" />
+              <select
+                aria-label={t.a11y.chooseLanguage}
+                value={lang}
+                onChange={(e) => setLang(e.target.value as keyof typeof translations)}
+                className="h-10 appearance-none rounded-md border border-border bg-surface py-0 pl-9 pr-8 text-xs text-foreground outline-none focus:border-primary"
+              >
+                {Object.entries(translations).map(([code, value]) => (
+                  <option key={code} value={code}>
+                    {value.label}
+                  </option>
+                ))}
+              </select>
+              <ChevronDown className="pointer-events-none absolute right-2 size-3 text-muted-foreground" />
             </label>
-            <Button size="sm" onClick={() => setContactOpen(true)}>{t.start}</Button>
+            <Button size="sm" onClick={() => setContactOpen(true)}>
+              {t.hero.primaryCta}
+            </Button>
           </div>
-          <Button variant="ghost" size="icon" className="lg:hidden" aria-label="Ouvrir le menu" onClick={() => setMobileOpen(!mobileOpen)}>{mobileOpen ? <X /> : <Menu />}</Button>
+          <Button
+            variant="ghost"
+            size="icon"
+            className="lg:hidden"
+            aria-label={t.a11y.openMenu}
+            onClick={() => setMobileOpen(!mobileOpen)}
+          >
+            {mobileOpen ? <X /> : <Menu />}
+          </Button>
         </div>
-        {mobileOpen && <nav className="border-t border-border bg-background p-5 lg:hidden"><div className="grid gap-4">{[["agents",t.agents],["results",t.results],["compare",t.compare],["pricing",t.pricing]].map(([id,label]) => <a key={id} href={`#${id}`} onClick={() => setMobileOpen(false)}>{label}</a>)}</div></nav>}
+        {mobileOpen && (
+          <nav className="border-t border-border bg-background p-5 lg:hidden">
+            <div className="grid gap-4">
+              {navLinks.map(({ id, label }) => (
+                <a key={id} href={`#${id}`} onClick={() => setMobileOpen(false)}>
+                  {label}
+                </a>
+              ))}
+            </div>
+          </nav>
+        )}
       </header>
 
-      <section id="top" className="relative min-h-screen overflow-hidden pt-18 text-primary-foreground">
-        <img src={homeBackground} alt="" aria-hidden="true" className="absolute inset-0 size-full object-cover object-center" />
-        <div className="absolute inset-0 bg-gradient-to-r from-foreground via-foreground/75 to-foreground/10" />
-        <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-foreground to-transparent" />
-        <div className="relative mx-auto flex min-h-[calc(100vh-4.5rem)] max-w-7xl items-center px-5 py-16 lg:px-8">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-primary-foreground/10 px-4 py-2 text-xs font-bold backdrop-blur-md"><span className="size-2 animate-pulse rounded-full bg-accent" /> DISPONIBLE EN 10 LANGUES</div>
-            <h1 className="mt-7 text-balance text-5xl font-extrabold leading-[0.98] sm:text-7xl lg:text-8xl">{t.hero}</h1>
-            <p className="mt-7 max-w-2xl text-balance text-lg font-light leading-relaxed text-primary-foreground/80 sm:text-2xl">{t.sub}</p>
-            <div className="mt-10 flex flex-wrap gap-3"><Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" onClick={() => document.querySelector("#pricing")?.scrollIntoView()}>{t.start}<ArrowRight className="size-4" /></Button><Button variant="outline" size="lg" className="border-primary-foreground/40 bg-primary-foreground/5 text-primary-foreground hover:bg-primary-foreground/15 hover:text-primary-foreground" onClick={() => setContactOpen(true)}>{t.demo}</Button></div>
-            <div className="mt-9 flex flex-wrap gap-x-7 gap-y-3 text-xs font-semibold text-primary-foreground/80"><span className="flex items-center gap-2"><Clock3 className="size-4 text-accent" />8 agents IA disponibles 24h/24</span><span className="flex items-center gap-2"><Sparkle className="size-4 text-primary" />Prise en main en moins de 10 min</span><span className="flex items-center gap-2"><Check className="size-4 text-primary" />Votre équipe garde le dernier mot</span></div>
+      <section id="top" className="home-section relative overflow-hidden text-primary-foreground">
+        <div className="relative min-h-[100svh] overflow-hidden bg-[var(--home-foreground)]">
+          <img
+            src={homeBackground}
+            alt=""
+            aria-hidden="true"
+            className="home-background-image absolute inset-0 size-full object-cover"
+          />
+          <div
+            className="home-background-blend absolute inset-x-0 bottom-0 top-[52%] z-10"
+            aria-hidden="true"
+          />
+          <div className="relative z-20 mx-auto flex min-h-[100svh] max-w-7xl items-center px-5 pb-14 pt-28 sm:pt-32 lg:px-8">
+            <div className="max-w-3xl drop-shadow-[0_4px_18px_rgb(0_0_0_/_0.85)]">
+              <div className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-primary-foreground/10 px-4 py-2 text-xs font-bold backdrop-blur-md">
+                <span className="size-2 animate-pulse rounded-full bg-accent" />
+                {t.hero.badge}
+              </div>
+              <h1 className="mt-7 text-balance text-5xl font-extrabold leading-[0.98] sm:text-6xl lg:text-7xl">
+                {t.hero.title}
+              </h1>
+              <p className="mt-7 max-w-2xl text-balance text-lg font-light leading-relaxed text-primary-foreground/80 sm:text-2xl">
+                {t.hero.subtitle}
+              </p>
+              <div className="mt-10 flex flex-wrap gap-3">
+                <Button
+                  size="lg"
+                  className="bg-accent text-accent-foreground hover:bg-accent/90"
+                  onClick={() => document.querySelector("#pricing")?.scrollIntoView()}
+                >
+                  {t.hero.primaryCta}
+                  <ArrowRight className="size-4" />
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-primary-foreground/40 bg-primary-foreground/5 text-primary-foreground hover:bg-primary-foreground/15 hover:text-primary-foreground"
+                  onClick={() => setContactOpen(true)}
+                >
+                  {t.hero.secondaryCta}
+                </Button>
+              </div>
+              <div className="mt-9 flex flex-wrap gap-x-7 gap-y-3 text-xs font-semibold text-primary-foreground/80">
+                {t.hero.proofs.map((proof, index) => {
+                  const Icon = heroProofIcons[index] ?? Check;
+                  return (
+                    <span key={proof} className="flex items-center gap-2">
+                      <Icon
+                        className={`size-4 ${index % 2 === 0 ? "text-accent" : "text-primary"}`}
+                      />
+                      {proof}
+                    </span>
+                  );
+                })}
+              </div>
+            </div>
           </div>
+        </div>
+
+        <div className="home-crm-zone relative px-5 pb-10 pt-4 sm:pt-5 lg:px-8 lg:pb-14 lg:pt-6">
+          <figure
+            className="home-crm-preview relative mx-auto w-full max-w-xl pb-7 sm:max-w-2xl sm:pb-8 lg:max-w-[680px] lg:pb-9"
+            aria-label={t.a11y.crmPreview}
+          >
+            <div
+              className="home-crm-halo absolute -inset-x-3 -bottom-2 top-6 rounded-[2rem]"
+              aria-hidden="true"
+            />
+            <div className="home-crm-desktop relative z-10 overflow-hidden rounded-lg border border-border/80 bg-card shadow-2xl shadow-primary/18">
+              <img
+                src={crmPreview}
+                alt={t.a11y.crmDesktop}
+                width={1366}
+                height={657}
+                className="w-full object-contain"
+              />
+            </div>
+            <div className="absolute -left-3 bottom-0 z-20 w-[46%] min-w-[150px] max-w-[290px] overflow-hidden rounded-lg border border-border/80 bg-card shadow-2xl shadow-primary/18 sm:-left-8 sm:bottom-1 lg:-left-20 lg:bottom-3">
+              <img
+                src={analyticsDashboardPreview}
+                alt={t.a11y.crmAnalytics}
+                width={1672}
+                height={941}
+                className="w-full object-contain"
+              />
+            </div>
+            <div className="home-crm-mobile absolute right-0 top-[58%] z-30 w-[24%] min-w-[100px] max-w-[144px] -translate-y-1/2 overflow-hidden rounded-[1.45rem] border-[7px] border-black bg-black shadow-2xl shadow-primary/22 sm:-right-2 lg:-right-6">
+              <img
+                src={crmMobilePreview}
+                alt={t.a11y.crmMobile}
+                width={332}
+                height={570}
+                className="w-full rounded-[0.9rem] object-contain"
+              />
+            </div>
+          </figure>
         </div>
       </section>
 
       <section id="agents" className="border-y border-border bg-background py-28">
-        <div className="mx-auto max-w-7xl px-5 lg:px-8"><div className="flex flex-col justify-between gap-8 md:flex-row md:items-end"><SectionTitle kicker="VOTRE ÉQUIPE VIRTUELLE" title="Rencontrez vos nouveaux collaborateurs." text="Huit expertises complémentaires, représentées par des visages pour rendre chaque rôle immédiatement compréhensible. Ils automatisent les tâches répétitives sans effacer la relation humaine." /><div className="flex items-center gap-4 font-bold text-primary"><span className="font-display text-4xl">08</span><span className="h-px w-20 bg-primary"/><span className="text-xs uppercase">expertises dédiées</span></div></div>
-          <div className="mt-16 grid gap-x-7 gap-y-14 sm:grid-cols-2 lg:grid-cols-4">{agents.map(([name,role,description,kpi,position]) => <article key={name} className="group"><div className="agent-portrait relative aspect-[3/4] overflow-hidden rounded-lg bg-surface shadow-xl saturate-75 transition duration-500 group-hover:-translate-y-1 group-hover:saturate-100" style={{ "--agent-portrait-image": `url(${agentPortraits})`, "--agent-position": position } as CSSProperties}><div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-transparent to-transparent"/><div className="absolute inset-x-0 bottom-0 p-5 text-primary-foreground"><p className="text-xs font-bold uppercase text-accent">{role}</p><h3 className="mt-1 text-2xl font-bold">{name}</h3></div></div><p className="mt-5 text-sm leading-relaxed text-muted-foreground">{description}</p><p className="mt-4 border-t border-border pt-3 text-sm font-bold text-primary">{kpi}</p></article>)}</div>
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
+            <SectionTitle
+              kicker={t.agentsSection.kicker}
+              title={t.agentsSection.title}
+              text={t.agentsSection.text}
+            />
+            <div className="flex items-center gap-4 font-bold text-primary">
+              <span className="font-display text-4xl">{t.agentsSection.count}</span>
+              <span className="h-px w-20 bg-primary" />
+              <span className="text-xs uppercase">{t.agentsSection.expertise}</span>
+            </div>
+          </div>
+          <div className="mt-16 grid gap-x-7 gap-y-14 sm:grid-cols-2 lg:grid-cols-4">
+            {t.agentsSection.items.map(({ name, role, description, kpi }, index) => {
+              const image = agentImages[index] ?? agentArcher;
+              return (
+                <article key={name} className="group">
+                  <div className="relative aspect-[3/4] overflow-hidden rounded-lg bg-surface shadow-xl saturate-75 transition duration-500 group-hover:-translate-y-1 group-hover:saturate-100">
+                    <img
+                      src={image}
+                      alt={`${t.a11y.agentPortrait} ${name}`}
+                      loading="lazy"
+                      className="absolute inset-0 size-full object-cover object-center"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-transparent to-transparent" />
+                    <div className="absolute inset-x-0 bottom-0 p-5 text-primary-foreground">
+                      <p className="text-xs font-bold uppercase text-accent">{role}</p>
+                      <h3 className="mt-1 text-2xl font-bold">{name}</h3>
+                    </div>
+                  </div>
+                  <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                    {description}
+                  </p>
+                  <p className="mt-4 border-t border-border pt-3 text-sm font-bold text-primary">
+                    {kpi}
+                  </p>
+                </article>
+              );
+            })}
+          </div>
         </div>
       </section>
 
-      <section className="border-b border-border bg-card py-28"><div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[0.9fr_1.1fr] lg:px-8"><div><p className="text-xs font-extrabold text-accent">CONÇU POUR LES ÉQUIPES RÉELLES</p><h2 className="mt-4 text-balance text-4xl font-bold sm:text-5xl">Plus qu’un CRM, un partenaire de croissance.</h2><p className="mt-6 text-lg leading-relaxed text-muted-foreground">Saleshub.buisness rassemble les échanges, les priorités et les prochaines actions dans un même espace. Chacun sait qui rappeler, pourquoi et avec quel contexte — sans passer sa journée à compléter des fiches.</p><div className="mt-10 grid gap-7 sm:grid-cols-2"><div><h3 className="text-lg font-bold">Une IA qui assiste</h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground">Elle prépare, résume et recommande. Vos équipes valident les décisions importantes et gardent la relation.</p></div><div><h3 className="text-lg font-bold">Une vision partagée</h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground">Marketing, vente et service client travaillent à partir du même historique, traduit dans la langue de chacun.</p></div></div></div><figure className="relative pb-8 lg:pl-8"><img src={teamCollaboration} alt="Une équipe commerciale échange autour de son CRM" loading="lazy" width={1400} height={1000} className="aspect-[7/5] w-full rounded-lg object-cover shadow-2xl"/><figcaption className="absolute bottom-0 left-0 max-w-sm rounded-md bg-foreground p-6 text-sm leading-relaxed text-primary-foreground shadow-xl"><strong className="block font-display text-3xl text-accent">1 seule vue</strong>pour suivre la conversation, les décisions et la prochaine action.</figcaption></figure></div></section>
+      <section id="integrations" className="border-b border-border bg-card py-14">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="text-xs font-extrabold text-primary">{t.integrations.kicker}</p>
+              <h2 className="mt-3 text-balance text-3xl font-bold sm:text-4xl">
+                {t.integrations.title}
+              </h2>
+            </div>
+            <p className="max-w-xl text-sm leading-relaxed text-muted-foreground">
+              {t.integrations.text}
+            </p>
+          </div>
+        </div>
+        <div
+          className="integration-marquee mt-10 overflow-hidden px-5"
+          aria-label={t.a11y.integrationList}
+        >
+          <div className="integration-marquee-track flex">
+            {[false, true].map((repeated) => (
+              <div
+                key={repeated ? "repeat" : "first"}
+                className="integration-logo-group flex gap-4 pr-4"
+                aria-hidden={repeated}
+              >
+                {integrations.map(({ name, logo, dark, wide }, index) => (
+                  <div
+                    key={`${name || "integration"}-${index}-${repeated ? "repeat" : "first"}`}
+                    className={`flex h-18 min-w-[184px] shrink-0 items-center gap-3 rounded-lg border px-5 shadow-sm ${
+                      dark ? "border-foreground bg-foreground" : "border-border bg-background"
+                    }`}
+                  >
+                    <img
+                      src={logo}
+                      alt={name && !repeated ? `${t.a11y.logo} ${name}` : ""}
+                      loading="lazy"
+                      className={`${wide ? "max-w-[96px]" : "max-w-10"} max-h-9 object-contain`}
+                    />
+                    <span
+                      className={`font-display text-lg font-bold ${dark ? "text-primary-foreground" : "text-foreground"}`}
+                    >
+                      {name}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-      <section id="results" className="py-24"><div className="mx-auto max-w-7xl px-5 lg:px-8"><SectionTitle kicker="LA PROMESSE" title="Du lead au paiement, un seul système." text="Les agents répondent, qualifient, prospectent, rédigent, recrutent et relancent pendant que votre équipe se concentre sur la vente." />
-        <div className="mt-14 grid gap-0 lg:grid-cols-5">{[["01","Un lead arrive","Publicité, site ou LinkedIn"],["02","Contacté en < 2 min","Message personnalisé"],["03","Qualifié","Score recalculé en continu"],["04","Devis en 30 s","Document généré"],["05","Payé & encaissé","Suivi automatisé"]].map(([n,title,text],i) => <div key={n} className="relative border-l border-border px-5 py-6"><span className="font-mono text-xs text-primary">{n}</span><h3 className="mt-4 font-bold">{title}</h3><p className="mt-2 text-sm text-muted-foreground">{text}</p>{i<4&&<ArrowRight className="absolute -right-3 top-1/2 z-10 hidden size-6 rounded-full border border-border bg-background p-1 text-gold lg:block" />}</div>)}</div>
-        <div className="mt-16 grid grid-cols-2 gap-6 border-y border-border py-10 lg:grid-cols-4">{[["39 000€","économisés / commercial / an"],["+30%","conversion lead → vente"],["+15%","RDV fixés / appels"],["50+","prospects qualifiés / semaine"]].map(([value,label])=><div key={value}><strong className="font-display text-3xl text-primary sm:text-4xl">{value}</strong><p className="mt-2 text-sm text-muted-foreground">{label}</p></div>)}</div><p className="mt-4 text-xs text-muted-foreground">Objectifs issus de la présentation commerciale, à mesurer et ajuster selon l’usage réel.</p>
-      </div></section>
+      <section id="partners" className="border-b border-border bg-background py-24">
+        <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[0.82fr_1.18fr] lg:px-8">
+          <div className="rounded-lg border border-border bg-foreground p-8 text-primary-foreground shadow-2xl lg:p-10">
+            <div className="flex size-12 items-center justify-center rounded-md bg-accent text-accent-foreground">
+              <Handshake className="size-6" />
+            </div>
+            <p className="mt-8 text-xs font-extrabold text-accent">{t.partners.kicker}</p>
+            <h2 className="mt-4 text-balance text-4xl font-bold sm:text-5xl">{t.partners.title}</h2>
+            <p className="mt-6 text-lg leading-relaxed text-primary-foreground/75">
+              {t.partners.text}
+            </p>
+            <div className="mt-8 grid gap-3 text-sm sm:grid-cols-3">
+              {t.partners.stats.map(({ value, label }) => (
+                <div
+                  key={`${value}-${label}`}
+                  className="border-t border-primary-foreground/18 pt-4"
+                >
+                  <strong className="block text-2xl text-accent">{value}</strong>
+                  <span className="text-primary-foreground/70">{label}</span>
+                </div>
+              ))}
+            </div>
+            <Button
+              size="lg"
+              className="mt-10 bg-accent text-accent-foreground hover:bg-accent/90"
+              onClick={() => setContactOpen(true)}
+            >
+              {t.partners.cta}
+              <ArrowRight className="size-4" />
+            </Button>
+          </div>
 
-      <section id="compare" className="border-y border-border bg-surface py-24"><div className="mx-auto max-w-7xl px-5 lg:px-8"><SectionTitle kicker="COMPARAISON MARCHÉ" title="Pourquoi Saleshub.buisness change la donne" text="Une plateforme unifiée à la place d’un assemblage d’outils et d’extensions." />
-        <div className="mt-12 overflow-x-auto rounded-lg border border-border"><table className="w-full min-w-[760px] text-left text-sm"><thead className="bg-background"><tr><th className="p-5">Fonctionnalité</th><th className="p-5 text-primary">Saleshub</th><th className="p-5">Salesforce</th><th className="p-5">HubSpot</th><th className="p-5">Pipedrive</th></tr></thead><tbody>{[["CRM complet intégré","✓","✓","✓","✓"],["8 agents IA autonomes","✓","Partiel","Partiel","Partiel"],["0 saisie manuelle","✓","Partiel","Partiel","Partiel"],["Coaching live pendant les appels","✓","Partiel","Partiel","—"],["Prise en main < 10 minutes","✓","—","Partiel","Partiel"],["Freemium sans CB","✓","—","Partiel","—"]].map(row=><tr key={row[0]} className="border-t border-border">{row.map((cell,i)=><td key={i} className={`p-5 ${i===1?"font-bold text-primary":"text-muted-foreground"}`}>{cell}</td>)}</tr>)}</tbody></table></div><p className="mt-4 text-xs text-muted-foreground">Comparaison indicative d’après les informations publiques citées dans le dossier commercial 2025/2026. À vérifier avant publication.</p>
-      </div></section>
+          <div className="grid gap-4">
+            {t.partners.levels.map(({ level, title, duration, text, points }, index) => {
+              const Icon = partnerLevelIcons[index] ?? BadgeCheck;
+              return (
+                <article
+                  key={level}
+                  className="group grid gap-5 rounded-lg border border-border bg-card p-6 shadow-sm transition hover:-translate-y-1 hover:border-primary/50 hover:shadow-xl md:grid-cols-[auto_1fr]"
+                >
+                  <div className="flex items-start gap-4 md:block">
+                    <div className="grid size-14 place-items-center rounded-md bg-primary text-primary-foreground">
+                      <Icon className="size-7" />
+                    </div>
+                    <span className="mt-4 hidden font-display text-5xl font-bold text-primary/12 md:block">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                  </div>
+                  <div>
+                    <div className="flex flex-wrap items-center gap-3">
+                      <span className="rounded-md bg-primary/10 px-3 py-1 text-[11px] font-extrabold uppercase text-primary">
+                        {level}
+                      </span>
+                      <span className="text-xs font-bold uppercase text-muted-foreground">
+                        {duration}
+                      </span>
+                    </div>
+                    <h3 className="mt-4 text-2xl font-bold">{title}</h3>
+                    <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                      {text}
+                    </p>
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {points.map((point) => (
+                        <span
+                          key={point}
+                          className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold text-muted-foreground"
+                        >
+                          <Check className="size-3.5 text-primary" />
+                          {point}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </section>
 
-      <section id="pricing" className="py-24"><div className="mx-auto max-w-7xl px-5 lg:px-8"><div className="text-center"><p className="text-xs font-extrabold text-primary">TARIFS</p><h2 className="mt-3 text-3xl font-bold sm:text-5xl">Choisissez votre engagement</h2><p className="mt-4 text-muted-foreground">Plus long, plus économique.</p><div className="mt-8 inline-flex rounded-md border border-border bg-surface p-1">{([['monthly','Mensuel'],['annual','Annuel −15%'],['biennial','2 ans −25%']] as const).map(([key,label])=><button key={key} onClick={()=>setBilling(key)} className={`rounded px-4 py-2 text-xs font-bold transition ${billing===key?"bg-primary text-primary-foreground":"text-muted-foreground hover:text-foreground"}`}>{label}</button>)}</div></div>
-        <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">{plans.map(plan=>{const price=plan[billing];return <article key={plan.name} className={`relative flex flex-col rounded-lg border p-6 ${plan.popular?"border-primary bg-primary/7 shadow-glow":"border-border bg-card"}`}>{plan.popular&&<span className="absolute -top-3 left-5 rounded bg-gold px-3 py-1 text-[10px] font-extrabold text-gold-foreground">RECOMMANDÉ</span>}<h3 className="text-xl font-bold">{plan.name}</h3><p className="mt-1 text-sm text-muted-foreground">{plan.desc}</p><div className="mt-6 min-h-14">{price===null?<strong className="text-3xl">Sur devis</strong>:<><strong className="text-4xl">{price}€</strong><span className="text-sm text-muted-foreground"> /mois/util.</span></>}</div><ul className="my-7 flex-1 space-y-3">{plan.features.map(f=><li key={f} className="flex gap-2 text-sm text-muted-foreground"><Check className="mt-0.5 size-4 shrink-0 text-primary" />{f}</li>)}</ul><Button variant={plan.popular?"primary":"outline"} onClick={()=>setContactOpen(true)}>{price===0?"Démarrer gratuitement":price===null?"Contacter l’équipe":"Choisir cette formule"}</Button></article>})}</div>
-        <div className="mt-6 flex items-center justify-center gap-2 text-xs text-muted-foreground"><ShieldCheck className="size-4 text-primary" />Paiement sécurisé et facturation récurrente après validation de votre formule.</div>
-      </div></section>
+      <section className="border-b border-border bg-card py-28">
+        <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+          <div>
+            <p className="text-xs font-extrabold text-accent">{t.collaboration.kicker}</p>
+            <h2 className="mt-4 text-balance text-4xl font-bold sm:text-5xl">
+              {t.collaboration.title}
+            </h2>
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+              {t.collaboration.text}
+            </p>
+            <div className="mt-10 grid gap-7 sm:grid-cols-2">
+              {t.collaboration.blocks.map(({ title, text }) => (
+                <div key={title}>
+                  <h3 className="text-lg font-bold">{title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <figure className="relative pb-8 lg:pl-8">
+            <img
+              src={teamCollaboration}
+              alt={t.collaboration.imageAlt}
+              loading="lazy"
+              width={1400}
+              height={1000}
+              className="aspect-[7/5] w-full rounded-lg object-cover shadow-2xl"
+            />
+            <figcaption className="absolute bottom-0 left-0 max-w-sm rounded-md bg-foreground p-6 text-sm leading-relaxed text-primary-foreground shadow-xl">
+              <strong className="block font-display text-3xl text-accent">
+                {t.collaboration.captionLead}
+              </strong>
+              {t.collaboration.captionText}
+            </figcaption>
+          </figure>
+        </div>
+      </section>
 
-      <section className="border-y border-border bg-surface py-24"><div className="mx-auto max-w-7xl px-5 lg:px-8"><SectionTitle kicker="SATISFACTION CLIENT" title="Les premiers utilisateurs racontent leur expérience" text="Un retour documenté de la phase bêta fermée." />
-        <article className="mt-10 grid gap-8 rounded-lg border border-border bg-card p-7 md:grid-cols-[auto_1fr_auto] md:items-center"><div className="agent-portrait size-20 rounded-full border-4 border-background shadow-lg" aria-hidden="true" style={{ "--agent-portrait-image": `url(${agentPortraits})`, "--agent-position": "100% 100%" } as CSSProperties}/><div><div className="flex gap-1 text-accent" aria-label="5 étoiles"><Star className="size-4 fill-current"/><Star className="size-4 fill-current"/><Star className="size-4 fill-current"/><Star className="size-4 fill-current"/><Star className="size-4 fill-current"/></div><blockquote className="mt-3 text-xl leading-relaxed">« La première semaine, ARCHER m’a apporté 23 leads qualifiés. J’ai signé 2 clients la deuxième semaine. »</blockquote><p className="mt-3 text-xs text-muted-foreground">Jérôme D. · Secteur immobilier · Identité et portrait illustratifs · Témoignage bêta à confirmer avant publication</p></div><div className="text-center"><strong className="text-3xl text-primary">4,9/5</strong><p className="text-xs text-muted-foreground">Satisfaction bêta déclarée</p></div></article>
-      </div></section>
+      <section id="results" className="py-24">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <SectionTitle kicker={t.results.kicker} title={t.results.title} text={t.results.text} />
+          <div className="mt-14 grid gap-0 lg:grid-cols-5">
+            {t.results.steps.map(({ number, title, text }, index) => (
+              <div key={number} className="relative border-l border-border px-5 py-6">
+                <span className="font-mono text-xs text-primary">{number}</span>
+                <h3 className="mt-4 font-bold">{title}</h3>
+                <p className="mt-2 text-sm text-muted-foreground">{text}</p>
+                {index < t.results.steps.length - 1 && (
+                  <ArrowRight className="absolute -right-3 top-1/2 z-10 hidden size-6 rounded-full border border-border bg-background p-1 text-gold lg:block" />
+                )}
+              </div>
+            ))}
+          </div>
+          <div className="mt-16 grid grid-cols-2 gap-6 border-y border-border py-10 lg:grid-cols-4">
+            {t.results.stats.map(({ value, label }) => (
+              <div key={value}>
+                <strong className="font-display text-3xl text-primary sm:text-4xl">{value}</strong>
+                <p className="mt-2 text-sm text-muted-foreground">{label}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 text-xs text-muted-foreground">{t.results.note}</p>
+        </div>
+      </section>
 
-      <section className="py-24"><div className="mx-auto max-w-7xl px-5 lg:px-8"><div className="grid items-center gap-10 lg:grid-cols-2"><div><p className="text-xs font-extrabold text-gold">DISTINCTIONS INTERNATIONALES</p><h2 className="mt-3 text-3xl font-bold sm:text-5xl">Une ambition mondiale, des preuves à publier.</h2><p className="mt-5 text-muted-foreground">La présentation indique plusieurs concours internationaux et catégories. Les noms, années et justificatifs doivent être confirmés avant d’afficher des trophées officiels.</p></div><div className="grid grid-cols-3 gap-3">{["Innovation IA","Productivité","Excellence SaaS"].map((award,i)=><div key={award} className="rounded-lg border border-border bg-card p-5 text-center"><Trophy className={`mx-auto size-7 ${i===1?"text-gold":"text-primary"}`} /><p className="mt-4 text-xs font-bold">{award}</p><span className="mt-2 block text-[10px] text-muted-foreground">À confirmer</span></div>)}</div></div></div></section>
+      <section id="compare" className="border-y border-border bg-surface py-24">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <SectionTitle kicker={t.compare.kicker} title={t.compare.title} text={t.compare.text} />
+          <div className="mt-12 overflow-x-auto rounded-lg border border-border">
+            <table className="w-full min-w-[760px] text-left text-sm">
+              <thead className="bg-background">
+                <tr>
+                  {t.compare.headers.map((header, index) => (
+                    <th
+                      key={header}
+                      className={`p-5 ${index > 0 ? "text-center" : ""} ${index === 1 ? "text-primary" : ""}`}
+                    >
+                      {header}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {t.compare.rows.map((row) => (
+                  <tr key={row[0]} className="border-t border-border">
+                    {row.map((cell, index) => (
+                      <td
+                        key={`${row[0]}-${cell}-${index}`}
+                        className={`p-5 ${index > 0 ? "text-center" : ""} ${index === 1 ? "font-bold text-primary" : "text-muted-foreground"}`}
+                      >
+                        {cell}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-4 text-xs text-muted-foreground">{t.compare.note}</p>
+        </div>
+      </section>
 
-      <section className="border-t border-border bg-primary/10 py-24 text-center"><div className="mx-auto max-w-3xl px-5"><Bot className="mx-auto size-10 text-primary"/><h2 className="mt-5 text-3xl font-bold sm:text-5xl">Vos 8 agents IA n’attendent que vous.</h2><p className="mt-5 text-muted-foreground">Échangeons 30 minutes pour adapter Saleshub.buisness à votre métier.</p><Button size="lg" className="mt-8" onClick={()=>setContactOpen(true)}>Prendre rendez-vous<ArrowRight className="size-4"/></Button></div></section>
+      <section
+        id="security"
+        className="border-y border-foreground bg-foreground py-24 text-primary-foreground"
+      >
+        <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
+          <div>
+            <p className="text-xs font-extrabold text-accent">{t.security.kicker}</p>
+            <h2 className="mt-4 text-balance text-4xl font-bold sm:text-5xl">{t.security.title}</h2>
+            <p className="mt-6 text-lg leading-relaxed text-primary-foreground/75">
+              {t.security.text}
+            </p>
+            <div className="mt-10 flex flex-wrap gap-3">
+              {t.security.badges.map((badge) => (
+                <span
+                  key={badge}
+                  className="rounded-md border border-primary-foreground/15 bg-primary-foreground/8 px-4 py-2 text-xs font-extrabold text-primary-foreground/90"
+                >
+                  {badge}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {t.security.controls.map(({ title, text }, index) => {
+              const Icon = securityIcons[index] ?? ShieldCheck;
+              return (
+                <article
+                  key={title}
+                  className="rounded-lg border border-primary-foreground/12 bg-primary-foreground/6 p-6"
+                >
+                  <Icon className="size-7 text-accent" />
+                  <h3 className="mt-5 text-lg font-bold">{title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-primary-foreground/70">{text}</p>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </section>
 
-      <footer className="border-t border-border py-10"><div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-5 sm:flex-row lg:px-8"><img src={logo} alt="Saleshub.buisness" loading="lazy" className="h-8 w-auto" width={1408} height={512}/><p className="text-xs text-muted-foreground">© 2026 Saleshub.buisness · Tous droits réservés</p><div className="flex gap-5 text-xs text-muted-foreground"><a href="#">Confidentialité</a><a href="#pricing">Tarifs</a><a href="#agents">Agents IA</a></div></div></footer>
+      <section id="pricing" className="py-24">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <div className="text-center">
+            <p className="text-xs font-extrabold text-primary">{t.pricing.kicker}</p>
+            <h2 className="mt-3 text-3xl font-bold sm:text-5xl">{t.pricing.title}</h2>
+            <p className="mt-4 text-muted-foreground">{t.pricing.text}</p>
+            <div className="mt-8 inline-flex rounded-md border border-border bg-surface p-1">
+              {billingCycles.map((key) => (
+                <button
+                  key={key}
+                  onClick={() => setBilling(key)}
+                  className={`rounded px-4 py-2 text-xs font-bold transition ${
+                    billing === key
+                      ? "bg-primary text-primary-foreground"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  {t.pricing.billing[key]}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {t.pricing.plans.map((plan, index) => {
+              const priceConfig = planPrices[index] ?? planPrices[0]!;
+              const price = priceConfig[billing];
+              return (
+                <article
+                  key={plan.name}
+                  className={`relative flex flex-col items-center rounded-lg border p-6 text-center ${
+                    priceConfig.popular
+                      ? "border-primary bg-primary/7 shadow-glow"
+                      : "border-border bg-card"
+                  }`}
+                >
+                  {priceConfig.popular && (
+                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded bg-gold px-3 py-1 text-[10px] font-extrabold text-gold-foreground">
+                      {t.pricing.recommended}
+                    </span>
+                  )}
+                  <h3 className="text-xl font-bold">{plan.name}</h3>
+                  <p className="mt-1 text-sm text-muted-foreground">{plan.desc}</p>
+                  <div className="mt-6 min-h-14">
+                    {price === null ? (
+                      <strong className="text-3xl">{t.pricing.customPrice}</strong>
+                    ) : (
+                      <>
+                        <strong className="text-4xl">{price}€</strong>
+                        <span className="text-sm text-muted-foreground">
+                          {t.pricing.perUserMonth}
+                        </span>
+                      </>
+                    )}
+                  </div>
+                  <ul className="my-7 flex w-full flex-1 flex-col items-center space-y-3">
+                    {plan.features.map((feature) => (
+                      <li
+                        key={feature}
+                        className="flex justify-center gap-2 text-center text-sm text-muted-foreground"
+                      >
+                        <Check className="mt-0.5 size-4 shrink-0 text-primary" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  <Button
+                    variant={priceConfig.popular ? "primary" : "outline"}
+                    onClick={() => setContactOpen(true)}
+                  >
+                    {price === 0
+                      ? t.pricing.ctaFree
+                      : price === null
+                        ? t.pricing.ctaCustom
+                        : t.pricing.ctaChoose}
+                  </Button>
+                </article>
+              );
+            })}
+          </div>
+          <div className="mt-6 flex items-center justify-center gap-2 text-xs text-muted-foreground">
+            <ShieldCheck className="size-4 text-primary" />
+            {t.pricing.securityNote}
+          </div>
+        </div>
+      </section>
 
-      {contactOpen && <div className="fixed inset-0 z-[60] grid place-items-center bg-background/80 p-4 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="contact-title"><div className="w-full max-w-md rounded-lg border border-border bg-card p-6 shadow-2xl"><div className="flex items-start justify-between"><div><h2 id="contact-title" className="text-2xl font-bold">Parlons de votre projet</h2><p className="mt-2 text-sm text-muted-foreground">Laissez vos coordonnées pour une démonstration personnalisée.</p></div><Button variant="ghost" size="icon" onClick={()=>setContactOpen(false)} aria-label="Fermer"><X className="size-5"/></Button></div><form className="mt-6 space-y-4" onSubmit={(e)=>{e.preventDefault();setContactOpen(false)}}><label className="block text-sm font-semibold">Nom<input required className="mt-2 h-11 w-full rounded-md border border-border bg-background px-3 font-normal outline-none focus:border-primary"/></label><label className="block text-sm font-semibold">Email professionnel<input required type="email" className="mt-2 h-11 w-full rounded-md border border-border bg-background px-3 font-normal outline-none focus:border-primary"/></label><label className="block text-sm font-semibold">Entreprise<input required className="mt-2 h-11 w-full rounded-md border border-border bg-background px-3 font-normal outline-none focus:border-primary"/></label><Button type="submit" className="w-full">Demander ma démonstration</Button><p className="text-center text-[10px] text-muted-foreground">Le formulaire de démonstration sera relié à votre équipe commerciale lors de la mise en ligne.</p></form></div></div>}
+      <section className="border-y border-border bg-surface py-24">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <SectionTitle
+            kicker={t.testimonial.kicker}
+            title={t.testimonial.title}
+            text={t.testimonial.text}
+          />
+          <article className="mt-10 grid gap-8 rounded-lg border border-border bg-card p-7 md:grid-cols-[auto_1fr_auto] md:items-center">
+            <div
+              className="agent-portrait size-20 rounded-full border-4 border-background shadow-lg"
+              aria-hidden="true"
+              style={
+                {
+                  "--agent-portrait-image": `url(${agentPortraits})`,
+                  "--agent-position": "100% 100%",
+                } as CSSProperties
+              }
+            />
+            <div>
+              <div className="flex gap-1 text-accent" aria-label={t.a11y.fiveStars}>
+                <Star className="size-4 fill-current" />
+                <Star className="size-4 fill-current" />
+                <Star className="size-4 fill-current" />
+                <Star className="size-4 fill-current" />
+                <Star className="size-4 fill-current" />
+              </div>
+              <blockquote className="mt-3 text-xl leading-relaxed">
+                {t.testimonial.quote}
+              </blockquote>
+              <p className="mt-3 text-xs text-muted-foreground">{t.testimonial.attribution}</p>
+            </div>
+            <div className="text-center">
+              <strong className="text-3xl text-primary">{t.testimonial.score}</strong>
+              <p className="text-xs text-muted-foreground">{t.testimonial.scoreLabel}</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section className="py-24">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <div className="grid items-center gap-10 lg:grid-cols-2">
+            <div>
+              <p className="text-xs font-extrabold text-gold">{t.awards.kicker}</p>
+              <h2 className="mt-3 text-3xl font-bold sm:text-5xl">{t.awards.title}</h2>
+              <p className="mt-5 text-muted-foreground">{t.awards.text}</p>
+            </div>
+            <div className="grid grid-cols-3 gap-3">
+              {t.awards.items.map((award, index) => (
+                <div
+                  key={award}
+                  className="rounded-lg border border-border bg-card p-5 text-center"
+                >
+                  <Trophy
+                    className={`mx-auto size-7 ${index === 1 ? "text-gold" : "text-primary"}`}
+                  />
+                  <p className="mt-4 text-xs font-bold">{award}</p>
+                  <span className="mt-2 block text-[10px] text-muted-foreground">
+                    {t.awards.status}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-border bg-primary/10 py-24 text-center">
+        <div className="mx-auto max-w-3xl px-5">
+          <Bot className="mx-auto size-10 text-primary" />
+          <h2 className="mt-5 text-3xl font-bold sm:text-5xl">{t.cta.title}</h2>
+          <p className="mt-5 text-muted-foreground">{t.cta.text}</p>
+          <Button size="lg" className="mt-8" onClick={() => setContactOpen(true)}>
+            {t.cta.button}
+            <ArrowRight className="size-4" />
+          </Button>
+        </div>
+      </section>
+
+      <footer className="border-t border-border bg-foreground text-primary-foreground">
+        <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8 lg:py-16">
+          <div className="grid gap-10 lg:grid-cols-[1.25fr_2fr]">
+            <div className="max-w-sm">
+              <a
+                href="#top"
+                aria-label={t.a11y.home}
+                className="inline-flex rounded-md bg-primary-foreground px-3 py-2"
+              >
+                <img
+                  src={logo}
+                  alt="Saleshub.business"
+                  loading="lazy"
+                  className="h-9 w-auto"
+                  width={1408}
+                  height={512}
+                />
+              </a>
+              <p className="mt-6 text-sm leading-relaxed text-primary-foreground/72">
+                {t.footer.description}
+              </p>
+              <div className="mt-7 grid gap-3 text-sm">
+                {t.footer.highlights.map((highlight, index) => {
+                  const Icon = footerHighlightIcons[index] ?? Check;
+                  return (
+                    <span
+                      key={highlight}
+                      className="inline-flex items-center gap-3 text-primary-foreground/78"
+                    >
+                      <Icon className="size-4 text-accent" />
+                      {highlight}
+                    </span>
+                  );
+                })}
+              </div>
+              <Button
+                className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90"
+                onClick={() => setContactOpen(true)}
+              >
+                {t.footer.cta}
+                <ArrowRight className="size-4" />
+              </Button>
+            </div>
+
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+              {t.footer.sections.map(({ title, links }) => (
+                <nav key={title} aria-label={title}>
+                  <h2 className="text-sm font-bold text-primary-foreground">{title}</h2>
+                  <ul className="mt-4 space-y-3">
+                    {links.map(({ label, href }) => (
+                      <li key={label}>
+                        <a
+                          href={href}
+                          className="text-sm text-primary-foreground/65 transition hover:text-accent"
+                        >
+                          {label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-12 border-t border-primary-foreground/12 pt-6">
+            <div className="flex flex-col gap-4 text-xs text-primary-foreground/58 md:flex-row md:items-center md:justify-between">
+              <p>{t.footer.copyright}</p>
+              <div className="flex flex-wrap gap-x-5 gap-y-2">
+                {t.footer.legalLinks.map((link) => (
+                  <a key={link} href="#" className="transition hover:text-accent">
+                    {link}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      {contactOpen && (
+        <div
+          className="fixed inset-0 z-[60] grid place-items-center bg-background/80 p-4 backdrop-blur-sm"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="contact-title"
+        >
+          <div className="w-full max-w-md rounded-lg border border-border bg-card p-6 shadow-2xl">
+            <div className="flex items-start justify-between">
+              <div>
+                <h2 id="contact-title" className="text-2xl font-bold">
+                  {t.contact.title}
+                </h2>
+                <p className="mt-2 text-sm text-muted-foreground">{t.contact.text}</p>
+              </div>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setContactOpen(false)}
+                aria-label={t.a11y.close}
+              >
+                <X className="size-5" />
+              </Button>
+            </div>
+            <form
+              className="mt-6 space-y-4"
+              onSubmit={(event) => {
+                event.preventDefault();
+                setContactOpen(false);
+              }}
+            >
+              <label className="block text-sm font-semibold">
+                {t.contact.name}
+                <input
+                  required
+                  className="mt-2 h-11 w-full rounded-md border border-border bg-background px-3 font-normal outline-none focus:border-primary"
+                />
+              </label>
+              <label className="block text-sm font-semibold">
+                {t.contact.email}
+                <input
+                  required
+                  type="email"
+                  className="mt-2 h-11 w-full rounded-md border border-border bg-background px-3 font-normal outline-none focus:border-primary"
+                />
+              </label>
+              <label className="block text-sm font-semibold">
+                {t.contact.company}
+                <input
+                  required
+                  className="mt-2 h-11 w-full rounded-md border border-border bg-background px-3 font-normal outline-none focus:border-primary"
+                />
+              </label>
+              <Button type="submit" className="w-full">
+                {t.contact.submit}
+              </Button>
+              <p className="text-center text-[10px] text-muted-foreground">{t.contact.note}</p>
+            </form>
+          </div>
+        </div>
+      )}
     </main>
   );
 }
 
 function SectionTitle({ kicker, title, text }: { kicker: string; title: string; text: string }) {
-  return <div className="max-w-3xl"><p className="text-xs font-extrabold text-primary">{kicker}</p><h2 className="mt-3 text-balance text-3xl font-bold sm:text-5xl">{title}</h2><p className="mt-5 max-w-2xl text-muted-foreground">{text}</p></div>;
+  return (
+    <div className="max-w-3xl">
+      <p className="text-xs font-extrabold text-primary">{kicker}</p>
+      <h2 className="mt-3 text-balance text-3xl font-bold sm:text-5xl">{title}</h2>
+      <p className="mt-5 max-w-2xl text-muted-foreground">{text}</p>
+    </div>
+  );
 }

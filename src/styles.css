@@ -178,3 +178,113 @@
   background-size: 400% 200%;
   background-position: var(--agent-position);
 }
+
+.home-section {
+  --home-foreground: oklch(19.8% 0.043 243);
+  background: var(--home-foreground);
+}
+
+.home-background-image {
+  object-position: center 44%;
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    #000 0%,
+    #000 46%,
+    transparent 72%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    180deg,
+    #000 0%,
+    #000 46%,
+    transparent 72%,
+    transparent 100%
+  );
+}
+
+
+.home-background-blend {
+  background: var(--home-foreground);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 38%, #000 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 38%, #000 100%);
+}
+
+.home-crm-zone {
+  background: var(--home-foreground);
+}
+
+.home-crm-halo {
+  background: var(--home-foreground);
+  box-shadow: 0 28px 70px color-mix(in oklab, var(--primary) 14%, transparent);
+}
+
+@keyframes home-crm-desktop-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(54px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@supports (animation-timeline: view()) {
+  .home-crm-desktop {
+    animation: home-crm-desktop-reveal linear both;
+    animation-range: entry 0% cover 38%;
+    animation-timeline: view();
+    will-change: opacity, transform;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-background-image {
+    object-position: center center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-crm-desktop {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.integration-marquee {
+  mask-image: linear-gradient(90deg, transparent, oklch(0 0 0) 8%, oklch(0 0 0) 92%, transparent);
+}
+
+.integration-marquee-track {
+  width: max-content;
+  animation: integration-marquee 34s linear infinite;
+}
+
+.integration-marquee:hover .integration-marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes integration-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .integration-marquee {
+    mask-image: none;
+  }
+
+  .integration-marquee-track {
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: none;
+  }
+}
