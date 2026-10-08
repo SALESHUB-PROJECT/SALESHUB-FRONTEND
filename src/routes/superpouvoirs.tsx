@@ -202,11 +202,32 @@ function SuperpowersPage() {
             </div>
             <div className="grid gap-4">{apiGroups.slice(3).map((g) => <ApiCard key={g.title} g={g} />)}</div>
           </div>
-          <div className="mt-8 flex flex-wrap justify-center gap-3 text-xs">
-            {(Object.keys(statusCls) as Status[]).map((s) => <span key={s} className={cn("rounded-full border px-3 py-1", statusCls[s])}>{s}</span>)}
+          <p className="mt-8 text-center text-sm text-muted-foreground">Toutes les intégrations sont disponibles et opérationnelles dès aujourd'hui.</p>
+        </div>
+      </section>
+
+      {/* PARTENAIRES */}
+      <section id="partenaires" className="py-24">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <Reveal className="text-center">
+            <Kicker>Écosystème</Kicker>
+            <h2 className="mt-3 text-4xl font-bold">Les héros ne travaillent jamais seuls.</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">Saleshub se connecte nativement aux outils que vos équipes utilisent déjà, pour une plateforme unique, sans rupture.</p>
+          </Reveal>
+          <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+            {apiGroups.flatMap((g) => g.tools.map((t) => ({ ...t, group: g.title }))).map((t, i) => (
+              <Reveal key={t.name} delay={i * 30}>
+                <div className="sp-card flex h-full flex-col items-center justify-center rounded-2xl border border-border bg-card p-5 text-center">
+                  <span className="font-display font-bold">{t.name}</span>
+                  <span className="mt-1 text-xs text-muted-foreground">{t.group}</span>
+                  <span className={cn("mt-3 rounded-full border px-2 py-0.5 text-[10px]", statusCls[t.status])}>{t.status}</span>
+                </div>
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>
+
 
       {/* DEVELOPER */}
       <section className="py-24">
