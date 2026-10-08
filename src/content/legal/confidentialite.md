@@ -22,7 +22,15 @@ Référent protection des données : [Prénom Nom] — e-mail : [dpo@saleshub.bu
 
 | Finalité | Données | Base légale |
 |---|---|---|
-| Répondre aux demandes de contact et de démo | Nom, prénom, e-mail, téléphone, entreprise, fonction, message | Mesures précontractuelles / intérêt légitime | | Créer et gérer les comptes utilisateurs | Identité, e-mail professionnel, identifiants, rôle, préférences | Exécution du contrat | | Fournir les Services (CRM, agents IA, intégrations) | Données d'usage, journaux, contenus saisis | Exécution du contrat | | Facturer et encaisser | Raison sociale, adresse, n° TVA, historique de paiements (les données de carte sont traitées par Stripe) | Exécution du contrat / obligation légale | | Assurer la sécurité et prévenir la fraude | Adresse IP, journaux de connexion et d'audit | Intérêt légitime / obligation légale | | Prospection commerciale B2B et newsletter | E-mail professionnel, nom, entreprise | Intérêt légitime (B2B), ou consentement lorsque requis | | Gérer le programme partenaire | Identité, entreprise, suivi des formations et certifications | Exécution du contrat | | Mesurer l'audience et améliorer le Site | Données de navigation, cookies | Consentement (voir Politique cookies) | | Gérer les litiges et respecter nos obligations | Pièces contractuelles et comptables | Obligation légale / intérêt légitime |
+| Répondre aux demandes de contact et de démo | Nom, prénom, e-mail, téléphone, entreprise, fonction, message | Mesures précontractuelles / intérêt légitime |
+| Créer et gérer les comptes utilisateurs | Identité, e-mail professionnel, identifiants, rôle, préférences | Exécution du contrat |
+| Fournir les Services (CRM, agents IA, intégrations) | Données d'usage, journaux, contenus saisis | Exécution du contrat |
+| Facturer et encaisser | Raison sociale, adresse, n° TVA, historique de paiements (les données de carte sont traitées par Stripe) | Exécution du contrat / obligation légale |
+| Assurer la sécurité et prévenir la fraude | Adresse IP, journaux de connexion et d'audit | Intérêt légitime / obligation légale |
+| Prospection commerciale B2B et newsletter | E-mail professionnel, nom, entreprise | Intérêt légitime (B2B), ou consentement lorsque requis |
+| Gérer le programme partenaire | Identité, entreprise, suivi des formations et certifications | Exécution du contrat |
+| Mesurer l'audience et améliorer le Site | Données de navigation, cookies | Consentement (voir Politique cookies) |
+| Gérer les litiges et respecter nos obligations | Pièces contractuelles et comptables | Obligation légale / intérêt légitime |
 
 Les champs obligatoires sont signalés dans les formulaires. À défaut, la demande ne pourra pas être traitée.
 
