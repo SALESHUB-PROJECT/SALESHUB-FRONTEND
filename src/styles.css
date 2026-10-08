@@ -288,3 +288,27 @@
     animation: none;
   }
 }
+
+/* Superpouvoirs page */
+@keyframes sp-flow { from { background-position: 0 0; } to { background-position: 200% 0; } }
+@keyframes sp-pulse { 0%,100% { opacity: .55; transform: scale(1); } 50% { opacity: 1; transform: scale(1.06); } }
+@keyframes sp-float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+@keyframes sp-dot { from { left: 0%; } to { left: 100%; } }
+@keyframes sp-dot-v { from { top: 0%; } to { top: 100%; } }
+@keyframes sp-type { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.sp-dark { background: radial-gradient(ellipse at 70% 20%, color-mix(in oklab, var(--primary) 35%, transparent), transparent 60%), var(--foreground); color: var(--primary-foreground); }
+.sp-glow-line { background: linear-gradient(90deg, transparent, var(--primary), color-mix(in oklab, var(--primary) 30%, white), var(--primary), transparent); background-size: 200% 100%; animation: sp-flow 3s linear infinite; }
+.sp-halo { animation: sp-pulse 4s ease-in-out infinite; background: radial-gradient(circle, color-mix(in oklab, var(--primary) 55%, transparent), transparent 65%); }
+.sp-float { animation: sp-float 6s ease-in-out infinite; }
+.sp-particles { background-image: radial-gradient(color-mix(in oklab, var(--primary-foreground) 35%, transparent) 1px, transparent 1px); background-size: 34px 34px; }
+.sp-dot { animation: sp-dot 2.4s linear infinite; }
+.sp-dot-v { animation: sp-dot-v 2.4s linear infinite; }
+.sp-type > * { animation: sp-type .5s ease both; }
+.sp-reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+.sp-reveal.is-visible { opacity: 1; transform: none; }
+.sp-card { transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+.sp-card:hover { transform: translateY(-6px); border-color: var(--primary); box-shadow: var(--shadow-glow); }
+@media (prefers-reduced-motion: reduce) {
+  .sp-glow-line, .sp-halo, .sp-float, .sp-dot, .sp-dot-v { animation: none; }
+  .sp-reveal { opacity: 1; transform: none; }
+}
