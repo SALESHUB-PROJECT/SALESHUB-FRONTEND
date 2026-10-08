@@ -16,6 +16,9 @@ import { Route as ConfidentialiteRouteImport } from './routes/confidentialite'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CookiesRouteImport } from './routes/cookies'
 import { Route as MentionsLegalesRouteImport } from './routes/mentions-legales'
+import { Route as SuperpouvoirsRouteImport } from './routes/superpouvoirs'
+import { Route as SecteursSlugRouteImport } from './routes/secteurs.$slug'
+import { Route as SolutionsSlugRouteImport } from './routes/solutions.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -52,6 +55,21 @@ const MentionsLegalesRoute = MentionsLegalesRouteImport.update({
   path: '/mentions-legales',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SuperpouvoirsRoute = SuperpouvoirsRouteImport.update({
+  id: '/superpouvoirs',
+  path: '/superpouvoirs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SecteursSlugRoute = SecteursSlugRouteImport.update({
+  id: '/secteurs/$slug',
+  path: '/secteurs/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SolutionsSlugRoute = SolutionsSlugRouteImport.update({
+  id: '/solutions/$slug',
+  path: '/solutions/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -61,6 +79,9 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/cookies': typeof CookiesRoute
   '/mentions-legales': typeof MentionsLegalesRoute
+  '/superpouvoirs': typeof SuperpouvoirsRoute
+  '/secteurs/$slug': typeof SecteursSlugRoute
+  '/solutions/$slug': typeof SolutionsSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -70,6 +91,9 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/cookies': typeof CookiesRoute
   '/mentions-legales': typeof MentionsLegalesRoute
+  '/superpouvoirs': typeof SuperpouvoirsRoute
+  '/secteurs/$slug': typeof SecteursSlugRoute
+  '/solutions/$slug': typeof SolutionsSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -80,6 +104,9 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/cookies': typeof CookiesRoute
   '/mentions-legales': typeof MentionsLegalesRoute
+  '/superpouvoirs': typeof SuperpouvoirsRoute
+  '/secteurs/$slug': typeof SecteursSlugRoute
+  '/solutions/$slug': typeof SolutionsSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -91,6 +118,9 @@ export interface FileRouteTypes {
     | '/contact'
     | '/cookies'
     | '/mentions-legales'
+    | '/superpouvoirs'
+    | '/secteurs/$slug'
+    | '/solutions/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -100,6 +130,9 @@ export interface FileRouteTypes {
     | '/contact'
     | '/cookies'
     | '/mentions-legales'
+    | '/superpouvoirs'
+    | '/secteurs/$slug'
+    | '/solutions/$slug'
   id:
     | '__root__'
     | '/'
@@ -109,6 +142,9 @@ export interface FileRouteTypes {
     | '/contact'
     | '/cookies'
     | '/mentions-legales'
+    | '/superpouvoirs'
+    | '/secteurs/$slug'
+    | '/solutions/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -119,6 +155,9 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   CookiesRoute: typeof CookiesRoute
   MentionsLegalesRoute: typeof MentionsLegalesRoute
+  SuperpouvoirsRoute: typeof SuperpouvoirsRoute
+  SecteursSlugRoute: typeof SecteursSlugRoute
+  SolutionsSlugRoute: typeof SolutionsSlugRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -172,6 +211,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MentionsLegalesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/superpouvoirs': {
+      id: '/superpouvoirs'
+      path: '/superpouvoirs'
+      fullPath: '/superpouvoirs'
+      preLoaderRoute: typeof SuperpouvoirsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/secteurs/$slug': {
+      id: '/secteurs/$slug'
+      path: '/secteurs/$slug'
+      fullPath: '/secteurs/$slug'
+      preLoaderRoute: typeof SecteursSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/solutions/$slug': {
+      id: '/solutions/$slug'
+      path: '/solutions/$slug'
+      fullPath: '/solutions/$slug'
+      preLoaderRoute: typeof SolutionsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -183,6 +243,9 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   CookiesRoute: CookiesRoute,
   MentionsLegalesRoute: MentionsLegalesRoute,
+  SuperpouvoirsRoute: SuperpouvoirsRoute,
+  SecteursSlugRoute: SecteursSlugRoute,
+  SolutionsSlugRoute: SolutionsSlugRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
