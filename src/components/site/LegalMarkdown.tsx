@@ -53,13 +53,13 @@ function render(md: string, current: string) {
   blocks.forEach((b, k) => {
     const lines = b.split("\n").filter((l) => l.trim());
     if (!lines.length) return;
-    const first = lines[0];
+    const first = lines[0] ?? "";
     if (first.startsWith("# ")) out.push(<h1 key={k} className="mt-3 text-4xl font-bold sm:text-5xl">{first.slice(2)}</h1>);
     else if (first.startsWith("## ")) out.push(<h2 key={k} className="mt-10 scroll-mt-28 text-2xl font-semibold">{inline(first.slice(3), current)}</h2>);
     else if (first.startsWith("### ")) out.push(<h3 key={k} className="mt-6 text-lg font-semibold">{inline(first.slice(4), current)}</h3>);
     else if (/^\*Dernière/.test(first)) out.push(<p key={k} className="mt-2 text-sm italic text-muted-foreground">{first.replace(/\*/g, "")}</p>);
     else if (first.startsWith("|")) {
-      const [head, , ...rows] = lines;
+      const [head = "", , ...rows] = lines;
       out.push(
         <div key={k} className="mt-4 overflow-x-auto rounded-lg border border-border">
           <table className="w-full min-w-[560px] text-left text-sm">
