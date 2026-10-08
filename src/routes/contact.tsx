@@ -141,12 +141,12 @@ function ContactPage() {
                   <option value="" disabled>Choisir…</option>
                   {needs.map((n) => <option key={n}>{n}</option>)}
                 </select>
-                {errors.need && <span className="text-xs text-destructive">{errors.need}</span>}
+                {errors["need"] && <span className="text-xs text-destructive">{errors["need"]}</span>}
               </label>
               <label className="grid gap-1.5 text-sm sm:col-span-2">
                 <span>Message *</span>
                 <textarea name="message" rows={5} maxLength={3000} className="w-full rounded-md border border-input bg-background p-3 text-sm outline-none focus:border-primary" />
-                {errors.message && <span className="text-xs text-destructive">{errors.message}</span>}
+                {errors["message"] && <span className="text-xs text-destructive">{errors["message"]}</span>}
               </label>
             </div>
             <p className="mt-4 text-xs text-muted-foreground">
