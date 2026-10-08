@@ -104,6 +104,10 @@ function LandingPage() {
   const [billing, setBilling] = useState<BillingCycle>("annual");
   const [mobileOpen, setMobileOpen] = useState(false);
   const [contactOpen, setContactOpen] = useState(false);
+  useEffect(() => {
+    const saved = localStorage.getItem("saleshub-lang");
+    if (saved && saved in translations) setLang(saved as keyof typeof translations);
+  }, []);
   const t = translations[lang];
   const rtl = lang === "ar";
   const navLinks = [
@@ -160,7 +164,7 @@ function LandingPage() {
               <select
                 aria-label={t.a11y.chooseLanguage}
                 value={lang}
-                onChange={(e) => setLang(e.target.value as keyof typeof translations)}
+                onChange={(e) => { const v = e.target.value as keyof typeof translations; setLang(v); try { localStorage.setItem("saleshub-lang", v); } catch {} }}
                 className="h-10 appearance-none rounded-md border border-border bg-surface py-0 pl-9 pr-8 text-xs text-foreground outline-none focus:border-primary"
               >
                 {Object.entries(translations).map(([code, value]) => (
