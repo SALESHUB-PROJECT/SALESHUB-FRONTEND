@@ -9,12 +9,13 @@ const columns: { title: string; links: L[] }[] = [
   {
     title: "SALES HUB",
     links: [
-      { label: "Fonctionnalités", href: "/#agents" },
-      { label: "Use cases", href: "/#results" },
-      { label: "Métiers", href: "/#agents" },
-      { label: "Secteurs", href: "/#compare" },
+      { label: "Superpouvoirs", to: "/superpouvoirs" },
+      { label: "Fonctionnalités", href: "/superpouvoirs#explorer" },
+      { label: "Use cases", href: "/superpouvoirs#explorer" },
+      { label: "Métiers", href: "/solutions/commercial" },
+      { label: "Secteurs", href: "/secteurs/services" },
       { label: "Intégrations", href: "/#integrations" },
-      { label: "API", href: "/#integrations" },
+      { label: "API", href: "/superpouvoirs#api" },
       { label: "Partenaires", href: "/#partners" },
       { label: "Tarifs", href: "/#pricing" },
       { label: "Contact", to: "/contact" },

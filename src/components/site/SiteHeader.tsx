@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/saleshub-logo.png";
 
 const links = [
+  { href: "/superpouvoirs", label: "Superpouvoirs" },
   { href: "/#agents", label: "Agents IA" },
   { href: "/#integrations", label: "Intégrations" },
   { href: "/#pricing", label: "Tarifs" },
