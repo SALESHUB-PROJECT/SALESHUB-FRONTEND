@@ -215,8 +215,8 @@ function SuperpowersPage() {
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">Saleshub se connecte nativement aux outils que vos équipes utilisent déjà, pour une plateforme unique, sans rupture.</p>
           </Reveal>
           <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-            {apiGroups.flatMap((g) => g.tools.map((t) => ({ ...t, group: g.title }))).map((t, i) => (
-              <Reveal key={t.name} delay={i * 30}>
+            {apiGroups.flatMap((g) => g.tools.map((t) => ({ ...t, group: g.title }))).map((t) => (
+              <Reveal key={t.name}>
                 <div className="sp-card flex h-full flex-col items-center justify-center rounded-2xl border border-border bg-card p-5 text-center">
                   <span className="font-display font-bold">{t.name}</span>
                   <span className="mt-1 text-xs text-muted-foreground">{t.group}</span>
