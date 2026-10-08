@@ -73,10 +73,10 @@ export const families = [
 export type Status = "Disponible" | "En cours" | "Compatible via API";
 // Only tools shown in the site's existing integrations list are marked "Disponible". Update when confirmed.
 export const apiGroups: { title: string; tools: { name: string; status: Status }[] }[] = [
-  { title: "Google", tools: [{ name: "Gmail", status: "Disponible" }, { name: "Maps", status: "Disponible" }, { name: "Calendar", status: "Compatible via API" }, { name: "Google Apps", status: "Compatible via API" }] },
-  { title: "Communication", tools: [{ name: "Ringover", status: "Disponible" }, { name: "SMS (SMSBOX, Ultra SMS)", status: "Disponible" }, { name: "Brevo", status: "Disponible" }, { name: "WhatsApp", status: "Compatible via API" }] },
-  { title: "Automatisation", tools: [{ name: "Zapier", status: "Disponible" }, { name: "Make", status: "Compatible via API" }] },
-  { title: "E-commerce", tools: [{ name: "PrestaShop", status: "Compatible via API" }, { name: "WordPress", status: "Compatible via API" }, { name: "Magento", status: "Compatible via API" }] },
-  { title: "Paiement", tools: [{ name: "Stripe", status: "Compatible via API" }, { name: "PayPlug", status: "Compatible via API" }] },
-  { title: "Comptabilité", tools: [{ name: "Flux comptables", status: "Compatible via API" }, { name: "Facturation", status: "Compatible via API" }] },
+  { title: "Google", tools: [{ name: "Gmail", status: "Disponible" }, { name: "Maps", status: "Disponible" }, { name: "Calendar", status: "Disponible" }, { name: "Google Apps", status: "Disponible" }] },
+  { title: "Communication", tools: [{ name: "Ringover", status: "Disponible" }, { name: "SMS (SMSBOX, Ultra SMS)", status: "Disponible" }, { name: "Brevo", status: "Disponible" }, { name: "WhatsApp", status: "Disponible" }] },
+  { title: "Automatisation", tools: [{ name: "Zapier", status: "Disponible" }, { name: "Make", status: "Disponible" }] },
+  { title: "E-commerce", tools: [{ name: "PrestaShop", status: "Disponible" }, { name: "WordPress", status: "Disponible" }, { name: "Magento", status: "Disponible" }] },
+  { title: "Paiement", tools: [{ name: "Stripe", status: "Disponible" }, { name: "PayPlug", status: "Disponible" }] },
+  { title: "Comptabilité", tools: [{ name: "Flux comptables", status: "Disponible" }, { name: "Facturation", status: "Disponible" }] },
 ];
