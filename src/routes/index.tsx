@@ -23,6 +23,7 @@ import {
   X,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { SiteFooter } from "@/components/site/SiteFooter";
 import logo from "@/assets/saleshub-logo.png";
 import homeBackground from "@/assets/saleshub-home-background.jpg";
 import crmPreview from "@/assets/demo_crm.png";
@@ -78,7 +79,6 @@ const agentImages = [
 ];
 const partnerLevelIcons = [GraduationCap, Wrench, BadgeCheck];
 const securityIcons = [KeyRound, LockKeyhole, Server, FileCheck];
-const footerHighlightIcons = [Bot, ShieldCheck, Globe2];
 const planPrices: Array<Record<BillingCycle, number | null> & { popular?: boolean }> = [
   { monthly: 0, annual: 0, biennial: 0 },
   { monthly: 19, annual: 16, biennial: 14, popular: true },
@@ -780,85 +780,7 @@ function LandingPage() {
         </div>
       </section>
 
-      <footer className="border-t border-border bg-foreground text-primary-foreground">
-        <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8 lg:py-16">
-          <div className="grid gap-10 lg:grid-cols-[1.25fr_2fr]">
-            <div className="max-w-sm">
-              <a
-                href="#top"
-                aria-label={t.a11y.home}
-                className="inline-flex rounded-md bg-primary-foreground px-3 py-2"
-              >
-                <img
-                  src={logo}
-                  alt="Saleshub.business"
-                  loading="lazy"
-                  className="h-9 w-auto"
-                  width={1408}
-                  height={512}
-                />
-              </a>
-              <p className="mt-6 text-sm leading-relaxed text-primary-foreground/72">
-                {t.footer.description}
-              </p>
-              <div className="mt-7 grid gap-3 text-sm">
-                {t.footer.highlights.map((highlight, index) => {
-                  const Icon = footerHighlightIcons[index] ?? Check;
-                  return (
-                    <span
-                      key={highlight}
-                      className="inline-flex items-center gap-3 text-primary-foreground/78"
-                    >
-                      <Icon className="size-4 text-accent" />
-                      {highlight}
-                    </span>
-                  );
-                })}
-              </div>
-              <Button
-                className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90"
-                onClick={() => setContactOpen(true)}
-              >
-                {t.footer.cta}
-                <ArrowRight className="size-4" />
-              </Button>
-            </div>
-
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-              {t.footer.sections.map(({ title, links }) => (
-                <nav key={title} aria-label={title}>
-                  <h2 className="text-sm font-bold text-primary-foreground">{title}</h2>
-                  <ul className="mt-4 space-y-3">
-                    {links.map(({ label, href }) => (
-                      <li key={label}>
-                        <a
-                          href={href}
-                          className="text-sm text-primary-foreground/65 transition hover:text-accent"
-                        >
-                          {label}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </nav>
-              ))}
-            </div>
-          </div>
-
-          <div className="mt-12 border-t border-primary-foreground/12 pt-6">
-            <div className="flex flex-col gap-4 text-xs text-primary-foreground/58 md:flex-row md:items-center md:justify-between">
-              <p>{t.footer.copyright}</p>
-              <div className="flex flex-wrap gap-x-5 gap-y-2">
-                {t.footer.legalLinks.map((link) => (
-                  <a key={link} href="#" className="transition hover:text-accent">
-                    {link}
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
 
       {contactOpen && (
         <div
