@@ -79,7 +79,6 @@ const agentImages = [
 ];
 const partnerLevelIcons = [GraduationCap, Wrench, BadgeCheck];
 const securityIcons = [KeyRound, LockKeyhole, Server, FileCheck];
-const footerHighlightIcons = [Bot, ShieldCheck, Globe2];
 const planPrices: Array<Record<BillingCycle, number | null> & { popular?: boolean }> = [
   { monthly: 0, annual: 0, biennial: 0 },
   { monthly: 19, annual: 16, biennial: 14, popular: true },
