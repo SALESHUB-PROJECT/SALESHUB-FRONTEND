@@ -1,7 +1,7 @@
 # Roadmap
 
 - [x] Proposer le logo combinant l’éclair entouré d’Impulsion et l’écriture d’Emblème
-- [ ] Intégrer le logo combiné approuvé sur toutes les pages et dans l’icône du navigateur
+- [x] Intégrer le logo combiné approuvé sur toutes les pages et dans l’icône du navigateur
 
 - [x] Nettoyer le tableau de cookies et remplacer tous les logos Saleshub selon la pièce jointe
 
