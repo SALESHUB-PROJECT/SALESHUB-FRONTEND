@@ -31,7 +31,7 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact | Saleshub.business" },
-      { name: "description", content: "Contactez Saleshub : démo, CRM, agents IA, intégration ou partenariat. Madagascar, France et Belgique." },
+      { name: "description", content: "Contactez Saleshub : démo, CRM, agents IA, intégration ou partenariat. Madagascar, France, Suisse, Belgique et Pays-Bas." },
       { property: "og:title", content: "Parlons de vos superpouvoirs | Saleshub" },
       { property: "og:description", content: "Une question, une démo, un projet d'intégration ? L'équipe Saleshub vous répond." },
       { property: "og:type", content: "website" },
@@ -48,8 +48,8 @@ export const Route = createFileRoute("/contact")({
           address: { "@type": "PostalAddress", streetAddress: "Lot 0912 C 185 MANODIDINA NY GARA", addressLocality: "Antsirabe I", addressCountry: "MG" },
           contactPoint: [
             { "@type": "ContactPoint", telephone: "+261320368218", contactType: "sales", areaServed: "MG" },
-            { "@type": "ContactPoint", telephone: "+33644602572", contactType: "sales", areaServed: "FR" },
-            { "@type": "ContactPoint", telephone: "+32460209427", contactType: "sales", areaServed: "BE" },
+            { "@type": "ContactPoint", telephone: "+33644602572", contactType: "sales", areaServed: ["FR", "CH"] },
+            { "@type": "ContactPoint", telephone: "+32460209427", contactType: "sales", areaServed: ["BE", "NL"] },
           ],
         }),
       },
@@ -96,8 +96,8 @@ function ContactPage() {
 
   const cards = [
     { flag: "🇲🇬", title: "Madagascar", value: company.phoneMadagascar, href: company.phoneMadagascarHref, Icon: Phone },
-    { flag: "🇫🇷", title: "France", value: company.phoneFrance, href: company.phoneFranceHref, Icon: Phone },
-    { flag: "🇧🇪", title: "Belgique", value: company.phoneBelgium, href: company.phoneBelgiumHref, Icon: Phone },
+    { flag: "🇫🇷", title: company.phoneFranceLabel, value: company.phoneFrance, href: company.phoneFranceHref, Icon: Phone },
+    { flag: "🇧🇪", title: company.phoneBelgiumLabel, value: company.phoneBelgium, href: company.phoneBelgiumHref, Icon: Phone },
     { flag: "✉️", title: "Email", value: company.email, href: company.emailHref, Icon: Mail },
   ];
 
