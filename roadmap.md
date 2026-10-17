@@ -1,5 +1,6 @@
 # Roadmap
 
+- [x] Remplacer le numéro français partout et ajouter le numéro belge
 - [x] Proposer le logo combinant l’éclair entouré d’Impulsion et l’écriture d’Emblème
 - [x] Intégrer le logo combiné approuvé sur toutes les pages et dans l’icône du navigateur
 

@@ -19,7 +19,8 @@ NIF : 1019212209 — STAT : 78 200 12 2024 0 01330
 Directeur de la publication : Monsieur Ayrton AHARKIOLKIS, en qualité de gérant
 
 Téléphone Madagascar : +261 32 03 682 18
-Téléphone France & Europe : +33 6 15 83 75 61
+Téléphone France : +33 06 44 60 25 72
+Téléphone Belgique : +32 0460 20 94 27
 E-mail : contact@saleshub.business
 
 ## 3. Hébergement
