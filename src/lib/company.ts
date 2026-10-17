@@ -9,8 +9,10 @@ export const company = {
   stat: "78 200 12 2024 0 01330",
   phoneMadagascar: "+261 32 03 682 18",
   phoneMadagascarHref: "tel:+261320368218",
-  phoneFranceEurope: "+33 6 15 83 75 61",
-  phoneFranceEuropeHref: "tel:+33615837561",
+  phoneFrance: "+33 06 44 60 25 72",
+  phoneFranceHref: "tel:+33644602572",
+  phoneBelgium: "+32 0460 20 94 27",
+  phoneBelgiumHref: "tel:+32460209427",
   email: "contact@saleshub.business",
   emailHref: "mailto:contact@saleshub.business",
   // Fields awaiting validation by Saleshub — leave null until confirmed.

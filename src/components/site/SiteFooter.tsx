@@ -64,9 +64,15 @@ export function SiteFooter() {
                 </a>
               </span>
               <span>
-                <span className="block text-xs uppercase tracking-wide text-primary-foreground/55">France & Europe</span>
-                <a href={company.phoneFranceEuropeHref} className="inline-flex items-center gap-2 hover:text-accent">
-                  <Phone className="size-4 text-accent" /> {company.phoneFranceEurope}
+                <span className="block text-xs uppercase tracking-wide text-primary-foreground/55">France</span>
+                <a href={company.phoneFranceHref} className="inline-flex items-center gap-2 hover:text-accent">
+                  <Phone className="size-4 text-accent" /> {company.phoneFrance}
+                </a>
+              </span>
+              <span>
+                <span className="block text-xs uppercase tracking-wide text-primary-foreground/55">Belgique</span>
+                <a href={company.phoneBelgiumHref} className="inline-flex items-center gap-2 hover:text-accent">
+                  <Phone className="size-4 text-accent" /> {company.phoneBelgium}
                 </a>
               </span>
               <a href={company.emailHref} className="inline-flex items-center gap-2 hover:text-accent">
