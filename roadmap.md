@@ -1,5 +1,6 @@
 # Roadmap
 
+- [ ] Retirer les drapeaux du pied de page et de la page Contact (rendu non concluant)
 - [x] Remplacer le numéro français partout, ajouter le numéro belge et élargir les libellés (France & Suisse, Belgique & Pays-Bas)
 - [x] Proposer le logo combinant l’éclair entouré d’Impulsion et l’écriture d’Emblème
 - [x] Intégrer le logo combiné approuvé sur toutes les pages et dans l’icône du navigateur
