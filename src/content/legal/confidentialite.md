@@ -6,7 +6,7 @@ Saleshub accorde une grande importance à la protection des données personnelle
 
 ## 1. Responsable du traitement
 
-**Saleshub**, [forme juridique], Lot 0912 C 185 Manodidina ny Gara, Antsirabe I, Madagascar — NIF 1019212209.
+**Saleshub**, société à responsabilité limitée (SARL) de droit malgache, Lot 0912 C 185 Manodidina ny Gara, Antsirabe I, Madagascar — NIF 1019212209.
 
 Référent protection des données : [Prénom Nom] — e-mail : [dpo@saleshub.business ou contact@saleshub.business]
 

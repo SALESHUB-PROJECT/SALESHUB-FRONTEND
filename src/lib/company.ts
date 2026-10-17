@@ -1,6 +1,8 @@
 // Single source of truth for company identity. Edit here to update every page.
 export const company = {
   name: "Saleshub",
+  legalForm: "société à responsabilité limitée (SARL) de droit malgache",
+  legalRepresentative: { name: "Ayrton AHARKIOLKIS", role: "gérant" },
   address: "Lot 0912 C 185 MANODIDINA NY GARA, ANTSIRABE I, MADAGASCAR",
   addressLines: ["Lot 0912 C 185 MANODIDINA NY GARA", "ANTSIRABE I", "MADAGASCAR"],
   nif: "1019212209",

@@ -8,14 +8,14 @@ Conformément à l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la conf
 
 Le site saleshub.business (ci-après « le Site ») est édité par :
 
-**Saleshub**, [forme juridique, ex. SARL / SARLU] au capital de [montant] [devise]
+**Saleshub**, société à responsabilité limitée (SARL) de droit malgache
 Siège social : Lot 0912 C 185 Manodidina ny Gara, Antsirabe I, Madagascar
 NIF : 1019212209 — STAT : 78 200 12 2024 0 01330
 RCS : [numéro, si applicable]
 
 ## 2. Directeur de la publication et contact
 
-Directeur de la publication : [Prénom Nom], en qualité de [fonction, ex. gérant / fondateur]
+Directeur de la publication : Monsieur Ayrton AHARKIOLKIS, en qualité de gérant
 
 Téléphone Madagascar : +261 32 03 682 18
 Téléphone France & Europe : +33 6 15 83 75 61
