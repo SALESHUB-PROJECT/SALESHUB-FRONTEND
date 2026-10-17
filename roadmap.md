@@ -1,8 +1,9 @@
 # Roadmap
 
-- [ ] Corriger les articles 3, 8 et 9 des CGV et ajouter l’annexe DPA
-- [ ] Corriger le référent, les destinataires et le contact pour les droits dans la confidentialité
-- [ ] Vérifier les textes et l’accès à l’annexe depuis les CGV
+- [x] Corriger les articles 3, 8 et 9 des CGV et ajouter l’annexe DPA
+- [x] Corriger le référent, les destinataires et le contact pour les droits dans la confidentialité
+- [x] Vérifier les textes et l’accès à l’annexe depuis les CGV
+- [ ] Valider les modalités opérationnelles de l’annexe DPA (sécurité, sous-traitants, transferts et purge : informations à fournir par Saleshub)
 
 - [x] Reprendre fidèlement le thème sombre cinématique de la référence fournie
 - [x] Créer la landing page Saleshub.buisness à partir de la présentation
