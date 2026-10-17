@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SiteFooter } from "@/components/site/SiteFooter";
-import logo from "@/assets/saleshub-logo.png";
+import logo from "@/assets/saleshub-lightning-logo.png";
 import homeBackground from "@/assets/saleshub-home-background.jpg";
 import crmPreview from "@/assets/demo_crm.png";
 import crmMobilePreview from "@/assets/demo_crm_mobil.png";
@@ -141,10 +141,10 @@ function LandingPage() {
           <a href="#top" aria-label={t.a11y.home}>
             <img
               src={logo}
-              alt="Saleshub.business"
-              className="h-12 w-auto sm:h-14"
-              width={3000}
-              height={1000}
+              alt="Saleshub"
+              className="h-auto w-40 sm:w-48"
+              width={1511}
+              height={289}
             />
           </a>
           <nav className="hidden items-center gap-7 lg:flex" aria-label={t.a11y.primaryNavigation}>
