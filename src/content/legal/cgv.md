@@ -1,6 +1,6 @@
 # Conditions Générales de Vente (CGV)
 
-*Dernière mise à jour : 8 octobre 2026*
+*Dernière mise à jour : 17 octobre 2026*
 
 ## Article 1 — Objet et champ d'application
 
@@ -26,8 +26,7 @@ La description détaillée et à jour de chaque formule figure sur la page Tarif
 Les formules proposées sont notamment :
 
 - **Solo** : formule gratuite, 1 utilisateur, 1 agent IA actif, quota de crédits mensuel limité, sans carte bancaire ;
-- **TPE** : formule payante facturée par utilisateur et par mois, jusqu'à 10 utilisateurs ;
-- **[PME : à compléter si la formule est commercialisée]** ;
+- **TPE / PME** : formule payante facturée par utilisateur et par mois ;
 - **ETI / Groupe** : formule sur devis.
 
 La souscription s'effectue en ligne via la Plateforme ou par signature d'un devis. Le contrat est conclu à la date d'acceptation des CGV lors de la souscription en ligne, ou à la date de signature du devis.
@@ -81,13 +80,13 @@ Saleshub met en œuvre les moyens raisonnables pour assurer l'accès à la Plate
 
 Les opérations de maintenance programmées sont, dans la mesure du possible, réalisées en dehors des heures ouvrées et annoncées à l'avance.
 
-Le support est accessible par e-mail à contact@saleshub.business [et via le chat intégré, si applicable], aux jours et heures ouvrés. Les niveaux de service renforcés (SLA, responsable de compte dédié) sont réservés aux formules qui les prévoient ou définis dans le devis.
+Le support est accessible par e-mail à contact@saleshub.business, aux jours et heures ouvrés. Les niveaux de service renforcés (SLA, responsable de compte dédié) sont réservés aux formules qui les prévoient ou définis dans le devis.
 
 ## Article 9 — Données du Client
 
 Le Client reste seul propriétaire des données qu'il importe ou génère dans la Plateforme (ci-après « Données Client »).
 
-Pour les Données Client à caractère personnel, Saleshub agit en qualité de sous-traitant au sens de l'article 28 du RGPD. Les conditions de ce traitement sont précisées dans l'accord de traitement des données (DPA) annexé aux présentes [lien ou annexe à prévoir], qui fait partie intégrante du contrat.
+Pour les Données Client à caractère personnel, Saleshub agit en qualité de sous-traitant au sens de l'article 28 du RGPD. Les conditions de ce traitement sont précisées dans l'accord de traitement des données (DPA), annexe aux présentes CGV, qui fait partie intégrante du contrat. Consultez l’Annexe — Accord de traitement des données (DPA).
 
 **Données de santé.** La Plateforme n'est pas, par défaut, destinée à héberger des données de santé au sens de l'article L.1111-8 du Code de la santé publique. Le Client qui souhaite traiter de telles données doit en informer Saleshub au préalable afin de souscrire une configuration d'hébergement certifiée HDS (Hébergeur de Données de Santé). À défaut, il s'interdit de les importer.
 

@@ -1,6 +1,6 @@
 # Politique de confidentialité
 
-*Dernière mise à jour : 8 octobre 2026*
+*Dernière mise à jour : 17 octobre 2026*
 
 Saleshub accorde une grande importance à la protection des données personnelles. La présente politique explique quelles données nous collectons, pourquoi, combien de temps nous les conservons et quels sont vos droits, conformément au Règlement (UE) 2016/679 (RGPD) et à la loi n° 78-17 du 6 janvier 1978 modifiée (« Informatique et Libertés »).
 
@@ -8,9 +8,7 @@ Saleshub accorde une grande importance à la protection des données personnelle
 
 **Saleshub**, société à responsabilité limitée (SARL) de droit malgache, Lot 0912 C 185 Manodidina ny Gara, Antsirabe I, Madagascar — NIF 1019212209.
 
-Référent protection des données : [Prénom Nom] — e-mail : [dpo@saleshub.business ou contact@saleshub.business]
-
-**Représentant dans l'Union européenne** (article 27 du RGPD) : [Nom / société, adresse dans l'UE, e-mail].
+Référent protection des données : Monsieur Ayrton AHARKIOLKIS — e-mail : contact@saleshub.business
 
 ## 2. Deux rôles distincts
 
@@ -36,7 +34,7 @@ Les champs obligatoires sont signalés dans les formulaires. À défaut, la dema
 
 ## 4. Intelligence artificielle
 
-Certaines fonctionnalités utilisent des modèles d'intelligence artificielle fournis par des prestataires spécialisés [à lister : nom des fournisseurs de modèles]. Les données transmises se limitent à ce qui est nécessaire à la fonctionnalité demandée. Nous exigeons contractuellement de ces prestataires qu'ils n'utilisent pas ces données pour entraîner leurs propres modèles.
+Certaines fonctionnalités utilisent des modèles d'intelligence artificielle. Les données transmises se limitent à ce qui est nécessaire à la fonctionnalité demandée. Nous exigeons contractuellement des prestataires concernés qu'ils n'utilisent pas ces données pour entraîner leurs propres modèles.
 
 Aucune décision produisant des effets juridiques ou affectant de manière significative une personne n'est prise sur le seul fondement d'un traitement automatisé par Saleshub : les agents IA fournissent des recommandations que les utilisateurs valident.
 
@@ -46,11 +44,10 @@ Les données sont accessibles aux seules personnes habilitées de Saleshub, dans
 
 - **Hébergement** : OVH SAS (France) ;
 - **Paiement** : Stripe ;
-- **E-mails et SMS transactionnels** : Brevo [et autres prestataires SMS selon intégrations activées] ;
+- **E-mails et SMS transactionnels** : Brevo ;
 - **Téléphonie et IA vocale** (selon intégrations activées) : CloudTalk, Kavkom, Aircall, Ringover ;
 - **Automatisation** : Zapier (si activée par le client) ;
-- **Prestataires d'IA** : [à lister] ;
-- **Outils de mesure d'audience** : [à lister, ex. Google Analytics, si utilisé].
+- **Outil de mesure d'audience** : Google Analytics.
 
 La liste à jour des sous-traitants est disponible sur demande. Les données peuvent être communiquées aux autorités lorsque la loi l'exige. Saleshub ne vend jamais les données personnelles.
 
@@ -81,7 +78,7 @@ Saleshub met en œuvre des mesures techniques et organisationnelles adaptées : 
 
 Vous disposez des droits suivants sur vos données : accès, rectification, effacement, limitation, portabilité, opposition (notamment à la prospection, à tout moment et sans motif), retrait du consentement à tout moment, et définition de directives relatives au sort de vos données après votre décès.
 
-Pour les exercer, écrivez à [dpo@saleshub.business ou contact@saleshub.business] en précisant votre demande. Une pièce justificative pourra être demandée en cas de doute raisonnable sur votre identité. Nous répondons dans un délai d'un mois, prolongeable de deux mois si la demande est complexe.
+Pour les exercer, écrivez à contact@saleshub.business en précisant votre demande. Une pièce justificative pourra être demandée en cas de doute raisonnable sur votre identité. Nous répondons dans un délai d'un mois, prolongeable de deux mois si la demande est complexe.
 
 Si vos données ont été importées dans Saleshub par l'un de nos clients, nous transmettrons votre demande à ce client, responsable du traitement.
 
