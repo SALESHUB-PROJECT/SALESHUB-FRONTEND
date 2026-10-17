@@ -95,10 +95,10 @@ function ContactPage() {
   );
 
   const cards = [
-    { flag: "🇲🇬", title: "Madagascar", value: company.phoneMadagascar, href: company.phoneMadagascarHref, Icon: Phone },
-    { flag: "🇫🇷", title: company.phoneFranceLabel, value: company.phoneFrance, href: company.phoneFranceHref, Icon: Phone },
-    { flag: "🇧🇪", title: company.phoneBelgiumLabel, value: company.phoneBelgium, href: company.phoneBelgiumHref, Icon: Phone },
-    { flag: "✉️", title: "Email", value: company.email, href: company.emailHref, Icon: Mail },
+    { flag: <Flags codes={["MG"]} className="size-7" />, title: "Madagascar", value: company.phoneMadagascar, href: company.phoneMadagascarHref, Icon: Phone },
+    { flag: <Flags codes={["FR", "CH"]} className="size-7" />, title: company.phoneFranceLabel, value: company.phoneFrance, href: company.phoneFranceHref, Icon: Phone },
+    { flag: <Flags codes={["BE", "NL"]} className="size-7" />, title: company.phoneBelgiumLabel, value: company.phoneBelgium, href: company.phoneBelgiumHref, Icon: Phone },
+    { flag: <Mail className="size-7 text-primary" />, title: "Email", value: company.email, href: company.emailHref, Icon: Mail },
   ];
 
   return (
