@@ -11,8 +11,10 @@ export const company = {
   phoneMadagascarHref: "tel:+261320368218",
   phoneFrance: "+33 06 44 60 25 72",
   phoneFranceHref: "tel:+33644602572",
+  phoneFranceLabel: "France & Suisse",
   phoneBelgium: "+32 0460 20 94 27",
   phoneBelgiumHref: "tel:+32460209427",
+  phoneBelgiumLabel: "Belgique & Pays-Bas",
   email: "contact@saleshub.business",
   emailHref: "mailto:contact@saleshub.business",
   // Fields awaiting validation by Saleshub — leave null until confirmed.
