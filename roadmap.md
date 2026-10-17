@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] Nettoyer le tableau de cookies et remplacer tous les logos Saleshub selon la pièce jointe
+- [x] Nettoyer le tableau de cookies et remplacer tous les logos Saleshub selon la pièce jointe
 
 - [x] Corriger les articles 3, 8 et 9 des CGV et ajouter l’annexe DPA
 - [x] Corriger le référent, les destinataires et le contact pour les droits dans la confidentialité
