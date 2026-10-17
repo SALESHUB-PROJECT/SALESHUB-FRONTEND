@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+Legal documents live in `src/content/legal` and use `LegalMarkdownPage` with `legalHead` in dedicated routes; the DPA is linked from the CGV and shared footer so contractual annexes remain directly accessible.

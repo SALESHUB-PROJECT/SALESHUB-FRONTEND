@@ -34,6 +34,7 @@ const columns: { title: string; links: L[] }[] = [
     links: [
       { label: "Mentions légales", to: "/mentions-legales" },
       { label: "CGV", to: "/cgv" },
+      { label: "Sous-traitance / DPA", to: "/dpa" },
       { label: "CGU", to: "/cgu" },
       { label: "Politique de confidentialité", to: "/confidentialite" },
       { label: "Cookies", to: "/cookies" },

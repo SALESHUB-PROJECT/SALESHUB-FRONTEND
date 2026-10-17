@@ -16,6 +16,7 @@ const NOTICE: Record<string, string> = {
 };
 
 const PAGES: [RegExp, string][] = [
+  [/Annexe — Accord de traitement des données \(DPA\)/, "/dpa"],
   [/Conditions Générales de Vente|CGV/, "/cgv"],
   [/Conditions Générales d'Utilisation|CGU/, "/cgu"],
   [/Politique de confidentialité/, "/confidentialite"],
@@ -24,7 +25,7 @@ const PAGES: [RegExp, string][] = [
 ];
 
 const TOKEN =
-  /(\*\*[^*]+\*\*|\*[^*]+\*|\[[^\]]+\]|[\w.+-]+@[\w-]+\.[\w.]+|\+\d{2,3}(?: \d{1,3}){3,5}|www\.(?:ovhcloud\.com|cnil\.fr)|Conditions Générales de Vente|Conditions Générales d'Utilisation|Politique de confidentialité|Politique cookies|\bCGV\b|\bCGU\b)/g;
+  /(\*\*[^*]+\*\*|\*[^*]+\*|\[[^\]]+\]|[\w.+-]+@[\w-]+\.[\w.]+|\+\d{2,3}(?: \d{1,3}){3,5}|www\.(?:ovhcloud\.com|cnil\.fr)|Annexe — Accord de traitement des données \(DPA\)|Conditions Générales de Vente|Conditions Générales d'Utilisation|Politique de confidentialité|Politique cookies|\bCGV\b|\bCGU\b)/g;
 
 function inline(text: string, current: string): ReactNode[] {
   return text.split(TOKEN).map((part, i) => {
