@@ -11,7 +11,7 @@ Le site saleshub.business (ci-après « le Site ») est édité par :
 **Saleshub**, société à responsabilité limitée (SARL) de droit malgache
 Siège social : Lot 0912 C 185 Manodidina ny Gara, Antsirabe I, Madagascar
 NIF : 1019212209 — STAT : 78 200 12 2024 0 01330
-RCS : [numéro, si applicable]
+
 
 ## 2. Directeur de la publication et contact
 
