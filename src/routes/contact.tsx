@@ -95,10 +95,10 @@ function ContactPage() {
   );
 
   const cards = [
-    { flag: "🇲🇬", title: "Madagascar", value: company.phoneMadagascar, href: company.phoneMadagascarHref, Icon: Phone },
-    { flag: "🇫🇷", title: company.phoneFranceLabel, value: company.phoneFrance, href: company.phoneFranceHref, Icon: Phone },
-    { flag: "🇧🇪", title: company.phoneBelgiumLabel, value: company.phoneBelgium, href: company.phoneBelgiumHref, Icon: Phone },
-    { flag: "✉️", title: "Email", value: company.email, href: company.emailHref, Icon: Mail },
+    { title: "Madagascar", value: company.phoneMadagascar, href: company.phoneMadagascarHref, Icon: Phone },
+    { title: company.phoneFranceLabel, value: company.phoneFrance, href: company.phoneFranceHref, Icon: Phone },
+    { title: company.phoneBelgiumLabel, value: company.phoneBelgium, href: company.phoneBelgiumHref, Icon: Phone },
+    { title: "Email", value: company.email, href: company.emailHref, Icon: Mail },
   ];
 
   return (
@@ -161,10 +161,9 @@ function ContactPage() {
         </div>
 
         <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {cards.map(({ flag, title, value, href, Icon }) => (
+          {cards.map(({ title, value, href, Icon }) => (
             <a key={title} href={href} className="group rounded-lg border border-border bg-card p-6 transition hover:border-primary">
-              <span className="text-2xl" aria-hidden>{flag}</span>
-              <p className="mt-3 font-semibold">{title}</p>
+              <p className="font-semibold">{title}</p>
               <p className="mt-1 inline-flex items-center gap-2 text-primary"><Icon className="size-4" /> {value}</p>
             </a>
           ))}
