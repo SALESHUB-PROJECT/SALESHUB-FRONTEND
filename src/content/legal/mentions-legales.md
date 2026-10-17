@@ -13,6 +13,7 @@ Siège social : Lot 0912 C 185 Manodidina ny Gara, Antsirabe I, Madagascar
 NIF : 1019212209 — STAT : 78 200 12 2024 0 01330
 
 
+
 ## 2. Directeur de la publication et contact
 
 Directeur de la publication : Monsieur Ayrton AHARKIOLKIS, en qualité de gérant
