@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, Phone } from "lucide-react";
+import { Flags } from "@/components/site/Flags";
 import logo from "@/assets/saleshub-approved-logo.png.asset.json";
 import { company } from "@/lib/company";
 import { openCookiePreferences } from "@/components/site/CookieBanner";
