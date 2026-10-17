@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, Phone } from "lucide-react";
-import logo from "@/assets/saleshub-logo.png";
+import logo from "@/assets/saleshub-lightning-logo.png";
 import { company } from "@/lib/company";
 import { openCookiePreferences } from "@/components/site/CookieBanner";
 
@@ -51,7 +51,7 @@ export function SiteFooter() {
         <div className="grid gap-10 lg:grid-cols-[1.25fr_2fr]">
           <div className="max-w-sm">
             <Link to="/" aria-label="Accueil" className="inline-flex rounded-md bg-primary-foreground px-3 py-2">
-              <img src={logo} alt="Saleshub.business" loading="lazy" className="h-9 w-auto" width={1408} height={512} />
+              <img src={logo} alt="Saleshub" loading="lazy" className="h-auto w-44" width={1511} height={289} />
             </Link>
             <p className="mt-6 font-display text-lg font-semibold">
               Une plateforme. Une équipe. Une relation transparente.
