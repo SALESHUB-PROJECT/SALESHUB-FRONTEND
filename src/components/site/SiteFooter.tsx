@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, Phone } from "lucide-react";
-import { Flags } from "@/components/site/Flags";
 import logo from "@/assets/saleshub-approved-logo.png.asset.json";
 import { company } from "@/lib/company";
 import { openCookiePreferences } from "@/components/site/CookieBanner";
@@ -59,19 +58,19 @@ export function SiteFooter() {
             </p>
             <address className="mt-6 grid gap-3 text-sm not-italic text-primary-foreground/78">
               <span>
-                <span className="flex items-center gap-1.5 text-xs uppercase tracking-wide text-primary-foreground/55"><Flags codes={["MG"]} /> Madagascar</span>
+                <span className="block text-xs uppercase tracking-wide text-primary-foreground/55">Madagascar</span>
                 <a href={company.phoneMadagascarHref} className="inline-flex items-center gap-2 hover:text-accent">
                   <Phone className="size-4 text-accent" /> {company.phoneMadagascar}
                 </a>
               </span>
               <span>
-                <span className="flex items-center gap-1.5 text-xs uppercase tracking-wide text-primary-foreground/55"><Flags codes={["FR", "CH"]} /> {company.phoneFranceLabel}</span>
+                <span className="block text-xs uppercase tracking-wide text-primary-foreground/55">{company.phoneFranceLabel}</span>
                 <a href={company.phoneFranceHref} className="inline-flex items-center gap-2 hover:text-accent">
                   <Phone className="size-4 text-accent" /> {company.phoneFrance}
                 </a>
               </span>
               <span>
-                <span className="flex items-center gap-1.5 text-xs uppercase tracking-wide text-primary-foreground/55"><Flags codes={["BE", "NL"]} /> {company.phoneBelgiumLabel}</span>
+                <span className="block text-xs uppercase tracking-wide text-primary-foreground/55">{company.phoneBelgiumLabel}</span>
                 <a href={company.phoneBelgiumHref} className="inline-flex items-center gap-2 hover:text-accent">
                   <Phone className="size-4 text-accent" /> {company.phoneBelgium}
                 </a>
