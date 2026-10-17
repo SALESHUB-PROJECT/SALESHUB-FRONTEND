@@ -96,10 +96,10 @@ function ContactPage() {
   );
 
   const cards = [
-    { flag: <Flags codes={["MG"]} className="size-7" />, title: "Madagascar", value: company.phoneMadagascar, href: company.phoneMadagascarHref, Icon: Phone },
-    { flag: <Flags codes={["FR", "CH"]} className="size-7" />, title: company.phoneFranceLabel, value: company.phoneFrance, href: company.phoneFranceHref, Icon: Phone },
-    { flag: <Flags codes={["BE", "NL"]} className="size-7" />, title: company.phoneBelgiumLabel, value: company.phoneBelgium, href: company.phoneBelgiumHref, Icon: Phone },
-    { flag: <Mail className="size-7 text-primary" />, title: "Email", value: company.email, href: company.emailHref, Icon: Mail },
+    { flag: <Flags codes={["MG"]} className="size-6" />, title: "Madagascar", value: company.phoneMadagascar, href: company.phoneMadagascarHref, Icon: Phone },
+    { flag: <Flags codes={["FR", "CH"]} className="size-6" />, title: company.phoneFranceLabel, value: company.phoneFrance, href: company.phoneFranceHref, Icon: Phone },
+    { flag: <Flags codes={["BE", "NL"]} className="size-6" />, title: company.phoneBelgiumLabel, value: company.phoneBelgium, href: company.phoneBelgiumHref, Icon: Phone },
+    { flag: <Mail className="size-5 text-primary" />, title: "Email", value: company.email, href: company.emailHref, Icon: Mail },
   ];
 
   return (
@@ -164,9 +164,8 @@ function ContactPage() {
         <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {cards.map(({ flag, title, value, href, Icon }) => (
             <a key={title} href={href} className="group rounded-lg border border-border bg-card p-6 transition hover:border-primary">
-              <span className="text-2xl" aria-hidden>{flag}</span>
-              <p className="mt-3 font-semibold">{title}</p>
-              <p className="mt-1 inline-flex items-center gap-2 text-primary"><Icon className="size-4" /> {value}</p>
+              <p className="flex items-center gap-2 font-semibold">{flag}<span>{title}</span></p>
+              <p className="mt-2 inline-flex items-center gap-2 text-primary"><Icon className="size-4" /> {value}</p>
             </a>
           ))}
         </div>
