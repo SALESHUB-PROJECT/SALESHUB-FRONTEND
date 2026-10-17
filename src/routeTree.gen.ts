@@ -15,6 +15,7 @@ import { Route as CgvRouteImport } from './routes/cgv'
 import { Route as ConfidentialiteRouteImport } from './routes/confidentialite'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CookiesRouteImport } from './routes/cookies'
+import { Route as DpaRouteImport } from './routes/dpa'
 import { Route as MentionsLegalesRouteImport } from './routes/mentions-legales'
 import { Route as SuperpouvoirsRouteImport } from './routes/superpouvoirs'
 import { Route as SecteursSlugRouteImport } from './routes/secteurs.$slug'
@@ -50,6 +51,11 @@ const CookiesRoute = CookiesRouteImport.update({
   path: '/cookies',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DpaRoute = DpaRouteImport.update({
+  id: '/dpa',
+  path: '/dpa',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const MentionsLegalesRoute = MentionsLegalesRouteImport.update({
   id: '/mentions-legales',
   path: '/mentions-legales',
@@ -78,6 +84,7 @@ export interface FileRoutesByFullPath {
   '/confidentialite': typeof ConfidentialiteRoute
   '/contact': typeof ContactRoute
   '/cookies': typeof CookiesRoute
+  '/dpa': typeof DpaRoute
   '/mentions-legales': typeof MentionsLegalesRoute
   '/superpouvoirs': typeof SuperpouvoirsRoute
   '/secteurs/$slug': typeof SecteursSlugRoute
@@ -90,6 +97,7 @@ export interface FileRoutesByTo {
   '/confidentialite': typeof ConfidentialiteRoute
   '/contact': typeof ContactRoute
   '/cookies': typeof CookiesRoute
+  '/dpa': typeof DpaRoute
   '/mentions-legales': typeof MentionsLegalesRoute
   '/superpouvoirs': typeof SuperpouvoirsRoute
   '/secteurs/$slug': typeof SecteursSlugRoute
@@ -103,6 +111,7 @@ export interface FileRoutesById {
   '/confidentialite': typeof ConfidentialiteRoute
   '/contact': typeof ContactRoute
   '/cookies': typeof CookiesRoute
+  '/dpa': typeof DpaRoute
   '/mentions-legales': typeof MentionsLegalesRoute
   '/superpouvoirs': typeof SuperpouvoirsRoute
   '/secteurs/$slug': typeof SecteursSlugRoute
@@ -117,6 +126,7 @@ export interface FileRouteTypes {
     | '/confidentialite'
     | '/contact'
     | '/cookies'
+    | '/dpa'
     | '/mentions-legales'
     | '/superpouvoirs'
     | '/secteurs/$slug'
@@ -129,6 +139,7 @@ export interface FileRouteTypes {
     | '/confidentialite'
     | '/contact'
     | '/cookies'
+    | '/dpa'
     | '/mentions-legales'
     | '/superpouvoirs'
     | '/secteurs/$slug'
@@ -141,6 +152,7 @@ export interface FileRouteTypes {
     | '/confidentialite'
     | '/contact'
     | '/cookies'
+    | '/dpa'
     | '/mentions-legales'
     | '/superpouvoirs'
     | '/secteurs/$slug'
@@ -154,6 +166,7 @@ export interface RootRouteChildren {
   ConfidentialiteRoute: typeof ConfidentialiteRoute
   ContactRoute: typeof ContactRoute
   CookiesRoute: typeof CookiesRoute
+  DpaRoute: typeof DpaRoute
   MentionsLegalesRoute: typeof MentionsLegalesRoute
   SuperpouvoirsRoute: typeof SuperpouvoirsRoute
   SecteursSlugRoute: typeof SecteursSlugRoute
@@ -204,6 +217,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CookiesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/dpa': {
+      id: '/dpa'
+      path: '/dpa'
+      fullPath: '/dpa'
+      preLoaderRoute: typeof DpaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/mentions-legales': {
       id: '/mentions-legales'
       path: '/mentions-legales'
@@ -242,6 +262,7 @@ const rootRouteChildren: RootRouteChildren = {
   ConfidentialiteRoute: ConfidentialiteRoute,
   ContactRoute: ContactRoute,
   CookiesRoute: CookiesRoute,
+  DpaRoute: DpaRoute,
   MentionsLegalesRoute: MentionsLegalesRoute,
   SuperpouvoirsRoute: SuperpouvoirsRoute,
   SecteursSlugRoute: SecteursSlugRoute,
