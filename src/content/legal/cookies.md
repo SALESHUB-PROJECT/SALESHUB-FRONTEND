@@ -24,8 +24,8 @@ Vous pouvez modifier vos choix à tout moment en cliquant sur le lien **« Gére
 
 | Nom du cookie | Fournisseur | Finalité | Durée |
 |---|---|---|---|
-| cookie_consent | Saleshub | Mémoriser vos choix de cookies | 6 mois |
-| session / auth | Saleshub | Connexion et sécurité du compte | Session |
+| cookie_consent | Heroes One | Mémoriser vos choix de cookies | 6 mois |
+| session / auth | Heroes One | Connexion et sécurité du compte | Session |
 | ex. _ga, _ga_* | Google Analytics | Mesure d'audience | 13 mois |
 | ex. _fbp | Meta | Mesure des campagnes publicitaires | 3 mois |
 

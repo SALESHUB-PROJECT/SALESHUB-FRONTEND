@@ -21,7 +21,7 @@ export function UseCaseDetail({ uc, compact = false }: { uc: UseCase; compact?: 
     },
     { k: "Superpouvoirs", v: <p>{uc.heroes.flatMap((h) => heroes[h].powers.slice(0, 2)).join(" · ")}</p> },
     {
-      k: "Fonctionnalités Saleshub utilisées",
+      k: "Fonctionnalités Heroes One utilisées",
       v: (
         <div className="flex flex-wrap gap-2">
           {uc.features.map((f) => (
@@ -51,7 +51,7 @@ export function UseCaseDetail({ uc, compact = false }: { uc: UseCase; compact?: 
       </ol>
       <div className="mt-6 flex flex-wrap gap-3">
         <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
-          <Link to="/contact">Créer mon espace Saleshub <ArrowRight className="size-4" /></Link>
+          <Link to="/contact">Créer mon espace Heroes One <ArrowRight className="size-4" /></Link>
         </Button>
         {compact && null}
       </div>

@@ -2,19 +2,19 @@
 
 *Dernière mise à jour : 17 octobre 2026*
 
-Saleshub accorde une grande importance à la protection des données personnelles. La présente politique explique quelles données nous collectons, pourquoi, combien de temps nous les conservons et quels sont vos droits, conformément au Règlement (UE) 2016/679 (RGPD) et à la loi n° 78-17 du 6 janvier 1978 modifiée (« Informatique et Libertés »).
+Heroes One accorde une grande importance à la protection des données personnelles. La présente politique explique quelles données nous collectons, pourquoi, combien de temps nous les conservons et quels sont vos droits, conformément au Règlement (UE) 2016/679 (RGPD) et à la loi n° 78-17 du 6 janvier 1978 modifiée (« Informatique et Libertés »).
 
 ## 1. Responsable du traitement
 
-**Saleshub**, société à responsabilité limitée (SARL) de droit malgache, Lot 0912 C 185 Manodidina ny Gara, Antsirabe I, Madagascar — NIF 1019212209.
+**Heroes One**, société à responsabilité limitée (SARL) de droit malgache, Lot 0912 C 185 Manodidina ny Gara, Antsirabe I, Madagascar — NIF 1019212209.
 
 Référent protection des données : Monsieur Ayrton AHARKIOLKIS — e-mail : contact@saleshub.business
 
 ## 2. Deux rôles distincts
 
-**Saleshub responsable de traitement.** Pour les données des visiteurs du Site, des prospects de Saleshub, des clients (contacts, facturation), des utilisateurs de comptes et des partenaires.
+**Heroes One responsable de traitement.** Pour les données des visiteurs du Site, des prospects de Heroes One, des clients (contacts, facturation), des utilisateurs de comptes et des partenaires.
 
-**Saleshub sous-traitant.** Pour les données que nos clients importent ou traitent dans le CRM (leurs propres contacts, prospects, clients, candidats). Dans ce cas, le client est responsable de traitement : c'est à lui que les personnes concernées doivent s'adresser en priorité. Saleshub traite ces données uniquement sur instruction du client, dans le cadre de l'accord de traitement des données (DPA).
+**Heroes One sous-traitant.** Pour les données que nos clients importent ou traitent dans le CRM (leurs propres contacts, prospects, clients, candidats). Dans ce cas, le client est responsable de traitement : c'est à lui que les personnes concernées doivent s'adresser en priorité. Heroes One traite ces données uniquement sur instruction du client, dans le cadre de l'accord de traitement des données (DPA).
 
 ## 3. Données collectées, finalités et bases légales
 
@@ -36,11 +36,11 @@ Les champs obligatoires sont signalés dans les formulaires. À défaut, la dema
 
 Certaines fonctionnalités utilisent des modèles d'intelligence artificielle. Les données transmises se limitent à ce qui est nécessaire à la fonctionnalité demandée. Nous exigeons contractuellement des prestataires concernés qu'ils n'utilisent pas ces données pour entraîner leurs propres modèles.
 
-Aucune décision produisant des effets juridiques ou affectant de manière significative une personne n'est prise sur le seul fondement d'un traitement automatisé par Saleshub : les agents IA fournissent des recommandations que les utilisateurs valident.
+Aucune décision produisant des effets juridiques ou affectant de manière significative une personne n'est prise sur le seul fondement d'un traitement automatisé par Heroes One : les agents IA fournissent des recommandations que les utilisateurs valident.
 
 ## 5. Destinataires
 
-Les données sont accessibles aux seules personnes habilitées de Saleshub, dans la limite de leurs fonctions, et à nos sous-traitants, notamment :
+Les données sont accessibles aux seules personnes habilitées de Heroes One, dans la limite de leurs fonctions, et à nos sous-traitants, notamment :
 
 - **Hébergement** : OVH SAS (France) ;
 - **Paiement** : Stripe ;
@@ -49,11 +49,11 @@ Les données sont accessibles aux seules personnes habilitées de Saleshub, dans
 - **Automatisation** : Zapier (si activée par le client) ;
 - **Outil de mesure d'audience** : Google Analytics.
 
-La liste à jour des sous-traitants est disponible sur demande. Les données peuvent être communiquées aux autorités lorsque la loi l'exige. Saleshub ne vend jamais les données personnelles.
+La liste à jour des sous-traitants est disponible sur demande. Les données peuvent être communiquées aux autorités lorsque la loi l'exige. Heroes One ne vend jamais les données personnelles.
 
 ## 6. Transferts hors de l'Union européenne
 
-Les données sont hébergées en France. Certaines équipes de Saleshub (support, développement, opérations) et certains prestataires sont situés hors de l'Union européenne, notamment à Madagascar et aux États-Unis, et peuvent accéder aux données.
+Les données sont hébergées en France. Certaines équipes de Heroes One (support, développement, opérations) et certains prestataires sont situés hors de l'Union européenne, notamment à Madagascar et aux États-Unis, et peuvent accéder aux données.
 
 Ces transferts sont encadrés par des garanties appropriées au sens du RGPD : décision d'adéquation lorsqu'elle existe (par exemple le Data Privacy Framework pour les prestataires américains certifiés), ou clauses contractuelles types de la Commission européenne complétées de mesures de sécurité (chiffrement, contrôle des accès, journalisation). Une copie de ces garanties peut être obtenue sur demande.
 
@@ -70,7 +70,7 @@ Ces transferts sont encadrés par des garanties appropriées au sens du RGPD : d
 
 ## 8. Sécurité
 
-Saleshub met en œuvre des mesures techniques et organisationnelles adaptées : chiffrement des échanges (HTTPS/TLS) et des données stockées, gestion des rôles et permissions, journalisation et audit des accès, sauvegardes, séparation des environnements, et sensibilisation des équipes. En cas de violation de données présentant un risque, Saleshub notifie l'autorité compétente et, le cas échéant, les personnes concernées ou ses clients dans les délais légaux.
+Heroes One met en œuvre des mesures techniques et organisationnelles adaptées : chiffrement des échanges (HTTPS/TLS) et des données stockées, gestion des rôles et permissions, journalisation et audit des accès, sauvegardes, séparation des environnements, et sensibilisation des équipes. En cas de violation de données présentant un risque, Heroes One notifie l'autorité compétente et, le cas échéant, les personnes concernées ou ses clients dans les délais légaux.
 
 **Données de santé.** Par défaut, la Plateforme n'est pas destinée à héberger des données de santé. Lorsqu'un client y recourt dans le cadre d'une offre dédiée, ces données sont hébergées chez un hébergeur certifié HDS.
 
@@ -80,7 +80,7 @@ Vous disposez des droits suivants sur vos données : accès, rectification, effa
 
 Pour les exercer, écrivez à contact@saleshub.business en précisant votre demande. Une pièce justificative pourra être demandée en cas de doute raisonnable sur votre identité. Nous répondons dans un délai d'un mois, prolongeable de deux mois si la demande est complexe.
 
-Si vos données ont été importées dans Saleshub par l'un de nos clients, nous transmettrons votre demande à ce client, responsable du traitement.
+Si vos données ont été importées dans Heroes One par l'un de nos clients, nous transmettrons votre demande à ce client, responsable du traitement.
 
 Vous pouvez introduire une réclamation auprès de la CNIL (www.cnil.fr) ou de l'autorité de protection des données de votre pays de résidence.
 

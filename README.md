@@ -1,6 +1,6 @@
 # Créer moi un site web à partir de ce données, et avec une système de paiement et divers...
 
-Créer moi un site web à partir de ce données, et avec une système de paiement et divers abonnement et formule. Traduire le site en 10 langues les plus parler dans le monde. Optimiser référencement, SEO et sur chatgpt, claude etc. Rajouter des commentaires de satisfaction de client et exprimer que saleshub a gagner de multiple concoure internationaux sur multiple catégories. Remplacez heroescrm partout par saleshub.buisness et créer un logo pour "Saleshub.buisness", avec des couleurs impactante, utiliser par plus grandes marque concurrente du secteur du CRM. Créer une des pages qui fera office de landingpage.
+Créer moi un site web à partir de ce données, et avec une système de paiement et divers abonnement et formule. Traduire le site en 10 langues les plus parler dans le monde. Optimiser référencement, SEO et sur chatgpt, claude etc. Rajouter des commentaires de satisfaction de client et exprimer que saleshub a gagner de multiple concoure internationaux sur multiple catégories. Remplacez heroescrm partout par saleshub.buisness et créer un logo pour "Heroes One.buisness", avec des couleurs impactante, utiliser par plus grandes marque concurrente du secteur du CRM. Créer une des pages qui fera office de landingpage.
 
 This project was built with [Lovable](https://lovable.dev).
 

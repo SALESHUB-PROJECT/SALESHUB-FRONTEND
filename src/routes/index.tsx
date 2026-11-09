@@ -141,7 +141,7 @@ function LandingPage() {
           <a href="#top" aria-label={t.a11y.home}>
             <img
               src={logo.url}
-              alt="Saleshub"
+              alt="Heroes One"
               className="h-auto w-40 sm:w-48"
               width={1427}
               height={359}

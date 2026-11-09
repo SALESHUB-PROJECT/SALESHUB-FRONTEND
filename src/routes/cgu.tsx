@@ -4,6 +4,6 @@ import { LegalMarkdownPage } from "@/components/site/LegalMarkdown";
 import md from "@/content/legal/cgu.md?raw";
 
 export const Route = createFileRoute("/cgu")({
-  head: () => legalHead("Conditions Générales d'Utilisation", "Règles d'utilisation de la plateforme Saleshub, du CRM, des agents IA, de l'API et des intégrations."),
+  head: () => legalHead("Conditions Générales d'Utilisation", "Règles d'utilisation de la plateforme Heroes One, du CRM, des agents IA, de l'API et des intégrations."),
   component: () => <LegalMarkdownPage md={md} path="/cgu" />,
 });
