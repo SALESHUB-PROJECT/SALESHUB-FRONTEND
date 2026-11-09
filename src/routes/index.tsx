@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SiteFooter } from "@/components/site/SiteFooter";
-import logo from "@/assets/saleshub-approved-logo.png.asset.json";
+import logo from "@/assets/heroes-one-logo.png.asset.json";
 import homeBackground from "@/assets/saleshub-home-background.jpg";
 import crmPreview from "@/assets/demo_crm.png";
 import crmMobilePreview from "@/assets/demo_crm_mobil.png";

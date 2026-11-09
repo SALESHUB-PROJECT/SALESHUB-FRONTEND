@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/saleshub-approved-logo.png.asset.json";
+import logo from "@/assets/heroes-one-logo.png.asset.json";
 
 const links = [
   { href: "/superpouvoirs", label: "Superpouvoirs" },
