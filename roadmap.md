@@ -15,8 +15,8 @@
 - [ ] Valider les modalités opérationnelles de l’annexe DPA (sécurité, sous-traitants, transferts et purge : informations à fournir par Heroes One)
 
 - [x] Reprendre fidèlement le thème sombre cinématique de la référence fournie
-- [x] Créer la landing page Saleshub.buisness à partir de la présentation
-- [x] Créer un logo Saleshub.buisness cohérent avec le thème
+- [x] Créer la landing page Heroes One à partir de la présentation
+- [x] Créer un logo Heroes One cohérent avec le thème
 - [ ] Activer le paiement réel des formules avec Paddle (en attente de votre accord)
 - [x] Ajouter la sélection de 10 langues
 - [x] Optimiser les contenus et métadonnées pour le référencement et les moteurs IA
