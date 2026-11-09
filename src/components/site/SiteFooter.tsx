@@ -7,7 +7,7 @@ import { openCookiePreferences } from "@/components/site/CookieBanner";
 type L = { label: string; href?: string; to?: string };
 const columns: { title: string; links: L[] }[] = [
   {
-    title: "SALES HUB",
+    title: "HEROES ONE",
     links: [
       { label: "Superpouvoirs", to: "/superpouvoirs" },
       { label: "Fonctionnalités", href: "/superpouvoirs#explorer" },
