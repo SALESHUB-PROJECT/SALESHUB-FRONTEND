@@ -9,7 +9,7 @@ import { UseCaseDetail } from "@/components/site/UseCaseDetail";
 import { apiGroups, families, heroOrder, heroes, jobs, journey, sectors, type Status } from "@/lib/superpowers";
 import { cn } from "@/lib/utils";
 
-const TITLE = "Saleshub — CRM IA, automatisation, agents IA, API & intégrations";
+const TITLE = "Heroes One — CRM IA, automatisation, agents IA, API & intégrations";
 const DESC = "Votre CRM sous stéroïdes : 8 agents IA, use cases par métier et secteur, API et intégrations. CRM commercial, CRM PME, CRM call center, CRM immobilier, énergie, e-commerce.";
 
 export const Route = createFileRoute("/superpouvoirs")({
@@ -53,7 +53,7 @@ function SuperpowersPage() {
         <div className="sp-particles absolute inset-0 opacity-40" aria-hidden />
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-2 lg:px-8">
           <div>
-            <Kicker light>Tous les superpouvoirs de Saleshub</Kicker>
+            <Kicker light>Tous les superpouvoirs de Heroes One</Kicker>
             <h1 className="mt-4 text-5xl font-extrabold leading-[1.02] sm:text-6xl lg:text-7xl">
               Votre CRM.<br /><span className="text-accent">Sous stéroïdes.</span>
             </h1>
@@ -118,7 +118,7 @@ function SuperpowersPage() {
           <Reveal className="text-center">
             <Kicker>Explorateur</Kicker>
             <h2 className="mt-3 text-4xl font-bold sm:text-5xl">Quel est votre superpouvoir ?</h2>
-            <p className="mt-3 text-muted-foreground">{tab === "job" ? "Choisissez votre métier." : "Saleshub s'adapte à votre métier."}</p>
+            <p className="mt-3 text-muted-foreground">{tab === "job" ? "Choisissez votre métier." : "Heroes One s'adapte à votre métier."}</p>
             <div role="tablist" className="mt-6 inline-flex rounded-full border border-border bg-card p-1">
               {(["job", "sector"] as const).map((t) => (
                 <button key={t} role="tab" aria-selected={tab === t}
@@ -185,7 +185,7 @@ function SuperpowersPage() {
               </Reveal>
             ))}
           </div>
-          <p className="mt-6 text-xs text-muted-foreground">Catalogue à valider par l'équipe Saleshub : seules les fonctions confirmées seront présentées comme disponibles.</p>
+          <p className="mt-6 text-xs text-muted-foreground">Catalogue à valider par l'équipe Heroes One : seules les fonctions confirmées seront présentées comme disponibles.</p>
         </div>
       </section>
 
@@ -193,12 +193,12 @@ function SuperpowersPage() {
       <section id="api" className="sp-dark relative overflow-hidden py-24">
         <div className="sp-particles absolute inset-0 opacity-30" aria-hidden />
         <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
-          <Reveal className="text-center"><Kicker light>API</Kicker><h2 className="mt-3 text-4xl font-bold">Le système nerveux de Saleshub.</h2></Reveal>
+          <Reveal className="text-center"><Kicker light>API</Kicker><h2 className="mt-3 text-4xl font-bold">Le système nerveux de Heroes One.</h2></Reveal>
           <div className="relative mt-12 grid items-center gap-6 lg:grid-cols-[1fr_auto_1fr]">
             <div className="grid gap-4">{apiGroups.slice(0, 3).map((g) => <ApiCard key={g.title} g={g} />)}</div>
             <div className="relative mx-auto grid size-44 place-items-center">
               <div className="sp-halo absolute inset-0 rounded-full" />
-              <div className="relative grid size-32 place-items-center rounded-full border-2 border-primary bg-foreground text-center font-display font-extrabold"><span><Zap className="mx-auto size-7 text-accent" />SALESHUB<br />API</span></div>
+              <div className="relative grid size-32 place-items-center rounded-full border-2 border-primary bg-foreground text-center font-display font-extrabold"><span><Zap className="mx-auto size-7 text-accent" />HEROES ONE<br />API</span></div>
             </div>
             <div className="grid gap-4">{apiGroups.slice(3).map((g) => <ApiCard key={g.title} g={g} />)}</div>
           </div>
@@ -212,7 +212,7 @@ function SuperpowersPage() {
           <Reveal className="text-center">
             <Kicker>Écosystème</Kicker>
             <h2 className="mt-3 text-4xl font-bold">Les héros ne travaillent jamais seuls.</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">Saleshub se connecte nativement aux outils que vos équipes utilisent déjà, pour une plateforme unique, sans rupture.</p>
+            <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">Heroes One se connecte nativement aux outils que vos équipes utilisent déjà, pour une plateforme unique, sans rupture.</p>
           </Reveal>
           <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
             {apiGroups.flatMap((g) => g.tools.map((t) => ({ ...t, group: g.title }))).map((t) => (
@@ -234,7 +234,7 @@ function SuperpowersPage() {
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-5 lg:grid-cols-2 lg:px-8">
           <Reveal>
             <Kicker>Developer API</Kicker>
-            <h2 className="mt-3 text-4xl font-bold">Donnez de nouveaux superpouvoirs à Saleshub.</h2>
+            <h2 className="mt-3 text-4xl font-bold">Donnez de nouveaux superpouvoirs à Heroes One.</h2>
             <div className="mt-6 flex flex-wrap gap-2">
               {devTabs.map((t, i) => <button key={t} onClick={() => setDevTab(i)} className={cn("rounded-md border px-3 py-1.5 text-sm", devTab === i ? "border-primary bg-primary text-primary-foreground" : "border-border")}>{t}</button>)}
             </div>
@@ -252,8 +252,8 @@ function SuperpowersPage() {
       {/* BRAIN */}
       <section className="sp-dark overflow-hidden py-24">
         <div className="mx-auto max-w-7xl px-5 text-center lg:px-8">
-          <Reveal><Kicker light>Le cerveau de Saleshub</Kicker><h2 className="mt-3 text-4xl font-bold">Une IA qui comprend votre entreprise.</h2>
-            <p className="mx-auto mt-3 max-w-2xl text-primary-foreground/70">Les agents IA s'appuient sur les données déjà présentes dans Saleshub pour aider vos équipes.</p></Reveal>
+          <Reveal><Kicker light>Le cerveau de Heroes One</Kicker><h2 className="mt-3 text-4xl font-bold">Une IA qui comprend votre entreprise.</h2>
+            <p className="mx-auto mt-3 max-w-2xl text-primary-foreground/70">Les agents IA s'appuient sur les données déjà présentes dans Heroes One pour aider vos équipes.</p></Reveal>
           <div className="relative mx-auto mt-12 aspect-square max-w-lg">
             <div className="sp-halo absolute inset-[25%] rounded-full" />
             <Brain className="absolute left-1/2 top-1/2 size-24 -translate-x-1/2 -translate-y-1/2 text-accent" />
@@ -271,7 +271,7 @@ function SuperpowersPage() {
       {/* WHY */}
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <Reveal><Kicker>Pourquoi Saleshub ?</Kicker><h2 className="mt-3 text-4xl font-bold">Quatre bénéfices immédiats.</h2></Reveal>
+          <Reveal><Kicker>Pourquoi Heroes One ?</Kicker><h2 className="mt-3 text-4xl font-bold">Quatre bénéfices immédiats.</h2></Reveal>
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { I: TrendingUp, t: "Plus de ventes", d: "Les équipes disposent de toutes les informations au bon moment." },

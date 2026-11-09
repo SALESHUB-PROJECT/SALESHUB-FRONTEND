@@ -4,7 +4,7 @@
 
 ## Article 1 — Objet
 
-Les présentes Conditions Générales d'Utilisation (ci-après « CGU ») définissent les règles d'accès et d'utilisation du site saleshub.business et de la plateforme Saleshub.business (ci-après ensemble « la Plateforme »), éditée par Saleshub.
+Les présentes Conditions Générales d'Utilisation (ci-après « CGU ») définissent les règles d'accès et d'utilisation du site saleshub.business et de la plateforme Heroes One (ci-après ensemble « la Plateforme »), éditée par Heroes One.
 
 Elles s'appliquent à tout visiteur du Site et à tout utilisateur disposant d'un compte (ci-après « l'Utilisateur »). L'utilisation de la Plateforme vaut acceptation des CGU. Pour les clients payants, les CGU complètent les Conditions Générales de Vente.
 
@@ -12,13 +12,13 @@ Elles s'appliquent à tout visiteur du Site et à tout utilisateur disposant d'u
 
 La Plateforme est accessible depuis un navigateur internet et sur mobile. Les frais de connexion et le matériel nécessaires restent à la charge de l'Utilisateur.
 
-L'accès aux fonctionnalités du CRM et des agents IA nécessite la création d'un compte. Saleshub peut refuser ou clôturer une inscription incompatible avec les présentes CGU.
+L'accès aux fonctionnalités du CRM et des agents IA nécessite la création d'un compte. Heroes One peut refuser ou clôturer une inscription incompatible avec les présentes CGU.
 
 ## Article 3 — Création et sécurité du compte
 
 L'Utilisateur s'engage à fournir des informations exactes et à les maintenir à jour.
 
-Ses identifiants sont personnels et confidentiels. Il est responsable de toute activité réalisée depuis son compte et s'engage à informer immédiatement Saleshub de toute utilisation non autorisée. Saleshub recommande l'activation de l'authentification renforcée lorsqu'elle est disponible.
+Ses identifiants sont personnels et confidentiels. Il est responsable de toute activité réalisée depuis son compte et s'engage à informer immédiatement Heroes One de toute utilisation non autorisée. Heroes One recommande l'activation de l'authentification renforcée lorsqu'elle est disponible.
 
 L'administrateur du compte d'une entreprise cliente gère les accès, rôles et permissions de ses utilisateurs, et répond de leur respect des CGU.
 
@@ -48,9 +48,9 @@ L'Utilisateur s'engage à utiliser la Plateforme conformément aux lois en vigue
 
 ## Article 6 — Intégrations et services tiers
 
-La Plateforme permet de connecter des services tiers (notamment téléphonie, messagerie, SMS, automatisation, paiement). L'utilisation de ces services est soumise aux conditions de leurs éditeurs. Saleshub n'est pas responsable de leur disponibilité, de leur fonctionnement ou de leurs évolutions, ni des données qu'ils traitent pour leur propre compte.
+La Plateforme permet de connecter des services tiers (notamment téléphonie, messagerie, SMS, automatisation, paiement). L'utilisation de ces services est soumise aux conditions de leurs éditeurs. Heroes One n'est pas responsable de leur disponibilité, de leur fonctionnement ou de leurs évolutions, ni des données qu'ils traitent pour leur propre compte.
 
-En connectant un service tiers, l'Utilisateur autorise Saleshub à échanger avec ce service les données nécessaires au fonctionnement de l'intégration.
+En connectant un service tiers, l'Utilisateur autorise Heroes One à échanger avec ce service les données nécessaires au fonctionnement de l'intégration.
 
 ## Article 7 — Crédits et quotas
 
@@ -58,25 +58,25 @@ Certaines fonctionnalités consomment des crédits selon le barème affiché dan
 
 ## Article 8 — Programme partenaire
 
-Les partenaires intégrateurs certifiés s'engagent à respecter les présentes CGU, les standards de qualité de Saleshub et les conditions spécifiques du programme partenaire, communiquées lors de leur inscription. La certification peut être retirée en cas de manquement.
+Les partenaires intégrateurs certifiés s'engagent à respecter les présentes CGU, les standards de qualité de Heroes One et les conditions spécifiques du programme partenaire, communiquées lors de leur inscription. La certification peut être retirée en cas de manquement.
 
 ## Article 9 — Disponibilité
 
-Saleshub s'efforce d'assurer la disponibilité de la Plateforme sans garantir une absence totale d'interruption. L'accès peut être suspendu pour maintenance, mise à jour, sécurité ou en cas de force majeure.
+Heroes One s'efforce d'assurer la disponibilité de la Plateforme sans garantir une absence totale d'interruption. L'accès peut être suspendu pour maintenance, mise à jour, sécurité ou en cas de force majeure.
 
 ## Article 10 — Suspension et clôture du compte
 
-En cas de manquement aux CGU, notamment aux règles d'usage de l'article 5, Saleshub peut, après notification et selon la gravité du manquement, suspendre ou clôturer le compte concerné. En cas d'atteinte à la sécurité de la Plateforme ou aux droits de tiers, la suspension peut être immédiate.
+En cas de manquement aux CGU, notamment aux règles d'usage de l'article 5, Heroes One peut, après notification et selon la gravité du manquement, suspendre ou clôturer le compte concerné. En cas d'atteinte à la sécurité de la Plateforme ou aux droits de tiers, la suspension peut être immédiate.
 
 L'Utilisateur peut clôturer son compte à tout moment depuis ses paramètres ou par e-mail à contact@saleshub.business, sous réserve des engagements souscrits au titre des CGV.
 
 ## Article 11 — Propriété intellectuelle
 
-La Plateforme, ses agents IA, ses personnages, son code, sa marque et ses contenus sont la propriété de Saleshub. L'Utilisateur bénéficie d'un droit d'utilisation limité, non exclusif et non cessible pendant la durée de son accès.
+La Plateforme, ses agents IA, ses personnages, son code, sa marque et ses contenus sont la propriété de Heroes One. L'Utilisateur bénéficie d'un droit d'utilisation limité, non exclusif et non cessible pendant la durée de son accès.
 
-L'Utilisateur conserve ses droits sur les données et contenus qu'il importe. Il concède à Saleshub le droit de les héberger et de les traiter dans la seule mesure nécessaire à la fourniture des Services.
+L'Utilisateur conserve ses droits sur les données et contenus qu'il importe. Il concède à Heroes One le droit de les héberger et de les traiter dans la seule mesure nécessaire à la fourniture des Services.
 
-**Amélioration des Services.** Saleshub n'utilise pas les Données Client pour entraîner des modèles d'IA accessibles à d'autres clients sans l'accord préalable du Client. Saleshub peut utiliser des statistiques d'usage agrégées et anonymisées pour améliorer la Plateforme.
+**Amélioration des Services.** Heroes One n'utilise pas les Données Client pour entraîner des modèles d'IA accessibles à d'autres clients sans l'accord préalable du Client. Heroes One peut utiliser des statistiques d'usage agrégées et anonymisées pour améliorer la Plateforme.
 
 ## Article 12 — Données personnelles
 
@@ -84,13 +84,13 @@ Le traitement des données personnelles est décrit dans la Politique de confide
 
 ## Article 13 — Responsabilité
 
-L'Utilisateur est seul responsable des contenus qu'il publie, des messages qu'il envoie et de l'usage qu'il fait des résultats produits par les agents IA. Il garantit Saleshub contre toute réclamation de tiers résultant d'une utilisation non conforme de la Plateforme.
+L'Utilisateur est seul responsable des contenus qu'il publie, des messages qu'il envoie et de l'usage qu'il fait des résultats produits par les agents IA. Il garantit Heroes One contre toute réclamation de tiers résultant d'une utilisation non conforme de la Plateforme.
 
-La responsabilité de Saleshub est encadrée par les CGV.
+La responsabilité de Heroes One est encadrée par les CGV.
 
 ## Article 14 — Modification des CGU
 
-Saleshub peut modifier les CGU pour tenir compte des évolutions de la Plateforme ou de la réglementation. Les Utilisateurs sont informés de toute modification substantielle par e-mail ou dans la Plateforme. La poursuite de l'utilisation après l'entrée en vigueur vaut acceptation.
+Heroes One peut modifier les CGU pour tenir compte des évolutions de la Plateforme ou de la réglementation. Les Utilisateurs sont informés de toute modification substantielle par e-mail ou dans la Plateforme. La poursuite de l'utilisation après l'entrée en vigueur vaut acceptation.
 
 ## Article 15 — Droit applicable
 

@@ -1,6 +1,6 @@
 // Single source of truth for company identity. Edit here to update every page.
 export const company = {
-  name: "Saleshub",
+  name: "Heroes One",
   legalForm: "société à responsabilité limitée (SARL) de droit malgache",
   legalRepresentative: { name: "Ayrton AHARKIOLKIS", role: "gérant" },
   address: "Lot 0912 C 185 MANODIDINA NY GARA, ANTSIRABE I, MADAGASCAR",
@@ -17,9 +17,9 @@ export const company = {
   phoneBelgiumLabel: "Belgique & Pays-Bas",
   email: "contact@saleshub.business",
   emailHref: "mailto:contact@saleshub.business",
-  // Fields awaiting validation by Saleshub — leave null until confirmed.
+  // Fields awaiting validation by Heroes One — leave null until confirmed.
   host: null as null | { name: string; address: string; contact: string },
   applicableLaw: null as null | string,
 };
 
-export const LEGAL_PENDING = "Texte juridique à valider par Saleshub / conseil juridique avant publication définitive.";
+export const LEGAL_PENDING = "Texte juridique à valider par Heroes One / conseil juridique avant publication définitive.";

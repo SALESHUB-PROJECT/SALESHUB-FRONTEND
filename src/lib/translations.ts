@@ -1,5 +1,5 @@
 /**
- * Interface language strings for the Saleshub landing page.
+ * Interface language strings for the Heroes One landing page.
  * Keep every language object in sync with the French reference (`fr`),
  * which defines the `Translation` shape.
  */
@@ -11,9 +11,9 @@ export const billingCycles: BillingCycle[] = ["monthly", "annual", "biennial"];
 export const fr = {
   label: "Français",
   seo: {
-    title: "Saleshub.business | CRM IA tout-en-un",
+    title: "Heroes One | CRM IA tout-en-un",
     description:
-      "Automatisez prospection, qualification, devis et encaissement avec 8 agents IA Saleshub.business disponibles 24h/24.",
+      "Automatisez prospection, qualification, devis et encaissement avec 8 agents IA Heroes One disponibles 24h/24.",
     ogDescription:
       "8 agents IA pour automatiser votre cycle de vente, du premier contact au paiement.",
   },
@@ -25,16 +25,16 @@ export const fr = {
     pricing: "Tarifs",
   },
   a11y: {
-    home: "Saleshub.business - accueil",
+    home: "Heroes One - accueil",
     primaryNavigation: "Navigation principale",
     chooseLanguage: "Choisir la langue",
     openMenu: "Ouvrir le menu",
     close: "Fermer",
-    crmPreview: "Aperçu du CRM Saleshub.business",
-    crmDesktop: "Interface desktop du CRM Saleshub.business",
-    crmMobile: "Interface mobile du CRM Saleshub.business",
-    crmAnalytics: "Tableau de bord analytique Saleshub.business",
-    integrationList: "Applications connectées à Saleshub.business",
+    crmPreview: "Aperçu du CRM Heroes One",
+    crmDesktop: "Interface desktop du CRM Heroes One",
+    crmMobile: "Interface mobile du CRM Heroes One",
+    crmAnalytics: "Tableau de bord analytique Heroes One",
+    integrationList: "Applications connectées à Heroes One",
     logo: "Logo",
     agentPortrait: "Portrait de",
     fiveStars: "5 étoiles",
@@ -119,13 +119,13 @@ export const fr = {
   },
   integrations: {
     kicker: "APPLICATIONS INTERCONNECTÉES",
-    title: "Vos outils connectés au CRM Saleshub.business.",
+    title: "Vos outils connectés au CRM Heroes One.",
     text: "Téléphonie, e-mail, SMS, automatisation et cartographie se synchronisent dans un seul espace pour garder chaque échange au bon endroit.",
   },
   partners: {
     kicker: "PROGRAMME PARTENAIRE",
-    title: "Formez vos équipes pour devenir intégrateur Saleshub certifié.",
-    text: "Trois niveaux de qualification pour apprendre à connecter Saleshub aux outils clients, structurer les données et livrer des intégrations fiables avec un standard professionnel.",
+    title: "Formez vos équipes pour devenir intégrateur Heroes One certifié.",
+    text: "Trois niveaux de qualification pour apprendre à connecter Heroes One aux outils clients, structurer les données et livrer des intégrations fiables avec un standard professionnel.",
     stats: [
       { value: "3", label: "formations" },
       { value: "IA", label: "CRM & agents" },
@@ -137,14 +137,14 @@ export const fr = {
         level: "Niveau 1",
         title: "Intégrateur certifié",
         duration: "Fondations CRM",
-        text: "Configurer un espace Saleshub, connecter les canaux essentiels et livrer une première intégration propre pour une équipe commerciale.",
+        text: "Configurer un espace Heroes One, connecter les canaux essentiels et livrer une première intégration propre pour une équipe commerciale.",
         points: ["Paramétrage CRM", "Emails, appels et SMS", "Import et qualité des données"],
       },
       {
         level: "Niveau 2",
         title: "Architecte intégration",
         duration: "Automatisation avancée",
-        text: "Construire des scénarios multi-outils, fiabiliser les flux de données et adapter Saleshub aux processus métier du client.",
+        text: "Construire des scénarios multi-outils, fiabiliser les flux de données et adapter Heroes One aux processus métier du client.",
         points: [
           "Workflows Zapier / API",
           "Synchronisation applicative",
@@ -163,7 +163,7 @@ export const fr = {
   collaboration: {
     kicker: "CONÇU POUR LES ÉQUIPES RÉELLES",
     title: "Plus qu’un CRM, un partenaire de croissance.",
-    text: "Saleshub.business rassemble les échanges, les priorités et les prochaines actions dans un même espace. Chacun sait qui rappeler, pourquoi et avec quel contexte, sans passer sa journée à compléter des fiches.",
+    text: "Heroes One rassemble les échanges, les priorités et les prochaines actions dans un même espace. Chacun sait qui rappeler, pourquoi et avec quel contexte, sans passer sa journée à compléter des fiches.",
     blocks: [
       {
         title: "Une IA qui assiste",
@@ -199,9 +199,9 @@ export const fr = {
   },
   compare: {
     kicker: "COMPARAISON MARCHÉ",
-    title: "Pourquoi Saleshub.business change la donne",
+    title: "Pourquoi Heroes One change la donne",
     text: "Une plateforme unifiée à la place d’un assemblage d’outils et d’extensions.",
-    headers: ["Fonctionnalité", "Saleshub", "Salesforce", "HubSpot", "Pipedrive"],
+    headers: ["Fonctionnalité", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
     rows: [
       ["CRM complet intégré", "✓", "✓", "✓", "✓"],
       ["8 agents IA autonomes", "✓", "Partiel", "Partiel", "Partiel"],
@@ -215,7 +215,7 @@ export const fr = {
   security: {
     kicker: "SÉCURITÉ & CONFORMITÉ",
     title: "Une sécurité pensée pour les données commerciales sensibles.",
-    text: "Saleshub.business centralise vos échanges, prospects et historiques clients avec des contrôles d’accès, une traçabilité et une architecture conçue pour accompagner les standards attendus par les entreprises.",
+    text: "Heroes One centralise vos échanges, prospects et historiques clients avec des contrôles d’accès, une traçabilité et une architecture conçue pour accompagner les standards attendus par les entreprises.",
     badges: ["GDPR / RGPD", "SOC 2 ready", "AES-256", "ISO 27001 ready", "SSO", "Journaux d’audit"],
     controls: [
       {
@@ -300,7 +300,7 @@ export const fr = {
   },
   cta: {
     title: "Vos 8 agents IA n’attendent que vous.",
-    text: "Échangeons 30 minutes pour adapter Saleshub.business à votre métier.",
+    text: "Échangeons 30 minutes pour adapter Heroes One à votre métier.",
     button: "Prendre rendez-vous",
   },
   footer: {
@@ -350,7 +350,7 @@ export const fr = {
         ],
       },
     ],
-    copyright: "© 2026 Saleshub.business · Tous droits réservés",
+    copyright: "© 2026 Heroes One · Tous droits réservés",
     legalLinks: ["Confidentialité", "Cookies", "Statut du service"],
   },
   contact: {
@@ -371,9 +371,9 @@ export const translations: Record<LanguageCode, Translation> = {
   en: {
     label: "English",
     seo: {
-      title: "Saleshub.business | All-in-one AI CRM",
+      title: "Heroes One | All-in-one AI CRM",
       description:
-        "Automate prospecting, qualification, quotes, and collection with 8 Saleshub.business AI agents available 24/7.",
+        "Automate prospecting, qualification, quotes, and collection with 8 Heroes One AI agents available 24/7.",
       ogDescription: "8 AI agents to automate your sales cycle, from first contact to payment.",
     },
     nav: {
@@ -384,16 +384,16 @@ export const translations: Record<LanguageCode, Translation> = {
       pricing: "Pricing",
     },
     a11y: {
-      home: "Saleshub.business - home",
+      home: "Heroes One - home",
       primaryNavigation: "Main navigation",
       chooseLanguage: "Choose language",
       openMenu: "Open menu",
       close: "Close",
-      crmPreview: "Saleshub.business CRM preview",
-      crmDesktop: "Saleshub.business CRM desktop interface",
-      crmMobile: "Saleshub.business CRM mobile interface",
-      crmAnalytics: "Saleshub.business analytics dashboard",
-      integrationList: "Applications connected to Saleshub.business",
+      crmPreview: "Heroes One CRM preview",
+      crmDesktop: "Heroes One CRM desktop interface",
+      crmMobile: "Heroes One CRM mobile interface",
+      crmAnalytics: "Heroes One analytics dashboard",
+      integrationList: "Applications connected to Heroes One",
       logo: "Logo",
       agentPortrait: "Portrait of",
       fiveStars: "5 stars",
@@ -478,13 +478,13 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     integrations: {
       kicker: "CONNECTED APPS",
-      title: "Your tools connected to Saleshub.business CRM.",
+      title: "Your tools connected to Heroes One CRM.",
       text: "Telephony, email, SMS, automation, and mapping sync in one workspace so every exchange stays in the right place.",
     },
     partners: {
       kicker: "PARTNER PROGRAM",
-      title: "Train your teams to become certified Saleshub integrators.",
-      text: "Three qualification levels to learn how to connect Saleshub to customer tools, structure data, and deliver reliable integrations with a professional standard.",
+      title: "Train your teams to become certified Heroes One integrators.",
+      text: "Three qualification levels to learn how to connect Heroes One to customer tools, structure data, and deliver reliable integrations with a professional standard.",
       stats: [
         { value: "3", label: "trainings" },
         { value: "AI", label: "CRM & agents" },
@@ -496,14 +496,14 @@ export const translations: Record<LanguageCode, Translation> = {
           level: "Level 1",
           title: "Certified integrator",
           duration: "CRM foundations",
-          text: "Configure a Saleshub workspace, connect essential channels, and deliver a clean first integration for a sales team.",
+          text: "Configure a Heroes One workspace, connect essential channels, and deliver a clean first integration for a sales team.",
           points: ["CRM setup", "Email, calls, and SMS", "Import and data quality"],
         },
         {
           level: "Level 2",
           title: "Integration architect",
           duration: "Advanced automation",
-          text: "Build multi-tool scenarios, make data flows reliable, and adapt Saleshub to the customer’s business processes.",
+          text: "Build multi-tool scenarios, make data flows reliable, and adapt Heroes One to the customer’s business processes.",
           points: [
             "Zapier / API workflows",
             "Application synchronization",
@@ -522,7 +522,7 @@ export const translations: Record<LanguageCode, Translation> = {
     collaboration: {
       kicker: "BUILT FOR REAL TEAMS",
       title: "More than a CRM, a growth partner.",
-      text: "Saleshub.business brings conversations, priorities, and next actions into one workspace. Everyone knows who to call back, why, and with what context, without spending the day filling out records.",
+      text: "Heroes One brings conversations, priorities, and next actions into one workspace. Everyone knows who to call back, why, and with what context, without spending the day filling out records.",
       blocks: [
         {
           title: "AI that assists",
@@ -558,9 +558,9 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     compare: {
       kicker: "MARKET COMPARISON",
-      title: "Why Saleshub.business changes the game",
+      title: "Why Heroes One changes the game",
       text: "A unified platform instead of a stack of tools and extensions.",
-      headers: ["Feature", "Saleshub", "Salesforce", "HubSpot", "Pipedrive"],
+      headers: ["Feature", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
       rows: [
         ["Complete integrated CRM", "✓", "✓", "✓", "✓"],
         ["8 autonomous AI agents", "✓", "Partial", "Partial", "Partial"],
@@ -574,7 +574,7 @@ export const translations: Record<LanguageCode, Translation> = {
     security: {
       kicker: "SECURITY & COMPLIANCE",
       title: "Security designed for sensitive commercial data.",
-      text: "Saleshub.business centralizes your conversations, prospects, and customer history with access controls, traceability, and an architecture designed to support enterprise standards.",
+      text: "Heroes One centralizes your conversations, prospects, and customer history with access controls, traceability, and an architecture designed to support enterprise standards.",
       badges: ["GDPR", "SOC 2 ready", "AES-256", "ISO 27001 ready", "SSO", "Audit logs"],
       controls: [
         {
@@ -659,7 +659,7 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     cta: {
       title: "Your 8 AI agents are waiting for you.",
-      text: "Let’s spend 30 minutes adapting Saleshub.business to your business.",
+      text: "Let’s spend 30 minutes adapting Heroes One to your business.",
       button: "Book a meeting",
     },
     footer: {
@@ -709,7 +709,7 @@ export const translations: Record<LanguageCode, Translation> = {
           ],
         },
       ],
-      copyright: "© 2026 Saleshub.business · All rights reserved",
+      copyright: "© 2026 Heroes One · All rights reserved",
       legalLinks: ["Privacy", "Cookies", "Service status"],
     },
     contact: {
@@ -725,9 +725,9 @@ export const translations: Record<LanguageCode, Translation> = {
   zh: {
     label: "中文",
     seo: {
-      title: "Saleshub.business | 一体化 AI CRM",
+      title: "Heroes One | 一体化 AI CRM",
       description:
-        "使用 Saleshub.business 的 8 位 AI 助手全天候自动完成获客、资格判断、报价和收款。",
+        "使用 Heroes One 的 8 位 AI 助手全天候自动完成获客、资格判断、报价和收款。",
       ogDescription: "8 位 AI 助手自动化您的销售周期，从首次联系到付款。",
     },
     nav: {
@@ -738,16 +738,16 @@ export const translations: Record<LanguageCode, Translation> = {
       pricing: "价格",
     },
     a11y: {
-      home: "Saleshub.business - 首页",
+      home: "Heroes One - 首页",
       primaryNavigation: "主导航",
       chooseLanguage: "选择语言",
       openMenu: "打开菜单",
       close: "关闭",
-      crmPreview: "Saleshub.business CRM 预览",
-      crmDesktop: "Saleshub.business CRM 桌面界面",
-      crmMobile: "Saleshub.business CRM 移动界面",
-      crmAnalytics: "Saleshub.business 分析仪表板",
-      integrationList: "连接到 Saleshub.business 的应用",
+      crmPreview: "Heroes One CRM 预览",
+      crmDesktop: "Heroes One CRM 桌面界面",
+      crmMobile: "Heroes One CRM 移动界面",
+      crmAnalytics: "Heroes One 分析仪表板",
+      integrationList: "连接到 Heroes One 的应用",
       logo: "标志",
       agentPortrait: "头像",
       fiveStars: "5 星",
@@ -824,13 +824,13 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     integrations: {
       kicker: "互联应用",
-      title: "您的工具连接到 Saleshub.business CRM。",
+      title: "您的工具连接到 Heroes One CRM。",
       text: "电话、邮件、短信、自动化和地图在同一空间同步，让每次交流都保存在正确位置。",
     },
     partners: {
       kicker: "合作伙伴计划",
-      title: "培训团队，成为认证 Saleshub 集成商。",
-      text: "三个资格等级，帮助您学习把 Saleshub 连接到客户工具、组织数据，并以专业标准交付可靠集成。",
+      title: "培训团队，成为认证 Heroes One 集成商。",
+      text: "三个资格等级，帮助您学习把 Heroes One 连接到客户工具、组织数据，并以专业标准交付可靠集成。",
       stats: [
         { value: "3", label: "培训" },
         { value: "AI", label: "CRM 与助手" },
@@ -842,14 +842,14 @@ export const translations: Record<LanguageCode, Translation> = {
           level: "第 1 级",
           title: "认证集成商",
           duration: "CRM 基础",
-          text: "配置 Saleshub 工作区，连接核心渠道，并为销售团队交付一次干净的初始集成。",
+          text: "配置 Heroes One 工作区，连接核心渠道，并为销售团队交付一次干净的初始集成。",
           points: ["CRM 设置", "邮件、通话和短信", "导入与数据质量"],
         },
         {
           level: "第 2 级",
           title: "集成架构师",
           duration: "高级自动化",
-          text: "构建多工具场景，保证数据流可靠，并让 Saleshub 适配客户业务流程。",
+          text: "构建多工具场景，保证数据流可靠，并让 Heroes One 适配客户业务流程。",
           points: ["Zapier / API 工作流", "应用同步", "权限与安全"],
         },
         {
@@ -864,7 +864,7 @@ export const translations: Record<LanguageCode, Translation> = {
     collaboration: {
       kicker: "为真实团队打造",
       title: "不只是 CRM，更是增长伙伴。",
-      text: "Saleshub.business 将沟通、优先级和下一步行动集中在同一空间。每个人都知道该回访谁、为什么回访以及需要哪些上下文，而不必整天填写记录。",
+      text: "Heroes One 将沟通、优先级和下一步行动集中在同一空间。每个人都知道该回访谁、为什么回访以及需要哪些上下文，而不必整天填写记录。",
       blocks: [
         {
           title: "辅助型 AI",
@@ -900,9 +900,9 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     compare: {
       kicker: "市场对比",
-      title: "Saleshub.business 为什么改变规则",
+      title: "Heroes One 为什么改变规则",
       text: "一个统一平台，替代工具和扩展的拼装。",
-      headers: ["功能", "Saleshub", "Salesforce", "HubSpot", "Pipedrive"],
+      headers: ["功能", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
       rows: [
         ["完整集成 CRM", "✓", "✓", "✓", "✓"],
         ["8 位自主 AI 助手", "✓", "部分", "部分", "部分"],
@@ -916,7 +916,7 @@ export const translations: Record<LanguageCode, Translation> = {
     security: {
       kicker: "安全与合规",
       title: "为敏感商业数据设计的安全能力。",
-      text: "Saleshub.business 通过访问控制、可追溯性和面向企业标准的架构，集中管理沟通、潜在客户和客户历史。",
+      text: "Heroes One 通过访问控制、可追溯性和面向企业标准的架构，集中管理沟通、潜在客户和客户历史。",
       badges: ["GDPR / RGPD", "SOC 2 就绪", "AES-256", "ISO 27001 就绪", "SSO", "审计日志"],
       controls: [
         {
@@ -989,7 +989,7 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     cta: {
       title: "您的 8 位 AI 助手正在等待。",
-      text: "用 30 分钟让 Saleshub.business 适配您的业务。",
+      text: "用 30 分钟让 Heroes One 适配您的业务。",
       button: "预约会议",
     },
     footer: {
@@ -1034,7 +1034,7 @@ export const translations: Record<LanguageCode, Translation> = {
           ],
         },
       ],
-      copyright: "© 2026 Saleshub.business · 保留所有权利",
+      copyright: "© 2026 Heroes One · 保留所有权利",
       legalLinks: ["隐私", "Cookie", "服务状态"],
     },
     contact: {
@@ -1050,9 +1050,9 @@ export const translations: Record<LanguageCode, Translation> = {
   hi: {
     label: "हिन्दी",
     seo: {
-      title: "Saleshub.business | ऑल-इन-वन AI CRM",
+      title: "Heroes One | ऑल-इन-वन AI CRM",
       description:
-        "Saleshub.business के 8 AI एजेंटों के साथ prospecting, qualification, quotes और collections को 24/7 ऑटोमेट करें।",
+        "Heroes One के 8 AI एजेंटों के साथ prospecting, qualification, quotes और collections को 24/7 ऑटोमेट करें।",
       ogDescription: "पहले संपर्क से भुगतान तक, आपके sales cycle को ऑटोमेट करने वाले 8 AI एजेंट।",
     },
     nav: {
@@ -1063,16 +1063,16 @@ export const translations: Record<LanguageCode, Translation> = {
       pricing: "मूल्य",
     },
     a11y: {
-      home: "Saleshub.business - होम",
+      home: "Heroes One - होम",
       primaryNavigation: "मुख्य नेविगेशन",
       chooseLanguage: "भाषा चुनें",
       openMenu: "मेनू खोलें",
       close: "बंद करें",
-      crmPreview: "Saleshub.business CRM प्रीव्यू",
-      crmDesktop: "Saleshub.business CRM desktop interface",
-      crmMobile: "Saleshub.business CRM mobile interface",
-      crmAnalytics: "Saleshub.business analytics dashboard",
-      integrationList: "Saleshub.business से जुड़े ऐप्स",
+      crmPreview: "Heroes One CRM प्रीव्यू",
+      crmDesktop: "Heroes One CRM desktop interface",
+      crmMobile: "Heroes One CRM mobile interface",
+      crmAnalytics: "Heroes One analytics dashboard",
+      integrationList: "Heroes One से जुड़े ऐप्स",
       logo: "लोगो",
       agentPortrait: "पोर्ट्रेट",
       fiveStars: "5 सितारे",
@@ -1157,13 +1157,13 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     integrations: {
       kicker: "कनेक्टेड ऐप्स",
-      title: "आपके tools Saleshub.business CRM से जुड़े।",
+      title: "आपके tools Heroes One CRM से जुड़े।",
       text: "Telephony, email, SMS, automation और mapping एक workspace में sync होते हैं ताकि हर exchange सही जगह रहे।",
     },
     partners: {
       kicker: "PARTNER PROGRAM",
-      title: "अपनी teams को certified Saleshub integrator बनने के लिए train करें।",
-      text: "तीन qualification levels जिनसे आप Saleshub को customer tools से connect करना, data structure करना और professional standard के साथ reliable integrations deliver करना सीखते हैं।",
+      title: "अपनी teams को certified Heroes One integrator बनने के लिए train करें।",
+      text: "तीन qualification levels जिनसे आप Heroes One को customer tools से connect करना, data structure करना और professional standard के साथ reliable integrations deliver करना सीखते हैं।",
       stats: [
         { value: "3", label: "trainings" },
         { value: "AI", label: "CRM & agents" },
@@ -1175,14 +1175,14 @@ export const translations: Record<LanguageCode, Translation> = {
           level: "Level 1",
           title: "Certified integrator",
           duration: "CRM foundations",
-          text: "Saleshub workspace configure करें, essential channels connect करें और sales team के लिए clean first integration deliver करें।",
+          text: "Heroes One workspace configure करें, essential channels connect करें और sales team के लिए clean first integration deliver करें।",
           points: ["CRM setup", "Emails, calls and SMS", "Import and data quality"],
         },
         {
           level: "Level 2",
           title: "Integration architect",
           duration: "Advanced automation",
-          text: "Multi-tool scenarios बनाएं, data flows को reliable करें और Saleshub को customer business processes के अनुसार adapt करें।",
+          text: "Multi-tool scenarios बनाएं, data flows को reliable करें और Heroes One को customer business processes के अनुसार adapt करें।",
           points: [
             "Zapier / API workflows",
             "Application synchronization",
@@ -1201,7 +1201,7 @@ export const translations: Record<LanguageCode, Translation> = {
     collaboration: {
       kicker: "REAL TEAMS के लिए बना",
       title: "CRM से बढ़कर, growth partner।",
-      text: "Saleshub.business conversations, priorities और next actions को एक workspace में लाता है। हर कोई जानता है किसे call back करना है, क्यों और किस context के साथ, बिना पूरा दिन records भरने में लगाए।",
+      text: "Heroes One conversations, priorities और next actions को एक workspace में लाता है। हर कोई जानता है किसे call back करना है, क्यों और किस context के साथ, बिना पूरा दिन records भरने में लगाए।",
       blocks: [
         {
           title: "AI जो assist करती है",
@@ -1237,9 +1237,9 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     compare: {
       kicker: "MARKET COMPARISON",
-      title: "Saleshub.business कैसे खेल बदलता है",
+      title: "Heroes One कैसे खेल बदलता है",
       text: "Tools और extensions के stack की जगह एक unified platform।",
-      headers: ["Feature", "Saleshub", "Salesforce", "HubSpot", "Pipedrive"],
+      headers: ["Feature", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
       rows: [
         ["Complete integrated CRM", "✓", "✓", "✓", "✓"],
         ["8 autonomous AI agents", "✓", "Partial", "Partial", "Partial"],
@@ -1253,7 +1253,7 @@ export const translations: Record<LanguageCode, Translation> = {
     security: {
       kicker: "SECURITY & COMPLIANCE",
       title: "Sensitive commercial data के लिए designed security।",
-      text: "Saleshub.business आपके exchanges, prospects और customer histories को access controls, traceability और enterprise standards support करने वाली architecture के साथ centralize करता है।",
+      text: "Heroes One आपके exchanges, prospects और customer histories को access controls, traceability और enterprise standards support करने वाली architecture के साथ centralize करता है।",
       badges: ["GDPR / RGPD", "SOC 2 ready", "AES-256", "ISO 27001 ready", "SSO", "Audit logs"],
       controls: [
         {
@@ -1338,7 +1338,7 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     cta: {
       title: "आपके 8 AI agents आपका इंतज़ार कर रहे हैं।",
-      text: "Saleshub.business को आपके business के अनुसार adapt करने के लिए 30 मिनट बात करें।",
+      text: "Heroes One को आपके business के अनुसार adapt करने के लिए 30 मिनट बात करें।",
       button: "Meeting book करें",
     },
     footer: {
@@ -1388,7 +1388,7 @@ export const translations: Record<LanguageCode, Translation> = {
           ],
         },
       ],
-      copyright: "© 2026 Saleshub.business · All rights reserved",
+      copyright: "© 2026 Heroes One · All rights reserved",
       legalLinks: ["Privacy", "Cookies", "Service status"],
     },
     contact: {
@@ -1404,9 +1404,9 @@ export const translations: Record<LanguageCode, Translation> = {
   es: {
     label: "Español",
     seo: {
-      title: "Saleshub.business | CRM con IA todo en uno",
+      title: "Heroes One | CRM con IA todo en uno",
       description:
-        "Automatiza prospección, calificación, presupuestos y cobros con 8 agentes de IA Saleshub.business disponibles 24/7.",
+        "Automatiza prospección, calificación, presupuestos y cobros con 8 agentes de IA Heroes One disponibles 24/7.",
       ogDescription:
         "8 agentes de IA para automatizar tu ciclo de ventas, del primer contacto al pago.",
     },
@@ -1418,16 +1418,16 @@ export const translations: Record<LanguageCode, Translation> = {
       pricing: "Precios",
     },
     a11y: {
-      home: "Saleshub.business - inicio",
+      home: "Heroes One - inicio",
       primaryNavigation: "Navegación principal",
       chooseLanguage: "Elegir idioma",
       openMenu: "Abrir menú",
       close: "Cerrar",
-      crmPreview: "Vista previa del CRM Saleshub.business",
-      crmDesktop: "Interfaz de escritorio del CRM Saleshub.business",
-      crmMobile: "Interfaz móvil del CRM Saleshub.business",
-      crmAnalytics: "Panel analítico de Saleshub.business",
-      integrationList: "Aplicaciones conectadas a Saleshub.business",
+      crmPreview: "Vista previa del CRM Heroes One",
+      crmDesktop: "Interfaz de escritorio del CRM Heroes One",
+      crmMobile: "Interfaz móvil del CRM Heroes One",
+      crmAnalytics: "Panel analítico de Heroes One",
+      integrationList: "Aplicaciones conectadas a Heroes One",
       logo: "Logo",
       agentPortrait: "Retrato de",
       fiveStars: "5 estrellas",
@@ -1512,13 +1512,13 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     integrations: {
       kicker: "APLICACIONES INTERCONECTADAS",
-      title: "Tus herramientas conectadas al CRM Saleshub.business.",
+      title: "Tus herramientas conectadas al CRM Heroes One.",
       text: "Telefonía, email, SMS, automatización y mapas se sincronizan en un solo espacio para mantener cada intercambio en el lugar correcto.",
     },
     partners: {
       kicker: "PROGRAMA DE SOCIOS",
-      title: "Forma a tus equipos para convertirse en integradores Saleshub certificados.",
-      text: "Tres niveles de cualificación para aprender a conectar Saleshub con las herramientas del cliente, estructurar datos y entregar integraciones fiables con estándar profesional.",
+      title: "Forma a tus equipos para convertirse en integradores Heroes One certificados.",
+      text: "Tres niveles de cualificación para aprender a conectar Heroes One con las herramientas del cliente, estructurar datos y entregar integraciones fiables con estándar profesional.",
       stats: [
         { value: "3", label: "formaciones" },
         { value: "IA", label: "CRM y agentes" },
@@ -1530,14 +1530,14 @@ export const translations: Record<LanguageCode, Translation> = {
           level: "Nivel 1",
           title: "Integrador certificado",
           duration: "Fundamentos CRM",
-          text: "Configurar un espacio Saleshub, conectar canales esenciales y entregar una primera integración limpia para un equipo comercial.",
+          text: "Configurar un espacio Heroes One, conectar canales esenciales y entregar una primera integración limpia para un equipo comercial.",
           points: ["Configuración CRM", "Emails, llamadas y SMS", "Importación y calidad de datos"],
         },
         {
           level: "Nivel 2",
           title: "Arquitecto de integración",
           duration: "Automatización avanzada",
-          text: "Construir escenarios multi-herramienta, asegurar flujos de datos fiables y adaptar Saleshub a los procesos del cliente.",
+          text: "Construir escenarios multi-herramienta, asegurar flujos de datos fiables y adaptar Heroes One a los procesos del cliente.",
           points: ["Workflows Zapier / API", "Sincronización aplicativa", "Permisos y seguridad"],
         },
         {
@@ -1556,7 +1556,7 @@ export const translations: Record<LanguageCode, Translation> = {
     collaboration: {
       kicker: "DISEÑADO PARA EQUIPOS REALES",
       title: "Más que un CRM, un socio de crecimiento.",
-      text: "Saleshub.business reúne conversaciones, prioridades y próximas acciones en un mismo espacio. Cada persona sabe a quién llamar, por qué y con qué contexto, sin pasar el día completando fichas.",
+      text: "Heroes One reúne conversaciones, prioridades y próximas acciones en un mismo espacio. Cada persona sabe a quién llamar, por qué y con qué contexto, sin pasar el día completando fichas.",
       blocks: [
         {
           title: "Una IA que asiste",
@@ -1592,9 +1592,9 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     compare: {
       kicker: "COMPARATIVA DE MERCADO",
-      title: "Por qué Saleshub.business cambia las reglas",
+      title: "Por qué Heroes One cambia las reglas",
       text: "Una plataforma unificada en lugar de un conjunto de herramientas y extensiones.",
-      headers: ["Funcionalidad", "Saleshub", "Salesforce", "HubSpot", "Pipedrive"],
+      headers: ["Funcionalidad", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
       rows: [
         ["CRM completo integrado", "✓", "✓", "✓", "✓"],
         ["8 agentes IA autónomos", "✓", "Parcial", "Parcial", "Parcial"],
@@ -1608,7 +1608,7 @@ export const translations: Record<LanguageCode, Translation> = {
     security: {
       kicker: "SEGURIDAD Y CUMPLIMIENTO",
       title: "Seguridad pensada para datos comerciales sensibles.",
-      text: "Saleshub.business centraliza intercambios, prospectos e historiales de clientes con controles de acceso, trazabilidad y una arquitectura diseñada para acompañar estándares empresariales.",
+      text: "Heroes One centraliza intercambios, prospectos e historiales de clientes con controles de acceso, trazabilidad y una arquitectura diseñada para acompañar estándares empresariales.",
       badges: [
         "GDPR / RGPD",
         "SOC 2 ready",
@@ -1705,7 +1705,7 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     cta: {
       title: "Tus 8 agentes IA te están esperando.",
-      text: "Hablemos 30 minutos para adaptar Saleshub.business a tu negocio.",
+      text: "Hablemos 30 minutos para adaptar Heroes One a tu negocio.",
       button: "Agendar reunión",
     },
     footer: {
@@ -1755,7 +1755,7 @@ export const translations: Record<LanguageCode, Translation> = {
           ],
         },
       ],
-      copyright: "© 2026 Saleshub.business · Todos los derechos reservados",
+      copyright: "© 2026 Heroes One · Todos los derechos reservados",
       legalLinks: ["Privacidad", "Cookies", "Estado del servicio"],
     },
     contact: {
@@ -1771,9 +1771,9 @@ export const translations: Record<LanguageCode, Translation> = {
   ar: {
     label: "العربية",
     seo: {
-      title: "Saleshub.business | نظام CRM شامل بالذكاء الاصطناعي",
+      title: "Heroes One | نظام CRM شامل بالذكاء الاصطناعي",
       description:
-        "أتمت التنقيب والتأهيل وعروض الأسعار والتحصيل مع 8 وكلاء ذكاء اصطناعي من Saleshub.business يعملون على مدار الساعة.",
+        "أتمت التنقيب والتأهيل وعروض الأسعار والتحصيل مع 8 وكلاء ذكاء اصطناعي من Heroes One يعملون على مدار الساعة.",
       ogDescription: "8 وكلاء ذكاء اصطناعي لأتمتة دورة البيع من أول تواصل حتى الدفع.",
     },
     nav: {
@@ -1784,16 +1784,16 @@ export const translations: Record<LanguageCode, Translation> = {
       pricing: "الأسعار",
     },
     a11y: {
-      home: "Saleshub.business - الرئيسية",
+      home: "Heroes One - الرئيسية",
       primaryNavigation: "التنقل الرئيسي",
       chooseLanguage: "اختر اللغة",
       openMenu: "فتح القائمة",
       close: "إغلاق",
-      crmPreview: "معاينة CRM Saleshub.business",
-      crmDesktop: "واجهة سطح المكتب لـ CRM Saleshub.business",
-      crmMobile: "واجهة الهاتف لـ CRM Saleshub.business",
-      crmAnalytics: "لوحة التحليلات في Saleshub.business",
-      integrationList: "التطبيقات المتصلة بـ Saleshub.business",
+      crmPreview: "معاينة CRM Heroes One",
+      crmDesktop: "واجهة سطح المكتب لـ CRM Heroes One",
+      crmMobile: "واجهة الهاتف لـ CRM Heroes One",
+      crmAnalytics: "لوحة التحليلات في Heroes One",
+      integrationList: "التطبيقات المتصلة بـ Heroes One",
       logo: "شعار",
       agentPortrait: "صورة",
       fiveStars: "5 نجوم",
@@ -1872,13 +1872,13 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     integrations: {
       kicker: "تطبيقات مترابطة",
-      title: "أدواتك متصلة بـ CRM Saleshub.business.",
+      title: "أدواتك متصلة بـ CRM Heroes One.",
       text: "الهاتف والبريد والرسائل النصية والأتمتة والخرائط تتزامن في مساحة واحدة حتى يبقى كل تواصل في مكانه الصحيح.",
     },
     partners: {
       kicker: "برنامج الشركاء",
-      title: "درّب فرقك لتصبح جهات تكامل Saleshub معتمدة.",
-      text: "ثلاثة مستويات تأهيل لتعلم ربط Saleshub بأدوات العملاء، تنظيم البيانات، وتسليم تكاملات موثوقة بمعيار احترافي.",
+      title: "درّب فرقك لتصبح جهات تكامل Heroes One معتمدة.",
+      text: "ثلاثة مستويات تأهيل لتعلم ربط Heroes One بأدوات العملاء، تنظيم البيانات، وتسليم تكاملات موثوقة بمعيار احترافي.",
       stats: [
         { value: "3", label: "تدريبات" },
         { value: "AI", label: "CRM ووكلاء" },
@@ -1890,14 +1890,14 @@ export const translations: Record<LanguageCode, Translation> = {
           level: "المستوى 1",
           title: "جهة تكامل معتمدة",
           duration: "أساسيات CRM",
-          text: "إعداد مساحة Saleshub، ربط القنوات الأساسية، وتسليم أول تكامل نظيف لفريق مبيعات.",
+          text: "إعداد مساحة Heroes One، ربط القنوات الأساسية، وتسليم أول تكامل نظيف لفريق مبيعات.",
           points: ["إعداد CRM", "البريد والمكالمات والرسائل", "الاستيراد وجودة البيانات"],
         },
         {
           level: "المستوى 2",
           title: "مهندس تكامل",
           duration: "أتمتة متقدمة",
-          text: "بناء سيناريوهات متعددة الأدوات، ضمان موثوقية تدفق البيانات، وتكييف Saleshub مع عمليات العميل.",
+          text: "بناء سيناريوهات متعددة الأدوات، ضمان موثوقية تدفق البيانات، وتكييف Heroes One مع عمليات العميل.",
           points: ["تدفقات Zapier / API", "مزامنة التطبيقات", "الصلاحيات والأمان"],
         },
         {
@@ -1912,7 +1912,7 @@ export const translations: Record<LanguageCode, Translation> = {
     collaboration: {
       kicker: "مصمم للفرق الحقيقية",
       title: "أكثر من CRM، شريك نمو.",
-      text: "يجمع Saleshub.business المحادثات والأولويات والخطوات التالية في مساحة واحدة. يعرف كل شخص من يتصل به ولماذا وبأي سياق، دون قضاء اليوم في تعبئة السجلات.",
+      text: "يجمع Heroes One المحادثات والأولويات والخطوات التالية في مساحة واحدة. يعرف كل شخص من يتصل به ولماذا وبأي سياق، دون قضاء اليوم في تعبئة السجلات.",
       blocks: [
         {
           title: "ذكاء اصطناعي يساعد",
@@ -1948,9 +1948,9 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     compare: {
       kicker: "مقارنة السوق",
-      title: "لماذا يغير Saleshub.business قواعد اللعبة",
+      title: "لماذا يغير Heroes One قواعد اللعبة",
       text: "منصة موحدة بدلاً من تجميع أدوات وإضافات.",
-      headers: ["الميزة", "Saleshub", "Salesforce", "HubSpot", "Pipedrive"],
+      headers: ["الميزة", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
       rows: [
         ["CRM كامل ومتكامل", "✓", "✓", "✓", "✓"],
         ["8 وكلاء AI مستقلون", "✓", "جزئي", "جزئي", "جزئي"],
@@ -1964,7 +1964,7 @@ export const translations: Record<LanguageCode, Translation> = {
     security: {
       kicker: "الأمان والامتثال",
       title: "أمان مصمم للبيانات التجارية الحساسة.",
-      text: "يُركز Saleshub.business محادثاتك وعملاءك المحتملين وسجلات العملاء مع ضوابط وصول وقابلية تتبع وبنية مصممة لدعم معايير المؤسسات.",
+      text: "يُركز Heroes One محادثاتك وعملاءك المحتملين وسجلات العملاء مع ضوابط وصول وقابلية تتبع وبنية مصممة لدعم معايير المؤسسات.",
       badges: ["GDPR / RGPD", "SOC 2 جاهز", "AES-256", "ISO 27001 جاهز", "SSO", "سجلات تدقيق"],
       controls: [
         {
@@ -2039,7 +2039,7 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     cta: {
       title: "وكلاؤك الثمانية ينتظرونك.",
-      text: "لنتحدث 30 دقيقة لتكييف Saleshub.business مع عملك.",
+      text: "لنتحدث 30 دقيقة لتكييف Heroes One مع عملك.",
       button: "احجز موعداً",
     },
     footer: {
@@ -2085,7 +2085,7 @@ export const translations: Record<LanguageCode, Translation> = {
           ],
         },
       ],
-      copyright: "© 2026 Saleshub.business · جميع الحقوق محفوظة",
+      copyright: "© 2026 Heroes One · جميع الحقوق محفوظة",
       legalLinks: ["الخصوصية", "ملفات تعريف الارتباط", "حالة الخدمة"],
     },
     contact: {
@@ -2101,9 +2101,9 @@ export const translations: Record<LanguageCode, Translation> = {
   pt: {
     label: "Português",
     seo: {
-      title: "Saleshub.business | CRM com IA tudo em um",
+      title: "Heroes One | CRM com IA tudo em um",
       description:
-        "Automatize prospecção, qualificação, propostas e cobranças com 8 agentes de IA Saleshub.business disponíveis 24/7.",
+        "Automatize prospecção, qualificação, propostas e cobranças com 8 agentes de IA Heroes One disponíveis 24/7.",
       ogDescription:
         "8 agentes de IA para automatizar seu ciclo de vendas, do primeiro contato ao pagamento.",
     },
@@ -2115,16 +2115,16 @@ export const translations: Record<LanguageCode, Translation> = {
       pricing: "Preços",
     },
     a11y: {
-      home: "Saleshub.business - início",
+      home: "Heroes One - início",
       primaryNavigation: "Navegação principal",
       chooseLanguage: "Escolher idioma",
       openMenu: "Abrir menu",
       close: "Fechar",
-      crmPreview: "Prévia do CRM Saleshub.business",
-      crmDesktop: "Interface desktop do CRM Saleshub.business",
-      crmMobile: "Interface mobile do CRM Saleshub.business",
-      crmAnalytics: "Painel analítico do Saleshub.business",
-      integrationList: "Aplicativos conectados ao Saleshub.business",
+      crmPreview: "Prévia do CRM Heroes One",
+      crmDesktop: "Interface desktop do CRM Heroes One",
+      crmMobile: "Interface mobile do CRM Heroes One",
+      crmAnalytics: "Painel analítico do Heroes One",
+      integrationList: "Aplicativos conectados ao Heroes One",
       logo: "Logo",
       agentPortrait: "Retrato de",
       fiveStars: "5 estrelas",
@@ -2209,13 +2209,13 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     integrations: {
       kicker: "APLICATIVOS INTERCONECTADOS",
-      title: "Suas ferramentas conectadas ao CRM Saleshub.business.",
+      title: "Suas ferramentas conectadas ao CRM Heroes One.",
       text: "Telefonia, email, SMS, automação e mapas sincronizam em um único espaço para manter cada troca no lugar certo.",
     },
     partners: {
       kicker: "PROGRAMA DE PARCEIROS",
-      title: "Treine suas equipes para se tornarem integradores Saleshub certificados.",
-      text: "Três níveis de qualificação para aprender a conectar o Saleshub às ferramentas do cliente, estruturar dados e entregar integrações confiáveis com padrão profissional.",
+      title: "Treine suas equipes para se tornarem integradores Heroes One certificados.",
+      text: "Três níveis de qualificação para aprender a conectar o Heroes One às ferramentas do cliente, estruturar dados e entregar integrações confiáveis com padrão profissional.",
       stats: [
         { value: "3", label: "treinamentos" },
         { value: "IA", label: "CRM e agentes" },
@@ -2227,7 +2227,7 @@ export const translations: Record<LanguageCode, Translation> = {
           level: "Nível 1",
           title: "Integrador certificado",
           duration: "Fundamentos de CRM",
-          text: "Configurar um espaço Saleshub, conectar canais essenciais e entregar uma primeira integração limpa para uma equipe comercial.",
+          text: "Configurar um espaço Heroes One, conectar canais essenciais e entregar uma primeira integração limpa para uma equipe comercial.",
           points: [
             "Configuração CRM",
             "Emails, chamadas e SMS",
@@ -2238,7 +2238,7 @@ export const translations: Record<LanguageCode, Translation> = {
           level: "Nível 2",
           title: "Arquiteto de integração",
           duration: "Automação avançada",
-          text: "Construir cenários multi-ferramenta, tornar fluxos de dados confiáveis e adaptar o Saleshub aos processos do cliente.",
+          text: "Construir cenários multi-ferramenta, tornar fluxos de dados confiáveis e adaptar o Heroes One aos processos do cliente.",
           points: ["Workflows Zapier / API", "Sincronização aplicativa", "Permissões e segurança"],
         },
         {
@@ -2257,7 +2257,7 @@ export const translations: Record<LanguageCode, Translation> = {
     collaboration: {
       kicker: "CRIADO PARA EQUIPES REAIS",
       title: "Mais que um CRM, um parceiro de crescimento.",
-      text: "Saleshub.business reúne conversas, prioridades e próximas ações em um único espaço. Todos sabem quem chamar, por quê e com qual contexto, sem passar o dia preenchendo fichas.",
+      text: "Heroes One reúne conversas, prioridades e próximas ações em um único espaço. Todos sabem quem chamar, por quê e com qual contexto, sem passar o dia preenchendo fichas.",
       blocks: [
         {
           title: "Uma IA que assiste",
@@ -2293,9 +2293,9 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     compare: {
       kicker: "COMPARAÇÃO DE MERCADO",
-      title: "Por que Saleshub.business muda o jogo",
+      title: "Por que Heroes One muda o jogo",
       text: "Uma plataforma unificada no lugar de um conjunto de ferramentas e extensões.",
-      headers: ["Funcionalidade", "Saleshub", "Salesforce", "HubSpot", "Pipedrive"],
+      headers: ["Funcionalidade", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
       rows: [
         ["CRM completo integrado", "✓", "✓", "✓", "✓"],
         ["8 agentes de IA autônomos", "✓", "Parcial", "Parcial", "Parcial"],
@@ -2309,7 +2309,7 @@ export const translations: Record<LanguageCode, Translation> = {
     security: {
       kicker: "SEGURANÇA E CONFORMIDADE",
       title: "Segurança pensada para dados comerciais sensíveis.",
-      text: "Saleshub.business centraliza conversas, prospects e históricos de clientes com controles de acesso, rastreabilidade e uma arquitetura criada para acompanhar padrões empresariais.",
+      text: "Heroes One centraliza conversas, prospects e históricos de clientes com controles de acesso, rastreabilidade e uma arquitetura criada para acompanhar padrões empresariais.",
       badges: [
         "GDPR / RGPD",
         "SOC 2 ready",
@@ -2406,7 +2406,7 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     cta: {
       title: "Seus 8 agentes de IA esperam por você.",
-      text: "Vamos conversar 30 minutos para adaptar Saleshub.business ao seu negócio.",
+      text: "Vamos conversar 30 minutos para adaptar Heroes One ao seu negócio.",
       button: "Marcar reunião",
     },
     footer: {
@@ -2456,7 +2456,7 @@ export const translations: Record<LanguageCode, Translation> = {
           ],
         },
       ],
-      copyright: "© 2026 Saleshub.business · Todos os direitos reservados",
+      copyright: "© 2026 Heroes One · Todos os direitos reservados",
       legalLinks: ["Privacidade", "Cookies", "Status do serviço"],
     },
     contact: {
@@ -2472,9 +2472,9 @@ export const translations: Record<LanguageCode, Translation> = {
   ru: {
     label: "Русский",
     seo: {
-      title: "Saleshub.business | CRM с ИИ все в одном",
+      title: "Heroes One | CRM с ИИ все в одном",
       description:
-        "Автоматизируйте поиск клиентов, квалификацию, предложения и взыскание с 8 ИИ-агентами Saleshub.business, доступными 24/7.",
+        "Автоматизируйте поиск клиентов, квалификацию, предложения и взыскание с 8 ИИ-агентами Heroes One, доступными 24/7.",
       ogDescription: "8 ИИ-агентов автоматизируют ваш цикл продаж от первого контакта до оплаты.",
     },
     nav: {
@@ -2485,16 +2485,16 @@ export const translations: Record<LanguageCode, Translation> = {
       pricing: "Тарифы",
     },
     a11y: {
-      home: "Saleshub.business - главная",
+      home: "Heroes One - главная",
       primaryNavigation: "Основная навигация",
       chooseLanguage: "Выбрать язык",
       openMenu: "Открыть меню",
       close: "Закрыть",
-      crmPreview: "Предпросмотр CRM Saleshub.business",
-      crmDesktop: "Десктопный интерфейс CRM Saleshub.business",
-      crmMobile: "Мобильный интерфейс CRM Saleshub.business",
-      crmAnalytics: "Аналитическая панель Saleshub.business",
-      integrationList: "Приложения, подключенные к Saleshub.business",
+      crmPreview: "Предпросмотр CRM Heroes One",
+      crmDesktop: "Десктопный интерфейс CRM Heroes One",
+      crmMobile: "Мобильный интерфейс CRM Heroes One",
+      crmAnalytics: "Аналитическая панель Heroes One",
+      integrationList: "Приложения, подключенные к Heroes One",
       logo: "Логотип",
       agentPortrait: "Портрет",
       fiveStars: "5 звезд",
@@ -2579,13 +2579,13 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     integrations: {
       kicker: "СВЯЗАННЫЕ ПРИЛОЖЕНИЯ",
-      title: "Ваши инструменты подключены к CRM Saleshub.business.",
+      title: "Ваши инструменты подключены к CRM Heroes One.",
       text: "Телефония, email, SMS, автоматизация и карты синхронизируются в одном пространстве, чтобы каждое взаимодействие было на месте.",
     },
     partners: {
       kicker: "ПАРТНЕРСКАЯ ПРОГРАММА",
-      title: "Обучите команды и станьте сертифицированным интегратором Saleshub.",
-      text: "Три уровня квалификации, чтобы научиться подключать Saleshub к инструментам клиентов, структурировать данные и поставлять надежные интеграции на профессиональном уровне.",
+      title: "Обучите команды и станьте сертифицированным интегратором Heroes One.",
+      text: "Три уровня квалификации, чтобы научиться подключать Heroes One к инструментам клиентов, структурировать данные и поставлять надежные интеграции на профессиональном уровне.",
       stats: [
         { value: "3", label: "обучения" },
         { value: "ИИ", label: "CRM и агенты" },
@@ -2597,14 +2597,14 @@ export const translations: Record<LanguageCode, Translation> = {
           level: "Уровень 1",
           title: "Сертифицированный интегратор",
           duration: "Основы CRM",
-          text: "Настроить пространство Saleshub, подключить ключевые каналы и выполнить первую чистую интеграцию для отдела продаж.",
+          text: "Настроить пространство Heroes One, подключить ключевые каналы и выполнить первую чистую интеграцию для отдела продаж.",
           points: ["Настройка CRM", "Email, звонки и SMS", "Импорт и качество данных"],
         },
         {
           level: "Уровень 2",
           title: "Архитектор интеграции",
           duration: "Продвинутая автоматизация",
-          text: "Создавать сценарии с несколькими инструментами, делать потоки данных надежными и адаптировать Saleshub к процессам клиента.",
+          text: "Создавать сценарии с несколькими инструментами, делать потоки данных надежными и адаптировать Heroes One к процессам клиента.",
           points: ["Workflows Zapier / API", "Синхронизация приложений", "Права и безопасность"],
         },
         {
@@ -2619,7 +2619,7 @@ export const translations: Record<LanguageCode, Translation> = {
     collaboration: {
       kicker: "СОЗДАНО ДЛЯ РЕАЛЬНЫХ КОМАНД",
       title: "Больше чем CRM, партнер роста.",
-      text: "Saleshub.business собирает разговоры, приоритеты и следующие действия в одном пространстве. Каждый знает, кому перезвонить, почему и с каким контекстом, не тратя день на заполнение карточек.",
+      text: "Heroes One собирает разговоры, приоритеты и следующие действия в одном пространстве. Каждый знает, кому перезвонить, почему и с каким контекстом, не тратя день на заполнение карточек.",
       blocks: [
         {
           title: "ИИ, который помогает",
@@ -2655,9 +2655,9 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     compare: {
       kicker: "СРАВНЕНИЕ РЫНКА",
-      title: "Почему Saleshub.business меняет правила",
+      title: "Почему Heroes One меняет правила",
       text: "Единая платформа вместо набора инструментов и расширений.",
-      headers: ["Функция", "Saleshub", "Salesforce", "HubSpot", "Pipedrive"],
+      headers: ["Функция", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
       rows: [
         ["Полная встроенная CRM", "✓", "✓", "✓", "✓"],
         ["8 автономных ИИ-агентов", "✓", "Частично", "Частично", "Частично"],
@@ -2671,7 +2671,7 @@ export const translations: Record<LanguageCode, Translation> = {
     security: {
       kicker: "БЕЗОПАСНОСТЬ И СООТВЕТСТВИЕ",
       title: "Безопасность для чувствительных коммерческих данных.",
-      text: "Saleshub.business централизует переписку, лиды и историю клиентов с контролем доступа, трассируемостью и архитектурой для корпоративных стандартов.",
+      text: "Heroes One централизует переписку, лиды и историю клиентов с контролем доступа, трассируемостью и архитектурой для корпоративных стандартов.",
       badges: ["GDPR / RGPD", "SOC 2 ready", "AES-256", "ISO 27001 ready", "SSO", "Журналы аудита"],
       controls: [
         {
@@ -2761,7 +2761,7 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     cta: {
       title: "Ваши 8 ИИ-агентов ждут вас.",
-      text: "Обсудим за 30 минут, как адаптировать Saleshub.business к вашему бизнесу.",
+      text: "Обсудим за 30 минут, как адаптировать Heroes One к вашему бизнесу.",
       button: "Назначить встречу",
     },
     footer: {
@@ -2811,7 +2811,7 @@ export const translations: Record<LanguageCode, Translation> = {
           ],
         },
       ],
-      copyright: "© 2026 Saleshub.business · Все права защищены",
+      copyright: "© 2026 Heroes One · Все права защищены",
       legalLinks: ["Конфиденциальность", "Cookies", "Статус сервиса"],
     },
     contact: {
@@ -2827,9 +2827,9 @@ export const translations: Record<LanguageCode, Translation> = {
   ja: {
     label: "日本語",
     seo: {
-      title: "Saleshub.business | オールインワンAI CRM",
+      title: "Heroes One | オールインワンAI CRM",
       description:
-        "24時間365日稼働するSaleshub.businessの8人のAIエージェントで、見込み客開拓、選別、見積、回収を自動化します。",
+        "24時間365日稼働するHeroes Oneの8人のAIエージェントで、見込み客開拓、選別、見積、回収を自動化します。",
       ogDescription: "初回接触から支払いまで、販売サイクルを自動化する8人のAIエージェント。",
     },
     nav: {
@@ -2840,16 +2840,16 @@ export const translations: Record<LanguageCode, Translation> = {
       pricing: "料金",
     },
     a11y: {
-      home: "Saleshub.business - ホーム",
+      home: "Heroes One - ホーム",
       primaryNavigation: "メインナビゲーション",
       chooseLanguage: "言語を選択",
       openMenu: "メニューを開く",
       close: "閉じる",
-      crmPreview: "Saleshub.business CRMプレビュー",
-      crmDesktop: "Saleshub.business CRMデスクトップ画面",
-      crmMobile: "Saleshub.business CRMモバイル画面",
-      crmAnalytics: "Saleshub.business分析ダッシュボード",
-      integrationList: "Saleshub.businessに接続されたアプリ",
+      crmPreview: "Heroes One CRMプレビュー",
+      crmDesktop: "Heroes One CRMデスクトップ画面",
+      crmMobile: "Heroes One CRMモバイル画面",
+      crmAnalytics: "Heroes One分析ダッシュボード",
+      integrationList: "Heroes Oneに接続されたアプリ",
       logo: "ロゴ",
       agentPortrait: "ポートレート",
       fiveStars: "5つ星",
@@ -2930,13 +2930,13 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     integrations: {
       kicker: "連携アプリ",
-      title: "Saleshub.business CRMに接続されたツール。",
+      title: "Heroes One CRMに接続されたツール。",
       text: "電話、メール、SMS、自動化、地図が1つのワークスペースで同期し、すべてのやり取りを正しい場所に残します。",
     },
     partners: {
       kicker: "パートナープログラム",
-      title: "チームをSaleshub認定インテグレーターに育成。",
-      text: "Saleshubを顧客ツールに接続し、データを整理し、プロ品質の信頼できる連携を提供するための3段階の資格制度です。",
+      title: "チームをHeroes One認定インテグレーターに育成。",
+      text: "Heroes Oneを顧客ツールに接続し、データを整理し、プロ品質の信頼できる連携を提供するための3段階の資格制度です。",
       stats: [
         { value: "3", label: "トレーニング" },
         { value: "AI", label: "CRMとエージェント" },
@@ -2948,14 +2948,14 @@ export const translations: Record<LanguageCode, Translation> = {
           level: "レベル1",
           title: "認定インテグレーター",
           duration: "CRM基礎",
-          text: "Saleshubワークスペースを設定し、主要チャネルを接続して、営業チーム向けに最初の連携をきれいに納品します。",
+          text: "Heroes Oneワークスペースを設定し、主要チャネルを接続して、営業チーム向けに最初の連携をきれいに納品します。",
           points: ["CRM設定", "メール・通話・SMS", "インポートとデータ品質"],
         },
         {
           level: "レベル2",
           title: "連携アーキテクト",
           duration: "高度な自動化",
-          text: "複数ツールのシナリオを構築し、データフローを安定させ、Saleshubを顧客の業務プロセスに合わせます。",
+          text: "複数ツールのシナリオを構築し、データフローを安定させ、Heroes Oneを顧客の業務プロセスに合わせます。",
           points: ["Zapier / APIワークフロー", "アプリ同期", "権限とセキュリティ"],
         },
         {
@@ -2970,7 +2970,7 @@ export const translations: Record<LanguageCode, Translation> = {
     collaboration: {
       kicker: "実際のチームのために設計",
       title: "CRMを超えた成長パートナー。",
-      text: "Saleshub.businessは会話、優先事項、次のアクションを1つの場所に集約します。誰に、なぜ、どの文脈で連絡すべきかが分かり、記録入力に一日を費やす必要がありません。",
+      text: "Heroes Oneは会話、優先事項、次のアクションを1つの場所に集約します。誰に、なぜ、どの文脈で連絡すべきかが分かり、記録入力に一日を費やす必要がありません。",
       blocks: [
         {
           title: "支援するAI",
@@ -3006,9 +3006,9 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     compare: {
       kicker: "市場比較",
-      title: "Saleshub.businessが流れを変える理由",
+      title: "Heroes Oneが流れを変える理由",
       text: "ツールと拡張機能の寄せ集めではなく、統合されたプラットフォームです。",
-      headers: ["機能", "Saleshub", "Salesforce", "HubSpot", "Pipedrive"],
+      headers: ["機能", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
       rows: [
         ["完全統合CRM", "✓", "✓", "✓", "✓"],
         ["8人の自律AIエージェント", "✓", "一部", "一部", "一部"],
@@ -3022,7 +3022,7 @@ export const translations: Record<LanguageCode, Translation> = {
     security: {
       kicker: "セキュリティとコンプライアンス",
       title: "機密性の高い営業データのためのセキュリティ。",
-      text: "Saleshub.businessは、アクセス制御、追跡性、企業基準に対応する設計で、やり取り、見込み客、顧客履歴を一元化します。",
+      text: "Heroes Oneは、アクセス制御、追跡性、企業基準に対応する設計で、やり取り、見込み客、顧客履歴を一元化します。",
       badges: ["GDPR / RGPD", "SOC 2 ready", "AES-256", "ISO 27001 ready", "SSO", "監査ログ"],
       controls: [
         {
@@ -3106,7 +3106,7 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     cta: {
       title: "8人のAIエージェントがあなたを待っています。",
-      text: "30分でSaleshub.businessをあなたの業務に合わせましょう。",
+      text: "30分でHeroes Oneをあなたの業務に合わせましょう。",
       button: "面談を予約",
     },
     footer: {
@@ -3152,7 +3152,7 @@ export const translations: Record<LanguageCode, Translation> = {
           ],
         },
       ],
-      copyright: "© 2026 Saleshub.business · All rights reserved",
+      copyright: "© 2026 Heroes One · All rights reserved",
       legalLinks: ["プライバシー", "Cookie", "サービス状況"],
     },
     contact: {
@@ -3168,9 +3168,9 @@ export const translations: Record<LanguageCode, Translation> = {
   de: {
     label: "Deutsch",
     seo: {
-      title: "Saleshub.business | All-in-one KI-CRM",
+      title: "Heroes One | All-in-one KI-CRM",
       description:
-        "Automatisieren Sie Akquise, Qualifizierung, Angebote und Zahlungseinzug mit 8 Saleshub.business KI-Agenten, verfügbar rund um die Uhr.",
+        "Automatisieren Sie Akquise, Qualifizierung, Angebote und Zahlungseinzug mit 8 Heroes One KI-Agenten, verfügbar rund um die Uhr.",
       ogDescription:
         "8 KI-Agenten automatisieren Ihren Verkaufszyklus vom Erstkontakt bis zur Zahlung.",
     },
@@ -3182,16 +3182,16 @@ export const translations: Record<LanguageCode, Translation> = {
       pricing: "Preise",
     },
     a11y: {
-      home: "Saleshub.business - Startseite",
+      home: "Heroes One - Startseite",
       primaryNavigation: "Hauptnavigation",
       chooseLanguage: "Sprache wählen",
       openMenu: "Menü öffnen",
       close: "Schließen",
-      crmPreview: "Vorschau des Saleshub.business CRM",
-      crmDesktop: "Desktop-Oberfläche des Saleshub.business CRM",
-      crmMobile: "Mobile Oberfläche des Saleshub.business CRM",
-      crmAnalytics: "Analytics-Dashboard von Saleshub.business",
-      integrationList: "Mit Saleshub.business verbundene Anwendungen",
+      crmPreview: "Vorschau des Heroes One CRM",
+      crmDesktop: "Desktop-Oberfläche des Heroes One CRM",
+      crmMobile: "Mobile Oberfläche des Heroes One CRM",
+      crmAnalytics: "Analytics-Dashboard von Heroes One",
+      integrationList: "Mit Heroes One verbundene Anwendungen",
       logo: "Logo",
       agentPortrait: "Porträt von",
       fiveStars: "5 Sterne",
@@ -3276,13 +3276,13 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     integrations: {
       kicker: "VERNETZTE ANWENDUNGEN",
-      title: "Ihre Tools verbunden mit dem Saleshub.business CRM.",
+      title: "Ihre Tools verbunden mit dem Heroes One CRM.",
       text: "Telefonie, E-Mail, SMS, Automatisierung und Karten werden in einem Arbeitsbereich synchronisiert, damit jede Interaktion am richtigen Ort bleibt.",
     },
     partners: {
       kicker: "PARTNERPROGRAMM",
-      title: "Bilden Sie Ihre Teams zu zertifizierten Saleshub-Integratoren aus.",
-      text: "Drei Qualifikationsstufen, um Saleshub mit Kundentools zu verbinden, Daten zu strukturieren und zuverlässige Integrationen auf professionellem Niveau zu liefern.",
+      title: "Bilden Sie Ihre Teams zu zertifizierten Heroes One Integratoren aus.",
+      text: "Drei Qualifikationsstufen, um Heroes One mit Kundentools zu verbinden, Daten zu strukturieren und zuverlässige Integrationen auf professionellem Niveau zu liefern.",
       stats: [
         { value: "3", label: "Schulungen" },
         { value: "KI", label: "CRM & Agenten" },
@@ -3294,14 +3294,14 @@ export const translations: Record<LanguageCode, Translation> = {
           level: "Stufe 1",
           title: "Zertifizierter Integrator",
           duration: "CRM-Grundlagen",
-          text: "Einen Saleshub-Arbeitsbereich einrichten, wesentliche Kanäle verbinden und eine saubere erste Integration für ein Vertriebsteam liefern.",
+          text: "Einen Heroes One Arbeitsbereich einrichten, wesentliche Kanäle verbinden und eine saubere erste Integration für ein Vertriebsteam liefern.",
           points: ["CRM-Einrichtung", "E-Mails, Anrufe und SMS", "Import und Datenqualität"],
         },
         {
           level: "Stufe 2",
           title: "Integrationsarchitekt",
           duration: "Fortgeschrittene Automatisierung",
-          text: "Multi-Tool-Szenarien erstellen, Datenflüsse absichern und Saleshub an Geschäftsprozesse des Kunden anpassen.",
+          text: "Multi-Tool-Szenarien erstellen, Datenflüsse absichern und Heroes One an Geschäftsprozesse des Kunden anpassen.",
           points: [
             "Zapier / API-Workflows",
             "Anwendungssynchronisierung",
@@ -3320,7 +3320,7 @@ export const translations: Record<LanguageCode, Translation> = {
     collaboration: {
       kicker: "FÜR ECHTE TEAMS ENTWICKELT",
       title: "Mehr als ein CRM, ein Wachstumspartner.",
-      text: "Saleshub.business bündelt Gespräche, Prioritäten und nächste Schritte an einem Ort. Jeder weiß, wen er zurückrufen muss, warum und mit welchem Kontext, ohne den Tag mit Datenerfassung zu verbringen.",
+      text: "Heroes One bündelt Gespräche, Prioritäten und nächste Schritte an einem Ort. Jeder weiß, wen er zurückrufen muss, warum und mit welchem Kontext, ohne den Tag mit Datenerfassung zu verbringen.",
       blocks: [
         {
           title: "KI, die unterstützt",
@@ -3356,9 +3356,9 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     compare: {
       kicker: "MARKTVERGLEICH",
-      title: "Warum Saleshub.business die Spielregeln verändert",
+      title: "Warum Heroes One die Spielregeln verändert",
       text: "Eine einheitliche Plattform statt einer Sammlung von Tools und Erweiterungen.",
-      headers: ["Funktion", "Saleshub", "Salesforce", "HubSpot", "Pipedrive"],
+      headers: ["Funktion", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
       rows: [
         ["Vollständig integriertes CRM", "✓", "✓", "✓", "✓"],
         ["8 autonome KI-Agenten", "✓", "Teilweise", "Teilweise", "Teilweise"],
@@ -3372,7 +3372,7 @@ export const translations: Record<LanguageCode, Translation> = {
     security: {
       kicker: "SICHERHEIT & COMPLIANCE",
       title: "Sicherheit für sensible Vertriebsdaten.",
-      text: "Saleshub.business zentralisiert Gespräche, Prospects und Kundenhistorien mit Zugriffskontrollen, Nachverfolgbarkeit und einer Architektur, die Unternehmensstandards unterstützt.",
+      text: "Heroes One zentralisiert Gespräche, Prospects und Kundenhistorien mit Zugriffskontrollen, Nachverfolgbarkeit und einer Architektur, die Unternehmensstandards unterstützt.",
       badges: ["GDPR / RGPD", "SOC 2 ready", "AES-256", "ISO 27001 ready", "SSO", "Audit-Logs"],
       controls: [
         {
@@ -3462,7 +3462,7 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     cta: {
       title: "Ihre 8 KI-Agenten warten auf Sie.",
-      text: "Lassen Sie uns 30 Minuten sprechen, um Saleshub.business an Ihr Geschäft anzupassen.",
+      text: "Lassen Sie uns 30 Minuten sprechen, um Heroes One an Ihr Geschäft anzupassen.",
       button: "Termin buchen",
     },
     footer: {
@@ -3512,7 +3512,7 @@ export const translations: Record<LanguageCode, Translation> = {
           ],
         },
       ],
-      copyright: "© 2026 Saleshub.business · Alle Rechte vorbehalten",
+      copyright: "© 2026 Heroes One · Alle Rechte vorbehalten",
       legalLinks: ["Datenschutz", "Cookies", "Service-Status"],
     },
     contact: {

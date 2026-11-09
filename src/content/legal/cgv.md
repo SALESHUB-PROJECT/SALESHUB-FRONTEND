@@ -4,22 +4,22 @@
 
 ## Article 1 — Objet et champ d'application
 
-Les présentes Conditions Générales de Vente (ci-après « CGV ») régissent la souscription et la fourniture des services de la plateforme Saleshub.business (ci-après « la Plateforme » ou « les Services ») par la société Saleshub, dont les coordonnées figurent dans les mentions légales (ci-après « Saleshub »), à tout client professionnel (ci-après « le Client »).
+Les présentes Conditions Générales de Vente (ci-après « CGV ») régissent la souscription et la fourniture des services de la plateforme Heroes One (ci-après « la Plateforme » ou « les Services ») par la société Heroes One, dont les coordonnées figurent dans les mentions légales (ci-après « Heroes One »), à tout client professionnel (ci-après « le Client »).
 
 Les Services sont exclusivement destinés aux professionnels (entreprises, indépendants, associations, organismes publics) agissant pour les besoins de leur activité. En souscrivant, le Client déclare agir en qualité de professionnel.
 
-Toute souscription implique l'acceptation sans réserve des présentes CGV et des Conditions Générales d'Utilisation (ci-après « CGU »). Elles prévalent sur tout autre document du Client, notamment ses conditions générales d'achat, sauf accord écrit contraire de Saleshub. Un contrat spécifique ou un devis signé prévaut sur les CGV pour les points qu'il règle expressément.
+Toute souscription implique l'acceptation sans réserve des présentes CGV et des Conditions Générales d'Utilisation (ci-après « CGU »). Elles prévalent sur tout autre document du Client, notamment ses conditions générales d'achat, sauf accord écrit contraire de Heroes One. Un contrat spécifique ou un devis signé prévaut sur les CGV pour les points qu'il règle expressément.
 
 ## Article 2 — Description des Services
 
-Saleshub.business est une plateforme logicielle en mode SaaS (logiciel en tant que service) comprenant notamment :
+Heroes One est une plateforme logicielle en mode SaaS (logiciel en tant que service) comprenant notamment :
 
 - un CRM (gestion des contacts, prospects, opportunités et historiques) ;
 - des agents d'intelligence artificielle spécialisés (prospection, coaching commercial, relation client, rédaction, recouvrement, recrutement, veille, visibilité), dont le nombre activable dépend de la formule souscrite ;
 - des intégrations avec des outils tiers (téléphonie, e-mail, SMS, automatisation, cartographie) ;
 - un système de crédits consommés par certaines fonctionnalités (notamment les traitements IA, envois et enrichissements).
 
-La description détaillée et à jour de chaque formule figure sur la page Tarifs du Site. Saleshub peut faire évoluer les fonctionnalités de la Plateforme, sans réduire de manière substantielle les fonctionnalités essentielles de la formule souscrite en cours d'engagement.
+La description détaillée et à jour de chaque formule figure sur la page Tarifs du Site. Heroes One peut faire évoluer les fonctionnalités de la Plateforme, sans réduire de manière substantielle les fonctionnalités essentielles de la formule souscrite en cours d'engagement.
 
 ## Article 3 — Formules et souscription
 
@@ -53,13 +53,13 @@ Le prix des formules par utilisateur est calculé en fonction du nombre d'utilis
 
 Les crédits non consommés au cours d'un mois ne sont pas reportés sur le mois suivant, sauf mention contraire de la formule. Des crédits supplémentaires peuvent être achetés selon le tarif en vigueur.
 
-Saleshub peut réviser ses tarifs. Toute modification est notifiée au Client au moins trente (30) jours avant son application et ne s'applique qu'au renouvellement suivant. Le Client qui refuse la nouvelle tarification peut résilier avant le renouvellement.
+Heroes One peut réviser ses tarifs. Toute modification est notifiée au Client au moins trente (30) jours avant son application et ne s'applique qu'au renouvellement suivant. Le Client qui refuse la nouvelle tarification peut résilier avant le renouvellement.
 
 Les prestations complémentaires (paramétrage, intégration sur mesure, formation, accompagnement) font l'objet d'un devis distinct.
 
 ## Article 6 — Facturation et paiement
 
-Les abonnements sont payables d'avance, selon la périodicité choisie (mensuelle, annuelle ou biennale), par carte bancaire ou prélèvement via le prestataire de paiement sécurisé Stripe, ou par virement pour les formules sur devis. Le Client autorise Saleshub à prélever les sommes dues à chaque échéance.
+Les abonnements sont payables d'avance, selon la périodicité choisie (mensuelle, annuelle ou biennale), par carte bancaire ou prélèvement via le prestataire de paiement sécurisé Stripe, ou par virement pour les formules sur devis. Le Client autorise Heroes One à prélever les sommes dues à chaque échéance.
 
 Les factures sont émises électroniquement et mises à disposition dans l'espace client ou envoyées par e-mail.
 
@@ -72,11 +72,11 @@ Tout retard de paiement entraîne de plein droit, sans mise en demeure préalabl
 - des pénalités de retard calculées au taux de trois (3) fois le taux d'intérêt légal en vigueur ;
 - une indemnité forfaitaire pour frais de recouvrement de 40 € par facture (article L.441-10 du Code de commerce), sans préjudice d'une indemnisation complémentaire sur justificatifs.
 
-En cas d'échec de paiement non régularisé dans un délai de huit (8) jours après notification, Saleshub peut suspendre l'accès aux Services jusqu'au paiement complet, sans que le Client puisse prétendre à une quelconque indemnité. Les sommes restant dues au titre de la période d'engagement deviennent exigibles.
+En cas d'échec de paiement non régularisé dans un délai de huit (8) jours après notification, Heroes One peut suspendre l'accès aux Services jusqu'au paiement complet, sans que le Client puisse prétendre à une quelconque indemnité. Les sommes restant dues au titre de la période d'engagement deviennent exigibles.
 
 ## Article 8 — Disponibilité et support
 
-Saleshub met en œuvre les moyens raisonnables pour assurer l'accès à la Plateforme 24 heures sur 24, 7 jours sur 7, sous réserve des opérations de maintenance, des cas de force majeure et des défaillances des réseaux ou services tiers. Il s'agit d'une obligation de moyens.
+Heroes One met en œuvre les moyens raisonnables pour assurer l'accès à la Plateforme 24 heures sur 24, 7 jours sur 7, sous réserve des opérations de maintenance, des cas de force majeure et des défaillances des réseaux ou services tiers. Il s'agit d'une obligation de moyens.
 
 Les opérations de maintenance programmées sont, dans la mesure du possible, réalisées en dehors des heures ouvrées et annoncées à l'avance.
 
@@ -86,9 +86,9 @@ Le support est accessible par e-mail à contact@saleshub.business, aux jours et 
 
 Le Client reste seul propriétaire des données qu'il importe ou génère dans la Plateforme (ci-après « Données Client »).
 
-Pour les Données Client à caractère personnel, Saleshub agit en qualité de sous-traitant au sens de l'article 28 du RGPD. Les conditions de ce traitement sont précisées dans l'accord de traitement des données (DPA), annexe aux présentes CGV, qui fait partie intégrante du contrat. Consultez l’Annexe — Accord de traitement des données (DPA).
+Pour les Données Client à caractère personnel, Heroes One agit en qualité de sous-traitant au sens de l'article 28 du RGPD. Les conditions de ce traitement sont précisées dans l'accord de traitement des données (DPA), annexe aux présentes CGV, qui fait partie intégrante du contrat. Consultez l’Annexe — Accord de traitement des données (DPA).
 
-**Données de santé.** La Plateforme n'est pas, par défaut, destinée à héberger des données de santé au sens de l'article L.1111-8 du Code de la santé publique. Le Client qui souhaite traiter de telles données doit en informer Saleshub au préalable afin de souscrire une configuration d'hébergement certifiée HDS (Hébergeur de Données de Santé). À défaut, il s'interdit de les importer.
+**Données de santé.** La Plateforme n'est pas, par défaut, destinée à héberger des données de santé au sens de l'article L.1111-8 du Code de la santé publique. Le Client qui souhaite traiter de telles données doit en informer Heroes One au préalable afin de souscrire une configuration d'hébergement certifiée HDS (Hébergeur de Données de Santé). À défaut, il s'interdit de les importer.
 
 À la fin du contrat, le Client dispose d'un délai de trente (30) jours pour exporter ses Données Client dans un format standard. À l'issue de ce délai, les Données Client sont supprimées, sauf obligation légale de conservation.
 
@@ -96,23 +96,23 @@ Pour les Données Client à caractère personnel, Saleshub agit en qualité de s
 
 **Par le Client.** Le Client peut résilier son abonnement depuis son espace client ou par e-mail à contact@saleshub.business, au plus tard la veille de la date de renouvellement. La résiliation prend effet à la fin de la période d'engagement en cours. Aucun remboursement au prorata n'est dû pour la période en cours.
 
-**Par Saleshub.** Saleshub peut résilier le contrat de plein droit, après mise en demeure restée sans effet pendant quinze (15) jours, en cas de manquement grave du Client à ses obligations (notamment défaut de paiement ou violation des CGU). En cas de manquement d'une particulière gravité (usage frauduleux, illicite ou mettant en danger la sécurité de la Plateforme), la suspension peut être immédiate.
+**Par Heroes One.** Heroes One peut résilier le contrat de plein droit, après mise en demeure restée sans effet pendant quinze (15) jours, en cas de manquement grave du Client à ses obligations (notamment défaut de paiement ou violation des CGU). En cas de manquement d'une particulière gravité (usage frauduleux, illicite ou mettant en danger la sécurité de la Plateforme), la suspension peut être immédiate.
 
-Saleshub peut également mettre fin à la formule gratuite Solo à tout moment, moyennant un préavis de trente (30) jours.
+Heroes One peut également mettre fin à la formule gratuite Solo à tout moment, moyennant un préavis de trente (30) jours.
 
 ## Article 11 — Responsabilité
 
-Saleshub est tenue à une obligation de moyens dans l'exécution des Services.
+Heroes One est tenue à une obligation de moyens dans l'exécution des Services.
 
 Les contenus, recommandations, scores, messages et documents générés par les agents d'intelligence artificielle sont produits de manière automatisée et peuvent comporter des erreurs ou imprécisions. Ils constituent une aide à la décision. Le Client conserve le contrôle et la responsabilité de leur validation et de leur utilisation, notamment avant tout envoi à des tiers.
 
-Les résultats commerciaux présentés sur le Site (nombre de leads, taux de conversion, économies) sont des objectifs indicatifs. Saleshub ne garantit aucun résultat commercial.
+Les résultats commerciaux présentés sur le Site (nombre de leads, taux de conversion, économies) sont des objectifs indicatifs. Heroes One ne garantit aucun résultat commercial.
 
 Le Client est seul responsable de la licéité de ses campagnes de prospection (e-mail, SMS, appels), notamment du respect des règles de consentement, d'opposition (dont la liste Bloctel) et d'information des personnes démarchées.
 
-La responsabilité de Saleshub ne pourra être engagée qu'en cas de faute prouvée et est limitée aux dommages directs. Elle est plafonnée, toutes causes confondues, au montant hors taxes effectivement payé par le Client au titre des douze (12) mois précédant le fait générateur. Saleshub ne saurait être tenue responsable des dommages indirects tels que perte de chiffre d'affaires, de clientèle, de données ou d'image. Ces limitations ne s'appliquent pas en cas de faute lourde ou dolosive.
+La responsabilité de Heroes One ne pourra être engagée qu'en cas de faute prouvée et est limitée aux dommages directs. Elle est plafonnée, toutes causes confondues, au montant hors taxes effectivement payé par le Client au titre des douze (12) mois précédant le fait générateur. Heroes One ne saurait être tenue responsable des dommages indirects tels que perte de chiffre d'affaires, de clientèle, de données ou d'image. Ces limitations ne s'appliquent pas en cas de faute lourde ou dolosive.
 
-Saleshub n'est pas responsable du fonctionnement des services tiers intégrés à la Plateforme (téléphonie, messagerie, paiement, etc.), qui relèvent des conditions propres à leurs éditeurs.
+Heroes One n'est pas responsable du fonctionnement des services tiers intégrés à la Plateforme (téléphonie, messagerie, paiement, etc.), qui relèvent des conditions propres à leurs éditeurs.
 
 ## Article 12 — Force majeure
 
@@ -120,7 +120,7 @@ Aucune des parties ne pourra être tenue responsable d'un manquement résultant 
 
 ## Article 13 — Propriété intellectuelle
 
-Saleshub demeure titulaire de l'ensemble des droits de propriété intellectuelle relatifs à la Plateforme, à ses agents IA, à son code et à sa documentation. Le contrat confère au Client un droit d'utilisation personnel, non exclusif et non cessible, pour la durée de l'abonnement et pour ses seuls besoins internes.
+Heroes One demeure titulaire de l'ensemble des droits de propriété intellectuelle relatifs à la Plateforme, à ses agents IA, à son code et à sa documentation. Le contrat confère au Client un droit d'utilisation personnel, non exclusif et non cessible, pour la durée de l'abonnement et pour ses seuls besoins internes.
 
 Le Client est propriétaire des contenus générés pour son compte via la Plateforme, sous réserve des droits éventuels des tiers.
 
@@ -130,11 +130,11 @@ Chaque partie s'engage à garder confidentielles les informations non publiques 
 
 ## Article 15 — Références
 
-Sauf opposition écrite du Client, Saleshub peut mentionner le nom et le logo du Client à titre de référence commerciale.
+Sauf opposition écrite du Client, Heroes One peut mentionner le nom et le logo du Client à titre de référence commerciale.
 
 ## Article 16 — Modification des CGV
 
-Saleshub peut modifier les présentes CGV. Les nouvelles conditions sont notifiées au Client au moins trente (30) jours avant leur entrée en vigueur et s'appliquent au renouvellement suivant. Le Client qui les refuse peut résilier avant cette date.
+Heroes One peut modifier les présentes CGV. Les nouvelles conditions sont notifiées au Client au moins trente (30) jours avant leur entrée en vigueur et s'appliquent au renouvellement suivant. Le Client qui les refuse peut résilier avant cette date.
 
 ## Article 17 — Droit applicable et litiges
 

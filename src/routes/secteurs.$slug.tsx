@@ -10,7 +10,7 @@ export const Route = createFileRoute("/secteurs/$slug")({
   },
   head: ({ loaderData }) => {
     if (!loaderData) return { meta: [{ title: "Secteur introuvable" }, { name: "robots", content: "noindex" }] };
-    const t = `CRM ${loaderData.uc.title} — Saleshub`;
+    const t = `CRM ${loaderData.uc.title} — Heroes One`;
     return { meta: [{ title: t }, { name: "description", content: `${loaderData.uc.tagline} ${loaderData.uc.features.join(", ")}.` }, { property: "og:title", content: t }, { property: "og:description", content: loaderData.uc.tagline }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] };
   },
   component: () => <UseCasePage uc={Route.useLoaderData().uc} kind="Secteur" />,

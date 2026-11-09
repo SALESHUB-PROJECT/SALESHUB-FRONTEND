@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/saleshub-approved-logo.png.asset.json";
+import logo from "@/assets/heroes-one-logo.png.asset.json";
 
 const links = [
   { href: "/superpouvoirs", label: "Superpouvoirs" },
@@ -17,8 +17,8 @@ export function SiteHeader() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-background/90 backdrop-blur-xl">
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 lg:px-8">
-        <Link to="/" aria-label="Accueil Saleshub">
-          <img src={logo.url} alt="Saleshub" className="h-auto w-40 sm:w-48" width={1427} height={359} />
+        <Link to="/" aria-label="Accueil Heroes One" className="inline-flex items-center rounded-md bg-primary-foreground px-3 py-1.5">
+          <img src={logo.url} alt="Heroes One" className="h-auto w-40 sm:w-48" width={1784} height={382} />
         </Link>
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Navigation principale">
           {links.map((l) => (

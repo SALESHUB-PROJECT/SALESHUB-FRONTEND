@@ -8,7 +8,7 @@ Conformément à l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la conf
 
 Le site saleshub.business (ci-après « le Site ») est édité par :
 
-**Saleshub**, société à responsabilité limitée (SARL) de droit malgache
+**Heroes One**, société à responsabilité limitée (SARL) de droit malgache
 Siège social : Lot 0912 C 185 Manodidina ny Gara, Antsirabe I, Madagascar
 NIF : 1019212209 — STAT : 78 200 12 2024 0 01330
 
@@ -33,9 +33,9 @@ Site internet : www.ovhcloud.com
 
 ## 4. Propriété intellectuelle
 
-L'ensemble des éléments présents sur le Site sont protégés par le droit de la propriété intellectuelle, en France et à l'international. Cela comprend notamment la marque Saleshub, le logo, les personnages (dont les agents Archer, Lyra, Atlas, Mentor, Tenax, Legio, Argus et Mythos), les illustrations, les contenus, les logiciels, le code, les textes, les bases de données et les éléments graphiques. Ces éléments sont la propriété exclusive de Saleshub ou de ses partenaires, qui l'ont autorisée à les utiliser.
+L'ensemble des éléments présents sur le Site sont protégés par le droit de la propriété intellectuelle, en France et à l'international. Cela comprend notamment la marque Heroes One, le logo, les personnages (dont les agents Archer, Lyra, Atlas, Mentor, Tenax, Legio, Argus et Mythos), les illustrations, les contenus, les logiciels, le code, les textes, les bases de données et les éléments graphiques. Ces éléments sont la propriété exclusive de Heroes One ou de ses partenaires, qui l'ont autorisée à les utiliser.
 
-Toute reproduction, représentation, modification, publication, adaptation ou exploitation de tout ou partie de ces éléments est interdite sans l'autorisation écrite préalable de Saleshub, quel que soit le procédé ou le support utilisé. Toute exploitation non autorisée constitue une contrefaçon sanctionnée notamment par les articles L.335-2 et suivants du Code de la propriété intellectuelle.
+Toute reproduction, représentation, modification, publication, adaptation ou exploitation de tout ou partie de ces éléments est interdite sans l'autorisation écrite préalable de Heroes One, quel que soit le procédé ou le support utilisé. Toute exploitation non autorisée constitue une contrefaçon sanctionnée notamment par les articles L.335-2 et suivants du Code de la propriété intellectuelle.
 
 Les bases de données présentes sur le Site sont protégées par les articles L.341-1 et suivants du même Code. Toute extraction ou réutilisation d'une partie substantielle de leur contenu est interdite.
 
@@ -43,11 +43,11 @@ Les marques et logos de tiers affichés sur le Site (notamment ceux des outils i
 
 ## 5. Responsabilité
 
-Saleshub s'efforce de fournir sur le Site des informations aussi exactes et à jour que possible. Il peut toutefois exister des erreurs, des omissions ou des informations devenues obsolètes. Les informations, chiffres et résultats présentés sur le Site sont fournis à titre indicatif et ne constituent pas un engagement contractuel. Seuls les Conditions Générales de Vente, les Conditions Générales d'Utilisation et les devis acceptés font foi.
+Heroes One s'efforce de fournir sur le Site des informations aussi exactes et à jour que possible. Il peut toutefois exister des erreurs, des omissions ou des informations devenues obsolètes. Les informations, chiffres et résultats présentés sur le Site sont fournis à titre indicatif et ne constituent pas un engagement contractuel. Seuls les Conditions Générales de Vente, les Conditions Générales d'Utilisation et les devis acceptés font foi.
 
-Saleshub ne peut être tenue responsable des dommages directs ou indirects résultant de l'accès au Site ou de son utilisation, notamment en cas d'impossibilité d'accès, d'interruption, de bug, d'incompatibilité du navigateur ou de présence d'un virus.
+Heroes One ne peut être tenue responsable des dommages directs ou indirects résultant de l'accès au Site ou de son utilisation, notamment en cas d'impossibilité d'accès, d'interruption, de bug, d'incompatibilité du navigateur ou de présence d'un virus.
 
-Le Site peut contenir des liens vers des sites tiers. Saleshub n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu ou à leurs pratiques en matière de données personnelles.
+Le Site peut contenir des liens vers des sites tiers. Heroes One n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu ou à leurs pratiques en matière de données personnelles.
 
 L'utilisateur est seul responsable de l'usage qu'il fait des informations et contenus présents sur le Site.
 

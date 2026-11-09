@@ -9,7 +9,7 @@ export type LegalSection = { title: string; body?: ReactNode };
 export function Pending({ children }: { children?: ReactNode }) {
   return (
     <p className="rounded-md border border-dashed border-accent/60 bg-accent/5 p-3 text-sm text-muted-foreground">
-      {children ?? "Contenu à compléter et valider par Saleshub."}
+      {children ?? "Contenu à compléter et valider par Heroes One."}
     </p>
   );
 }
@@ -52,9 +52,9 @@ export function LegalPage({ title, intro, sections, pending = true }: { title: s
 export function legalHead(title: string, description: string) {
   return {
     meta: [
-      { title: `${title} | Saleshub.business` },
+      { title: `${title} | Heroes One` },
       { name: "description", content: description },
-      { property: "og:title", content: `${title} | Saleshub.business` },
+      { property: "og:title", content: `${title} | Heroes One` },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

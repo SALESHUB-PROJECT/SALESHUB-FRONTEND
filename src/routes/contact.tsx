@@ -10,7 +10,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { company } from "@/lib/company";
 import heroes from "@/assets/saleshub-home-background.jpg";
 
-const needs = ["Démo Saleshub", "CRM", "Agents IA", "Automatisation", "Prospection", "Marketing", "Call center", "API / intégration", "Partenariat", "Programme intégrateur", "Support", "Autre"];
+const needs = ["Démo Heroes One", "CRM", "Agents IA", "Automatisation", "Prospection", "Marketing", "Call center", "API / intégration", "Partenariat", "Programme intégrateur", "Support", "Autre"];
 const sizes = ["1", "2-10", "11-50", "51-200", "201-1000", "1000+"];
 
 const schema = z.object({
@@ -30,10 +30,10 @@ const schema = z.object({
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact | Saleshub.business" },
-      { name: "description", content: "Contactez Saleshub : démo, CRM, agents IA, intégration ou partenariat. Madagascar, France, Suisse, Belgique et Pays-Bas." },
-      { property: "og:title", content: "Parlons de vos superpouvoirs | Saleshub" },
-      { property: "og:description", content: "Une question, une démo, un projet d'intégration ? L'équipe Saleshub vous répond." },
+      { title: "Contact | Heroes One" },
+      { name: "description", content: "Contactez Heroes One : démo, CRM, agents IA, intégration ou partenariat. Madagascar, France, Suisse, Belgique et Pays-Bas." },
+      { property: "og:title", content: "Parlons de vos superpouvoirs | Heroes One" },
+      { property: "og:description", content: "Une question, une démo, un projet d'intégration ? L'équipe Heroes One vous répond." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
@@ -113,7 +113,7 @@ function ContactPage() {
               Une question, une démonstration, un projet d'intégration ou un partenariat ? Notre équipe est à votre écoute.
             </p>
             <div className="mt-8 overflow-hidden rounded-lg border border-border">
-              <img src={heroes} alt="Les héros Saleshub" className="aspect-[16/10] w-full object-cover" loading="lazy" />
+              <img src={heroes} alt="Les héros Heroes One" className="aspect-[16/10] w-full object-cover" loading="lazy" />
             </div>
             <p className="mt-6 font-display text-xl font-semibold">Parlons de votre prochain superpouvoir.</p>
           </div>
@@ -172,10 +172,10 @@ function ContactPage() {
         <div className="mt-10 flex flex-col items-start justify-between gap-4 rounded-lg bg-foreground p-8 text-primary-foreground sm:flex-row sm:items-center">
           <div>
             <h2 className="text-2xl font-semibold">Besoin d'une démo ?</h2>
-            <p className="mt-1 text-primary-foreground/75">Réservez une présentation personnalisée de Saleshub.</p>
+            <p className="mt-1 text-primary-foreground/75">Réservez une présentation personnalisée de Heroes One.</p>
           </div>
           <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
-            <a href={`${company.emailHref}?subject=${encodeURIComponent("Demande de démo Saleshub")}`}>Réserver une démo <ArrowRight className="size-4" /></a>
+            <a href={`${company.emailHref}?subject=${encodeURIComponent("Demande de démo Heroes One")}`}>Réserver une démo <ArrowRight className="size-4" /></a>
           </Button>
         </div>
       </main>
