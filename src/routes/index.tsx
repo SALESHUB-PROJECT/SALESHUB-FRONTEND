@@ -181,7 +181,15 @@ function LandingPage() {
           </Button>
         </div>
         {mobileOpen && (
-          <nav className="border-t border-border bg-background p-5 lg:hidden">
+          <nav className="border-t border-border bg-card p-5 text-card-foreground lg:hidden">
+            <div className="mb-4 sm:hidden">
+              <LanguageMenu
+                value={lang}
+                ariaLabel={t.a11y.chooseLanguage}
+                languages={Object.entries(translations).map(([code, value]) => ({ code, label: value.label }))}
+                onChange={(code) => { const v = code as keyof typeof translations; setLang(v); try { localStorage.setItem("saleshub-lang", v); } catch {} }}
+              />
+            </div>
             <div className="grid gap-4">
               {navLinks.map(({ id, label }) => (
                 <a key={id} href={`#${id}`} onClick={() => setMobileOpen(false)}>
