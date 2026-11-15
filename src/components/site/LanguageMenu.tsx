@@ -1,6 +1,5 @@
 import { BR, CN, DE, ES, FR, IN, JP, RU, SA, US } from "country-flag-icons/react/3x2";
 import { Check, ChevronDown, Globe2 } from "lucide-react";
-import type { FlagComponent } from "country-flag-icons/react/3x2";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -8,7 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-type Flag = FlagComponent;
+type Flag = typeof FR;
 
 export const languageCountries: Record<string, { country: string; Flag: Flag }> = {
   fr: { country: "France", Flag: FR },
