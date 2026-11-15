@@ -212,7 +212,7 @@ function LandingPage() {
             className="home-background-blend absolute inset-x-0 bottom-0 top-[52%] z-10"
             aria-hidden="true"
           />
-          <div className="relative z-20 mx-auto flex min-h-[100svh] max-w-7xl flex-col items-center justify-between px-5 pb-10 pt-24 text-center sm:pt-28 lg:px-8">
+          <div className="relative z-20 mx-auto flex min-h-[100svh] max-w-7xl flex-col items-center justify-between px-5 pb-[24svh] pt-24 text-center sm:pt-28 lg:px-8">
             <div className="drop-shadow-[0_4px_18px_rgb(0_0_0_/_0.85)]">
               <h1 className="text-balance text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
                 {t.hero.title}
