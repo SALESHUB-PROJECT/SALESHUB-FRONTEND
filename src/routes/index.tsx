@@ -212,19 +212,14 @@ function LandingPage() {
             className="home-background-blend absolute inset-x-0 bottom-0 top-[52%] z-10"
             aria-hidden="true"
           />
-          <div className="relative z-20 mx-auto flex min-h-[100svh] max-w-7xl items-center px-5 pb-14 pt-28 sm:pt-32 lg:px-8">
-            <div className="max-w-3xl drop-shadow-[0_4px_18px_rgb(0_0_0_/_0.85)]">
-              <div className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 bg-primary-foreground/10 px-4 py-2 text-xs font-bold backdrop-blur-md">
-                <span className="size-2 animate-pulse rounded-full bg-accent" />
-                {t.hero.badge}
-              </div>
-              <h1 className="mt-7 text-balance text-5xl font-extrabold leading-[0.98] sm:text-6xl lg:text-7xl">
+          <div className="relative z-20 mx-auto flex min-h-[100svh] max-w-7xl flex-col items-center justify-between px-5 pb-10 pt-24 text-center sm:pt-28 lg:px-8">
+            <div className="drop-shadow-[0_4px_18px_rgb(0_0_0_/_0.85)]">
+              <h1 className="text-balance text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
                 {t.hero.title}
               </h1>
-              <p className="mt-7 max-w-2xl text-balance text-lg font-light leading-relaxed text-primary-foreground/80 sm:text-2xl">
-                {t.hero.subtitle}
-              </p>
-              <div className="mt-10 flex flex-wrap gap-3">
+            </div>
+            <div className="flex flex-col items-center drop-shadow-[0_4px_18px_rgb(0_0_0_/_0.85)]">
+              <div className="flex flex-wrap justify-center gap-3">
                 <Button
                   size="lg"
                   className="bg-accent text-accent-foreground hover:bg-accent/90"
@@ -242,7 +237,7 @@ function LandingPage() {
                   {t.hero.secondaryCta}
                 </Button>
               </div>
-              <div className="mt-9 flex flex-wrap gap-x-7 gap-y-3 text-xs font-semibold text-primary-foreground/80">
+              <div className="mt-6 flex flex-wrap justify-center gap-x-7 gap-y-3 text-xs font-semibold text-primary-foreground/80">
                 {t.hero.proofs.map((proof, index) => {
                   const Icon = heroProofIcons[index] ?? Check;
                   return (
