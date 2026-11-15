@@ -142,6 +142,7 @@ function LandingPage() {
           <a href="#top" aria-label={t.a11y.home} className="inline-flex items-center">
             <img
               src={logo.url}
+              onError={(e) => { const img = e.currentTarget; if (!img.src.endsWith("/heroes-one-logo.webp")) img.src = "/heroes-one-logo.webp"; }}
               alt="Heroes One"
               className="h-auto w-40 sm:w-48"
               width={1784}

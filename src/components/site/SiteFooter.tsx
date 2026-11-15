@@ -51,7 +51,8 @@ export function SiteFooter() {
         <div className="grid gap-10 lg:grid-cols-[1.25fr_2fr]">
           <div className="max-w-sm">
             <Link to="/" aria-label="Accueil" className="inline-flex rounded-md bg-primary-foreground px-3 py-2">
-              <img src={logo.url} alt="Heroes One" loading="lazy" className="h-auto w-44" width={1784} height={382} />
+              <img src={logo.url}
+              onError={(e) => { const img = e.currentTarget; if (!img.src.endsWith("/heroes-one-logo.webp")) img.src = "/heroes-one-logo.webp"; }} alt="Heroes One" loading="lazy" className="h-auto w-44" width={1784} height={382} />
             </Link>
             <p className="mt-6 font-display text-lg font-semibold">
               Une plateforme. Une équipe. Une relation transparente.
