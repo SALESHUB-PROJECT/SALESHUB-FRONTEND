@@ -42,20 +42,28 @@ export function LanguageMenu({ value, languages, onChange, ariaLabel }: Props) {
     else setCountry(defaultCountry[value] ?? "FR");
   }, [value]);
 
-  const names = useMemo(() => {
-    try { return new Intl.DisplayNames([value, "fr"], { type: "region" }); } catch { return null; }
-  }, [value]);
-  const countryName = (cc: string) => names?.of(cc) ?? cc;
-
+  // Each country is written in the language of its own entry (France / Français, Deutschland / Deutsch…),
+  // whatever language the site is currently shown in.
   const entries = useMemo(() => {
-    const list = languages.flatMap(({ code, label }) =>
-      (countriesByLanguage[code] ?? []).map((cc) => ({ code, label, cc, name: countryName(cc) })),
-    );
-    list.sort((a, b) => a.name.localeCompare(b.name, value) || a.label.localeCompare(b.label));
+    const dn = (loc: string) => { try { return new Intl.DisplayNames([loc], { type: "region" }); } catch { return null; } };
+    const fr = dn("fr");
+    const en = dn("en");
+    const list = languages.flatMap(({ code, label }) => {
+      const own = dn(code);
+      return (countriesByLanguage[code] ?? []).map((cc) => ({
+        code, label, cc,
+        name: own?.of(cc) ?? cc,
+        sortName: fr?.of(cc) ?? cc,
+        search: `${own?.of(cc) ?? ""} ${fr?.of(cc) ?? ""} ${en?.of(cc) ?? ""} ${label} ${cc}`.toLowerCase(),
+      }));
+    });
+    list.sort((a, b) => a.sortName.localeCompare(b.sortName, "fr") || a.label.localeCompare(b.label));
     const q = query.trim().toLowerCase();
-    return q ? list.filter((e) => `${e.name} ${e.label} ${e.cc}`.toLowerCase().includes(q)) : list;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [languages, names, query, value]);
+    return q ? list.filter((e) => e.search.includes(q)) : list;
+  }, [languages, query]);
+
+  const countryName = (cc: string) => entries.find((e) => e.cc === cc && e.code === value)?.name
+    ?? (() => { try { return new Intl.DisplayNames([value], { type: "region" }).of(cc) ?? cc; } catch { return cc; } })();
 
   const current = languages.find((l) => l.code === value);
   const CurrentFlag = flagOf(country);
