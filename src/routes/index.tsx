@@ -25,6 +25,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import logo from "@/assets/heroes-one-logo.png.asset.json";
+import { LanguageMenu } from "@/components/site/LanguageMenu";
 import homeBackground from "@/assets/saleshub-home-background.jpg";
 import crmPreview from "@/assets/demo_crm.png";
 import crmMobilePreview from "@/assets/demo_crm_mobil.png";
@@ -136,9 +137,9 @@ function LandingPage() {
       dir={rtl ? "rtl" : "ltr"}
       className="min-h-screen overflow-hidden bg-background text-foreground"
     >
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-background/90 backdrop-blur-xl">
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-card shadow-sm">
         <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 lg:px-8">
-          <a href="#top" aria-label={t.a11y.home} className="inline-flex items-center rounded-md bg-primary-foreground px-3 py-1.5">
+          <a href="#top" aria-label={t.a11y.home} className="inline-flex items-center">
             <img
               src={logo.url}
               alt="Heroes One"
@@ -159,22 +160,12 @@ function LandingPage() {
             ))}
           </nav>
           <div className="hidden items-center gap-2 sm:flex">
-            <label className="relative flex items-center">
-              <Globe2 className="pointer-events-none absolute left-3 size-4 text-primary" />
-              <select
-                aria-label={t.a11y.chooseLanguage}
-                value={lang}
-                onChange={(e) => { const v = e.target.value as keyof typeof translations; setLang(v); try { localStorage.setItem("saleshub-lang", v); } catch {} }}
-                className="h-10 appearance-none rounded-md border border-border bg-surface py-0 pl-9 pr-8 text-xs text-foreground outline-none focus:border-primary"
-              >
-                {Object.entries(translations).map(([code, value]) => (
-                  <option key={code} value={code}>
-                    {value.label}
-                  </option>
-                ))}
-              </select>
-              <ChevronDown className="pointer-events-none absolute right-2 size-3 text-muted-foreground" />
-            </label>
+            <LanguageMenu
+              value={lang}
+              ariaLabel={t.a11y.chooseLanguage}
+              languages={Object.entries(translations).map(([code, value]) => ({ code, label: value.label }))}
+              onChange={(code) => { const v = code as keyof typeof translations; setLang(v); try { localStorage.setItem("saleshub-lang", v); } catch {} }}
+            />
             <Button size="sm" onClick={() => setContactOpen(true)}>
               {t.hero.primaryCta}
             </Button>
@@ -190,7 +181,15 @@ function LandingPage() {
           </Button>
         </div>
         {mobileOpen && (
-          <nav className="border-t border-border bg-background p-5 lg:hidden">
+          <nav className="border-t border-border bg-card p-5 text-card-foreground lg:hidden">
+            <div className="mb-4 sm:hidden">
+              <LanguageMenu
+                value={lang}
+                ariaLabel={t.a11y.chooseLanguage}
+                languages={Object.entries(translations).map(([code, value]) => ({ code, label: value.label }))}
+                onChange={(code) => { const v = code as keyof typeof translations; setLang(v); try { localStorage.setItem("saleshub-lang", v); } catch {} }}
+              />
+            </div>
             <div className="grid gap-4">
               {navLinks.map(({ id, label }) => (
                 <a key={id} href={`#${id}`} onClick={() => setMobileOpen(false)}>
