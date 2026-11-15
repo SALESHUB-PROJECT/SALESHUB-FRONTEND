@@ -9,6 +9,7 @@ const NOTICE: Record<string, string> = {
   hi: "इस दस्तावेज़ का केवल फ़्रेंच संस्करण ही मान्य है।",
   es: "Solo la versión francesa de este documento es vinculante.",
   ar: "النسخة الفرنسية فقط من هذه الوثيقة هي المعتمدة.",
+  he: "רק הגרסה הצרפתית של מסמך זה היא המחייבת.",
   pt: "Apenas a versão francesa deste documento faz fé.",
   ru: "Юридическую силу имеет только французская версия этого документа.",
   ja: "本書はフランス語版のみが正本となります。",
@@ -86,7 +87,7 @@ export function LegalMarkdownPage({ md, path }: { md: string; path: string }) {
     <div className="min-h-screen bg-background">
       <SiteHeader />
       <main className="mx-auto max-w-4xl px-5 pb-20 pt-32 leading-relaxed text-foreground/85 lg:px-8">
-        {notice && <p className="mb-6 rounded-lg border border-primary/40 bg-primary/5 p-3 text-sm" dir={lang === "ar" ? "rtl" : undefined}>{notice}</p>}
+        {notice && <p className="mb-6 rounded-lg border border-primary/40 bg-primary/5 p-3 text-sm" dir={lang === "ar" || lang === "he" ? "rtl" : undefined}>{notice}</p>}
         <p className="text-sm font-semibold uppercase tracking-wide text-primary">Legal & Trust</p>
         {render(md, path)}
       </main>
