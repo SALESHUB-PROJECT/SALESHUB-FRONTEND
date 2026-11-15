@@ -46,7 +46,9 @@ export const fr = {
     primaryCta: "Démarrer gratuitement",
     secondaryCta: "Réserver une démo",
     proofs: [
-      "8 agents IA disponibles 24h/24",
+      "Agents IA gratuits et illimités",
+      "Communication unifiée (Mail, SMS, Appels, ...)",
+      "Automatisation totale (Mailing, Commandes, PDF, ...)",
       "Prise en main en moins de 10 min",
       "Plus de 2 millions d'utilisateurs heureux, dans 49 pays",
     ],
@@ -404,7 +406,9 @@ export const translations: Record<LanguageCode, Translation> = {
       primaryCta: "Start for free",
       secondaryCta: "Book a demo",
       proofs: [
-        "8 AI agents available 24/7",
+        "Free, unlimited AI agents",
+        "Unified communication (Email, SMS, Calls, ...)",
+        "Total automation (mailing, orders, PDF, ...)",
         "Ready in under 10 min",
         "Over 2 million happy users in 49 countries",
       ],
@@ -757,7 +761,9 @@ export const translations: Record<LanguageCode, Translation> = {
       primaryCta: "免费开始",
       secondaryCta: "预约演示",
       proofs: [
-        "8 位 AI 助手全天候可用",
+        "免费且不限量的 AI 助手",
+        "统一沟通（邮件、短信、电话……）",
+        "全面自动化（邮件营销、订单、PDF……）",
         "不到 10 分钟即可上手",
         "49 个国家超过 200 万满意用户",
       ],
@@ -1081,7 +1087,9 @@ export const translations: Record<LanguageCode, Translation> = {
       primaryCta: "मुफ़्त शुरू करें",
       secondaryCta: "डेमो बुक करें",
       proofs: [
-        "8 AI एजेंट 24/7 उपलब्ध",
+        "मुफ़्त और असीमित AI एजेंट",
+        "एकीकृत संचार (ईमेल, SMS, कॉल, ...)",
+        "पूर्ण ऑटोमेशन (मेलिंग, ऑर्डर, PDF, ...)",
         "10 मिनट से कम में शुरुआत",
         "49 देशों में 20 लाख से अधिक खुश उपयोगकर्ता",
       ],
@@ -1435,7 +1443,9 @@ export const translations: Record<LanguageCode, Translation> = {
       primaryCta: "Empezar gratis",
       secondaryCta: "Reservar demo",
       proofs: [
-        "8 agentes IA disponibles 24/7",
+        "Agentes IA gratuitos e ilimitados",
+        "Comunicación unificada (Email, SMS, Llamadas, ...)",
+        "Automatización total (mailing, pedidos, PDF, ...)",
         "Puesta en marcha en menos de 10 min",
         "Más de 2 millones de usuarios felices en 49 países",
       ],
@@ -1800,7 +1810,9 @@ export const translations: Record<LanguageCode, Translation> = {
       primaryCta: "ابدأ مجاناً",
       secondaryCta: "احجز عرضاً",
       proofs: [
-        "8 وكلاء ذكاء اصطناعي متاحون 24/7",
+        "وكلاء ذكاء اصطناعي مجانيون وبلا حدود",
+        "تواصل موحّد (بريد، رسائل نصية، مكالمات، ...)",
+        "أتمتة شاملة (البريد الجماعي، الطلبات، PDF، ...)",
         "بدء الاستخدام في أقل من 10 دقائق",
         "أكثر من مليوني مستخدم سعيد في 49 دولة",
       ],
@@ -2130,7 +2142,9 @@ export const translations: Record<LanguageCode, Translation> = {
       primaryCta: "Começar grátis",
       secondaryCta: "Agendar demo",
       proofs: [
-        "8 agentes de IA disponíveis 24/7",
+        "Agentes de IA gratuitos e ilimitados",
+        "Comunicação unificada (E-mail, SMS, Chamadas, ...)",
+        "Automação total (mailing, pedidos, PDF, ...)",
         "Uso inicial em menos de 10 min",
         "Mais de 2 milhões de usuários felizes em 49 países",
       ],
@@ -2499,7 +2513,9 @@ export const translations: Record<LanguageCode, Translation> = {
       primaryCta: "Начать бесплатно",
       secondaryCta: "Заказать демо",
       proofs: [
-        "8 ИИ-агентов доступны 24/7",
+        "Бесплатные и безлимитные ИИ-агенты",
+        "Единая коммуникация (почта, SMS, звонки, ...)",
+        "Полная автоматизация (рассылки, заказы, PDF, ...)",
         "Запуск менее чем за 10 минут",
         "Более 2 миллионов довольных пользователей в 49 странах",
       ],
@@ -2853,7 +2869,9 @@ export const translations: Record<LanguageCode, Translation> = {
       primaryCta: "無料で始める",
       secondaryCta: "デモを予約",
       proofs: [
-        "8人のAIエージェントが24時間対応",
+        "無料で無制限のAIエージェント",
+        "コミュニケーション統合（メール、SMS、電話…）",
+        "完全自動化（メール配信、注文、PDF…）",
         "10分未満で利用開始",
         "49カ国で200万人以上の満足ユーザー",
       ],
@@ -3194,7 +3212,9 @@ export const translations: Record<LanguageCode, Translation> = {
       primaryCta: "Kostenlos starten",
       secondaryCta: "Demo buchen",
       proofs: [
-        "8 KI-Agenten rund um die Uhr verfügbar",
+        "Kostenlose, unbegrenzte KI-Agenten",
+        "Einheitliche Kommunikation (E-Mail, SMS, Anrufe, ...)",
+        "Totale Automatisierung (Mailing, Bestellungen, PDF, ...)",
         "Start in weniger als 10 Minuten",
         "Über 2 Millionen zufriedene Nutzer in 49 Ländern",
       ],
@@ -3551,7 +3571,9 @@ export const translations: Record<LanguageCode, Translation> = {
       "primaryCta": "התחילו בחינם",
       "secondaryCta": "תיאום דמו",
       "proofs": [
-        "8 סוכני AI זמינים 24/7",
+        "סוכני AI חינמיים ובלתי מוגבלים",
+        "תקשורת מאוחדת (מייל, SMS, שיחות, ...)",
+        "אוטומציה מלאה (דיוור, הזמנות, PDF, ...)",
         "הטמעה מהירה בפחות מ-10 דקות",
         "יותר מ-2 מיליון משתמשים מרוצים ב-49 מדינות"
       ]
