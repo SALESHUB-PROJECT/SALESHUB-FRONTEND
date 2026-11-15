@@ -41,15 +41,14 @@ export const fr = {
   },
   hero: {
     badge: "DISPONIBLE EN 11 LANGUES",
-    title: "Le CRM qui pense, prospecte et encaisse pour vous.",
+    title: "CRM aux superpouvoirs",
     subtitle: "L’équipe IA qui fait grandir votre entreprise pendant que vous la dirigez.",
     primaryCta: "Démarrer gratuitement",
     secondaryCta: "Réserver une démo",
     proofs: [
       "8 agents IA disponibles 24h/24",
       "Prise en main en moins de 10 min",
-      "50 000 entreprises référencées dans 49 pays",
-      "Votre équipe garde le dernier mot",
+      "Plus de 2 millions d'utilisateurs heureux, dans 49 pays",
     ],
   },
   agentsSection: {
@@ -400,15 +399,14 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     hero: {
       badge: "AVAILABLE IN 11 LANGUAGES",
-      title: "The CRM that thinks, prospects, and collects payments for you.",
+      title: "The CRM with superpowers",
       subtitle: "The AI team that grows your business while you lead it.",
       primaryCta: "Start for free",
       secondaryCta: "Book a demo",
       proofs: [
         "8 AI agents available 24/7",
         "Ready in under 10 min",
-        "50,000 companies listed across 49 countries",
-        "Your team keeps the final say",
+        "Over 2 million happy users in 49 countries",
       ],
     },
     agentsSection: {
@@ -754,15 +752,14 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     hero: {
       badge: "支持 11 种语言",
-      title: "为您思考、获客并收款的 CRM。",
+      title: "拥有超能力的 CRM",
       subtitle: "在您经营企业时，AI 团队持续推动业务增长。",
       primaryCta: "免费开始",
       secondaryCta: "预约演示",
       proofs: [
         "8 位 AI 助手全天候可用",
         "不到 10 分钟即可上手",
-        "覆盖 49 个国家的 50,000 家企业",
-        "您的团队保留最终决定权",
+        "49 个国家超过 200 万满意用户",
       ],
     },
     agentsSection: {
@@ -1079,15 +1076,14 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     hero: {
       badge: "11 भाषाओं में उपलब्ध",
-      title: "आपके लिए सोचने, ग्राहक खोजने और भुगतान लेने वाला CRM।",
+      title: "सुपरपावर वाला CRM",
       subtitle: "जब आप व्यवसाय का नेतृत्व करते हैं, आपकी AI टीम उसे बढ़ाती रहती है।",
       primaryCta: "मुफ़्त शुरू करें",
       secondaryCta: "डेमो बुक करें",
       proofs: [
         "8 AI एजेंट 24/7 उपलब्ध",
         "10 मिनट से कम में शुरुआत",
-        "49 देशों में 50,000 कंपनियां सूचीबद्ध",
-        "अंतिम निर्णय आपकी टीम के पास",
+        "49 देशों में 20 लाख से अधिक खुश उपयोगकर्ता",
       ],
     },
     agentsSection: {
@@ -1434,15 +1430,14 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     hero: {
       badge: "DISPONIBLE EN 11 IDIOMAS",
-      title: "El CRM que piensa, prospecta y cobra por ti.",
+      title: "El CRM con superpoderes",
       subtitle: "El equipo de IA que hace crecer tu empresa mientras la diriges.",
       primaryCta: "Empezar gratis",
       secondaryCta: "Reservar demo",
       proofs: [
         "8 agentes IA disponibles 24/7",
         "Puesta en marcha en menos de 10 min",
-        "50 000 empresas referenciadas en 49 países",
-        "Tu equipo conserva la última palabra",
+        "Más de 2 millones de usuarios felices en 49 países",
       ],
     },
     agentsSection: {
@@ -1800,15 +1795,14 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     hero: {
       badge: "متاح بعشر لغات",
-      title: "نظام CRM يفكر ويستقطب العملاء ويحصّل المدفوعات نيابةً عنك.",
+      title: "CRM بقوى خارقة",
       subtitle: "فريق الذكاء الاصطناعي الذي ينمّي أعمالك بينما تقودها.",
       primaryCta: "ابدأ مجاناً",
       secondaryCta: "احجز عرضاً",
       proofs: [
         "8 وكلاء ذكاء اصطناعي متاحون 24/7",
         "بدء الاستخدام في أقل من 10 دقائق",
-        "50,000 شركة مدرجة في 49 بلداً",
-        "يبقى القرار النهائي لفريقك",
+        "أكثر من مليوني مستخدم سعيد في 49 دولة",
       ],
     },
     agentsSection: {
@@ -2131,15 +2125,14 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     hero: {
       badge: "DISPONÍVEL EM 11 IDIOMAS",
-      title: "O CRM que pensa, prospecta e recebe por você.",
+      title: "O CRM com superpoderes",
       subtitle: "A equipe de IA que faz sua empresa crescer enquanto você a lidera.",
       primaryCta: "Começar grátis",
       secondaryCta: "Agendar demo",
       proofs: [
         "8 agentes de IA disponíveis 24/7",
         "Uso inicial em menos de 10 min",
-        "50.000 empresas referenciadas em 49 países",
-        "Sua equipe mantém a decisão final",
+        "Mais de 2 milhões de usuários felizes em 49 países",
       ],
     },
     agentsSection: {
@@ -2501,15 +2494,14 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     hero: {
       badge: "ДОСТУПНО НА 11 ЯЗЫКАХ",
-      title: "CRM, которая думает, ищет клиентов и принимает оплату за вас.",
+      title: "CRM со суперспособностями",
       subtitle: "ИИ-команда развивает ваш бизнес, пока вы им управляете.",
       primaryCta: "Начать бесплатно",
       secondaryCta: "Заказать демо",
       proofs: [
         "8 ИИ-агентов доступны 24/7",
         "Запуск менее чем за 10 минут",
-        "50 000 компаний в 49 странах",
-        "Финальное решение остается за вашей командой",
+        "Более 2 миллионов довольных пользователей в 49 странах",
       ],
     },
     agentsSection: {
@@ -2856,15 +2848,14 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     hero: {
       badge: "11言語対応",
-      title: "思考・営業・回収を代行するCRM。",
+      title: "スーパーパワーを持つCRM",
       subtitle: "経営に集中している間、AIチームがビジネスを成長させます。",
       primaryCta: "無料で始める",
       secondaryCta: "デモを予約",
       proofs: [
         "8人のAIエージェントが24時間対応",
         "10分未満で利用開始",
-        "49カ国の50,000社を掲載",
-        "最終判断はチームが保持",
+        "49カ国で200万人以上の満足ユーザー",
       ],
     },
     agentsSection: {
@@ -3198,15 +3189,14 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     hero: {
       badge: "IN 11 SPRACHEN VERFÜGBAR",
-      title: "Das CRM, das für Sie denkt, akquiriert und Zahlungen einzieht.",
+      title: "Das CRM mit Superkräften",
       subtitle: "Das KI-Team, das Ihr Unternehmen wachsen lässt, während Sie es führen.",
       primaryCta: "Kostenlos starten",
       secondaryCta: "Demo buchen",
       proofs: [
         "8 KI-Agenten rund um die Uhr verfügbar",
         "Start in weniger als 10 Minuten",
-        "50.000 Unternehmen in 49 Ländern erfasst",
-        "Ihr Team behält das letzte Wort",
+        "Über 2 Millionen zufriedene Nutzer in 49 Ländern",
       ],
     },
     agentsSection: {
@@ -3556,15 +3546,14 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     "hero": {
       "badge": "זמין ב-11 שפות",
-      "title": "ה-CRM שחושב, מאתר לקוחות וגובה תשלומים עבורכם.",
+      "title": "CRM עם כוחות על",
       "subtitle": "צוות ה-AI שמצמיח את העסק שלכם בזמן שאתם מנהלים אותו.",
       "primaryCta": "התחילו בחינם",
       "secondaryCta": "תיאום דמו",
       "proofs": [
         "8 סוכני AI זמינים 24/7",
         "הטמעה מהירה בפחות מ-10 דקות",
-        "50,000 חברות ב-49 מדינות",
-        "הצוות שלכם תמיד שומר על המילה האחרונה"
+        "יותר מ-2 מיליון משתמשים מרוצים ב-49 מדינות"
       ]
     },
     "agentsSection": {
