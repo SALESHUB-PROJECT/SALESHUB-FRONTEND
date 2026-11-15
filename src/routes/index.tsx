@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SiteFooter } from "@/components/site/SiteFooter";
-import logo from "@/assets/heroes-one-logo.png.asset.json";
+const logoSrc = "/heroes-one-logo.webp";
 import { LanguageMenu } from "@/components/site/LanguageMenu";
 import homeBackground from "@/assets/saleshub-home-background.jpg";
 import crmPreview from "@/assets/demo_crm.png";
@@ -141,9 +141,7 @@ function LandingPage() {
         <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 lg:px-8">
           <a href="#top" aria-label={t.a11y.home} className="inline-flex items-center">
             <img
-              src={logo.url}
-              onError={(e) => { const img = e.currentTarget; if (!img.src.endsWith("/heroes-one-logo.webp")) img.src = "/heroes-one-logo.webp"; }}
-              alt="Heroes One"
+              src={logoSrc} alt="Heroes One"
               className="h-auto w-40 sm:w-48"
               width={1784}
               height={382}
