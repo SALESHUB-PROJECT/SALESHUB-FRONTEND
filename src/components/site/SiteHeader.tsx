@@ -18,7 +18,7 @@ export function SiteHeader() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-card shadow-sm">
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 lg:px-8">
         <Link to="/" aria-label="Accueil Heroes One" className="inline-flex items-center">
-          <img src={logoSrc} alt="Heroes One" className="h-auto w-40 sm:w-48" width={1784} height={382} />
+          <img src={logoSrc} alt="Heroes One" className="h-auto w-48 sm:w-60" width={1200} height={241} />
         </Link>
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Navigation principale">
           {links.map((l) => (
