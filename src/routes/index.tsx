@@ -143,8 +143,8 @@ function LandingPage() {
             <img
               src={logoSrc} alt="Heroes One"
               className="h-auto w-48 sm:w-60"
-              width={1784}
-              height={382}
+              width={1200}
+              height={241}
             />
           </a>
           <nav className="hidden items-center gap-7 lg:flex" aria-label={t.a11y.primaryNavigation}>
