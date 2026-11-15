@@ -14,11 +14,13 @@ import {
   KeyRound,
   LockKeyhole,
   Menu,
+  MessagesSquare,
   Server,
   ShieldCheck,
   Sparkle,
   Star,
   Trophy,
+  Workflow,
   Wrench,
   X,
 } from "lucide-react";
@@ -67,7 +69,7 @@ export const Route = createFileRoute("/")({
   component: LandingPage,
 });
 
-const heroProofIcons = [Clock3, Sparkle, Globe2, Check];
+const heroProofIcons = [Sparkle, MessagesSquare, Workflow, Clock3, Globe2];
 const agentImages = [
   agentArcher,
   agentLyra,
