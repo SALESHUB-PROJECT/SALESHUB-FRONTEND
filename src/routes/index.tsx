@@ -237,13 +237,13 @@ function LandingPage() {
                   {t.hero.secondaryCta}
                 </Button>
               </div>
-              <div className="mt-6 flex flex-wrap justify-center gap-x-7 gap-y-3 text-xs font-semibold text-primary-foreground/80">
+              <div className="mt-6 flex flex-wrap justify-center gap-x-8 gap-y-3 text-base font-semibold text-primary-foreground/85 sm:text-lg">
                 {t.hero.proofs.map((proof, index) => {
                   const Icon = heroProofIcons[index] ?? Check;
                   return (
-                    <span key={proof} className="flex items-center gap-2">
+                    <span key={proof} className="flex items-center gap-2.5">
                       <Icon
-                        className={`size-4 ${index % 2 === 0 ? "text-accent" : "text-primary"}`}
+                        className={`size-5 sm:size-6 ${index % 2 === 0 ? "text-accent" : "text-primary"}`}
                       />
                       {proof}
                     </span>
