@@ -40,7 +40,7 @@ export const fr = {
     fiveStars: "5 étoiles",
   },
   hero: {
-    badge: "DISPONIBLE EN 10 LANGUES",
+    badge: "DISPONIBLE EN 11 LANGUES",
     title: "Le CRM qui pense, prospecte et encaisse pour vous.",
     subtitle: "L’équipe IA qui fait grandir votre entreprise pendant que vous la dirigez.",
     primaryCta: "Démarrer gratuitement",
@@ -309,7 +309,7 @@ export const fr = {
     highlights: [
       "8 agents IA spécialisés",
       "Sécurité et conformité préparées",
-      "Disponible en 10 langues",
+      "Disponible en 11 langues",
     ],
     cta: "Réserver une démo",
     sections: [
@@ -399,7 +399,7 @@ export const translations: Record<LanguageCode, Translation> = {
       fiveStars: "5 stars",
     },
     hero: {
-      badge: "AVAILABLE IN 10 LANGUAGES",
+      badge: "AVAILABLE IN 11 LANGUAGES",
       title: "The CRM that thinks, prospects, and collects payments for you.",
       subtitle: "The AI team that grows your business while you lead it.",
       primaryCta: "Start for free",
@@ -668,7 +668,7 @@ export const translations: Record<LanguageCode, Translation> = {
       highlights: [
         "8 specialized AI agents",
         "Security and compliance prepared",
-        "Available in 10 languages",
+        "Available in 11 languages",
       ],
       cta: "Book a demo",
       sections: [
@@ -753,7 +753,7 @@ export const translations: Record<LanguageCode, Translation> = {
       fiveStars: "5 星",
     },
     hero: {
-      badge: "支持 10 种语言",
+      badge: "支持 11 种语言",
       title: "为您思考、获客并收款的 CRM。",
       subtitle: "在您经营企业时，AI 团队持续推动业务增长。",
       primaryCta: "免费开始",
@@ -994,7 +994,7 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     footer: {
       description: "一体化 AI CRM，用于自动获客、判断线索、跟踪客户并加速收款。",
-      highlights: ["8 位专业 AI 助手", "已准备安全与合规", "支持 10 种语言"],
+      highlights: ["8 位专业 AI 助手", "已准备安全与合规", "支持 11 种语言"],
       cta: "预约演示",
       sections: [
         {
@@ -1078,7 +1078,7 @@ export const translations: Record<LanguageCode, Translation> = {
       fiveStars: "5 सितारे",
     },
     hero: {
-      badge: "10 भाषाओं में उपलब्ध",
+      badge: "11 भाषाओं में उपलब्ध",
       title: "आपके लिए सोचने, ग्राहक खोजने और भुगतान लेने वाला CRM।",
       subtitle: "जब आप व्यवसाय का नेतृत्व करते हैं, आपकी AI टीम उसे बढ़ाती रहती है।",
       primaryCta: "मुफ़्त शुरू करें",
@@ -1347,7 +1347,7 @@ export const translations: Record<LanguageCode, Translation> = {
       highlights: [
         "8 specialized AI agents",
         "Security और compliance prepared",
-        "10 languages में available",
+        "11 languages में available",
       ],
       cta: "Demo book करें",
       sections: [
@@ -1433,7 +1433,7 @@ export const translations: Record<LanguageCode, Translation> = {
       fiveStars: "5 estrellas",
     },
     hero: {
-      badge: "DISPONIBLE EN 10 IDIOMAS",
+      badge: "DISPONIBLE EN 11 IDIOMAS",
       title: "El CRM que piensa, prospecta y cobra por ti.",
       subtitle: "El equipo de IA que hace crecer tu empresa mientras la diriges.",
       primaryCta: "Empezar gratis",
@@ -1714,7 +1714,7 @@ export const translations: Record<LanguageCode, Translation> = {
       highlights: [
         "8 agentes IA especializados",
         "Seguridad y cumplimiento preparados",
-        "Disponible en 10 idiomas",
+        "Disponible en 11 idiomas",
       ],
       cta: "Reservar demo",
       sections: [
@@ -2130,7 +2130,7 @@ export const translations: Record<LanguageCode, Translation> = {
       fiveStars: "5 estrelas",
     },
     hero: {
-      badge: "DISPONÍVEL EM 10 IDIOMAS",
+      badge: "DISPONÍVEL EM 11 IDIOMAS",
       title: "O CRM que pensa, prospecta e recebe por você.",
       subtitle: "A equipe de IA que faz sua empresa crescer enquanto você a lidera.",
       primaryCta: "Começar grátis",
@@ -2415,7 +2415,7 @@ export const translations: Record<LanguageCode, Translation> = {
       highlights: [
         "8 agentes de IA especializados",
         "Segurança e conformidade preparadas",
-        "Disponível em 10 idiomas",
+        "Disponível em 11 idiomas",
       ],
       cta: "Agendar demo",
       sections: [
@@ -2500,7 +2500,7 @@ export const translations: Record<LanguageCode, Translation> = {
       fiveStars: "5 звезд",
     },
     hero: {
-      badge: "ДОСТУПНО НА 10 ЯЗЫКАХ",
+      badge: "ДОСТУПНО НА 11 ЯЗЫКАХ",
       title: "CRM, которая думает, ищет клиентов и принимает оплату за вас.",
       subtitle: "ИИ-команда развивает ваш бизнес, пока вы им управляете.",
       primaryCta: "Начать бесплатно",
@@ -2770,7 +2770,7 @@ export const translations: Record<LanguageCode, Translation> = {
       highlights: [
         "8 специализированных ИИ-агентов",
         "Безопасность и соответствие подготовлены",
-        "Доступно на 10 языках",
+        "Доступно на 11 языках",
       ],
       cta: "Заказать демо",
       sections: [
@@ -2855,7 +2855,7 @@ export const translations: Record<LanguageCode, Translation> = {
       fiveStars: "5つ星",
     },
     hero: {
-      badge: "10言語対応",
+      badge: "11言語対応",
       title: "思考・営業・回収を代行するCRM。",
       subtitle: "経営に集中している間、AIチームがビジネスを成長させます。",
       primaryCta: "無料で始める",
@@ -3112,7 +3112,7 @@ export const translations: Record<LanguageCode, Translation> = {
     footer: {
       description:
         "見込み客開拓、リード選別、顧客追跡、回収加速を自動化するオールインワンAI CRMです。",
-      highlights: ["8人の専門AIエージェント", "セキュリティとコンプライアンスに対応", "10言語対応"],
+      highlights: ["8人の専門AIエージェント", "セキュリティとコンプライアンスに対応", "11言語対応"],
       cta: "デモを予約",
       sections: [
         {
@@ -3197,7 +3197,7 @@ export const translations: Record<LanguageCode, Translation> = {
       fiveStars: "5 Sterne",
     },
     hero: {
-      badge: "IN 10 SPRACHEN VERFÜGBAR",
+      badge: "IN 11 SPRACHEN VERFÜGBAR",
       title: "Das CRM, das für Sie denkt, akquiriert und Zahlungen einzieht.",
       subtitle: "Das KI-Team, das Ihr Unternehmen wachsen lässt, während Sie es führen.",
       primaryCta: "Kostenlos starten",
@@ -3471,7 +3471,7 @@ export const translations: Record<LanguageCode, Translation> = {
       highlights: [
         "8 spezialisierte KI-Agenten",
         "Sicherheit und Compliance vorbereitet",
-        "In 10 Sprachen verfügbar",
+        "In 11 Sprachen verfügbar",
       ],
       cta: "Demo buchen",
       sections: [
@@ -3555,7 +3555,7 @@ export const translations: Record<LanguageCode, Translation> = {
       "fiveStars": "5 כוכבים"
     },
     "hero": {
-      "badge": "זמין ב-10 שפות",
+      "badge": "זמין ב-11 שפות",
       "title": "ה-CRM שחושב, מאתר לקוחות וגובה תשלומים עבורכם.",
       "subtitle": "צוות ה-AI שמצמיח את העסק שלכם בזמן שאתם מנהלים אותו.",
       "primaryCta": "התחילו בחינם",
@@ -3920,7 +3920,7 @@ export const translations: Record<LanguageCode, Translation> = {
       "highlights": [
         "8 סוכני AI מומחים",
         "עמידה בתקני אבטחה ותאימות",
-        "זמין ב-10 שפות"
+        "זמין ב-11 שפות"
       ],
       "cta": "תיאום דמו",
       "sections": [
