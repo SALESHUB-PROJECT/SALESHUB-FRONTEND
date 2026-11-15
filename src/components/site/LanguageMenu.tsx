@@ -17,9 +17,10 @@ export const countriesByLanguage: Record<string, string[]> = {
   pt: ["PT","BR","AO","MZ","CV","GW","ST","TL","GQ"],
   ru: ["RU","BY","KZ","KG"],
   ja: ["JP"],
+  he: ["IL"],
   de: ["DE","AT","CH","LI","LU","BE"],
 };
-const defaultCountry: Record<string, string> = { fr: "FR", en: "US", zh: "CN", hi: "IN", es: "ES", ar: "SA", pt: "BR", ru: "RU", ja: "JP", de: "DE" };
+const defaultCountry: Record<string, string> = { fr: "FR", en: "US", zh: "CN", hi: "IN", es: "ES", ar: "SA", pt: "BR", ru: "RU", ja: "JP", de: "DE", he: "IL" };
 const KEY = "heroes-locale";
 
 type Props = {

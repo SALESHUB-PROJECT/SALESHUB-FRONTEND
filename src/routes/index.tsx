@@ -110,7 +110,7 @@ function LandingPage() {
     if (saved && saved in translations) setLang(saved as keyof typeof translations);
   }, []);
   const t = translations[lang];
-  const rtl = lang === "ar";
+  const rtl = lang === "ar" || lang === "he";
   const navLinks = [
     { id: "agents", label: t.nav.agents },
     { id: "results", label: t.nav.results },
