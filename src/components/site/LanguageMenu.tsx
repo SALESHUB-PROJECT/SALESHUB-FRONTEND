@@ -1,6 +1,6 @@
 import { BR, CN, DE, ES, FR, IN, JP, RU, SA, US } from "country-flag-icons/react/3x2";
 import { Check, ChevronDown, Globe2 } from "lucide-react";
-import type { ComponentType, SVGProps } from "react";
+import type { FlagComponent } from "country-flag-icons/react/3x2";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -8,7 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-type Flag = ComponentType<SVGProps<SVGSVGElement> & { title?: string }>;
+type Flag = FlagComponent;
 
 export const languageCountries: Record<string, { country: string; Flag: Flag }> = {
   fr: { country: "France", Flag: FR },
@@ -32,7 +32,7 @@ type Props = {
 
 export function LanguageMenu({ value, languages, onChange, ariaLabel }: Props) {
   const current = languages.find((l) => l.code === value) ?? languages[0];
-  const meta = languageCountries[current.code];
+  const meta = current ? languageCountries[current.code] : undefined;
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
@@ -43,7 +43,7 @@ export function LanguageMenu({ value, languages, onChange, ariaLabel }: Props) {
         {meta && <meta.Flag className="h-3 w-[18px] rounded-[2px] shadow-sm" aria-hidden />}
         <span className="grid leading-tight">
           <span className="text-sm font-semibold">{meta?.country}</span>
-          <span className="text-xs text-muted-foreground">{current.label}</span>
+          <span className="text-xs text-muted-foreground">{current?.label}</span>
         </span>
         <ChevronDown className="size-3.5 text-muted-foreground" />
       </DropdownMenuTrigger>
