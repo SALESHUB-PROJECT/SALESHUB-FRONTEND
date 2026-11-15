@@ -4,7 +4,7 @@
  * which defines the `Translation` shape.
  */
 export type BillingCycle = "monthly" | "annual" | "biennial";
-export type LanguageCode = "fr" | "en" | "zh" | "hi" | "es" | "ar" | "pt" | "ru" | "ja" | "de";
+export type LanguageCode = "fr" | "en" | "zh" | "hi" | "es" | "ar" | "pt" | "ru" | "ja" | "de" | "he";
 
 export const billingCycles: BillingCycle[] = ["monthly", "annual", "biennial"];
 
@@ -40,7 +40,7 @@ export const fr = {
     fiveStars: "5 étoiles",
   },
   hero: {
-    badge: "DISPONIBLE EN 10 LANGUES",
+    badge: "DISPONIBLE EN 11 LANGUES",
     title: "Le CRM qui pense, prospecte et encaisse pour vous.",
     subtitle: "L’équipe IA qui fait grandir votre entreprise pendant que vous la dirigez.",
     primaryCta: "Démarrer gratuitement",
@@ -309,7 +309,7 @@ export const fr = {
     highlights: [
       "8 agents IA spécialisés",
       "Sécurité et conformité préparées",
-      "Disponible en 10 langues",
+      "Disponible en 11 langues",
     ],
     cta: "Réserver une démo",
     sections: [
@@ -399,7 +399,7 @@ export const translations: Record<LanguageCode, Translation> = {
       fiveStars: "5 stars",
     },
     hero: {
-      badge: "AVAILABLE IN 10 LANGUAGES",
+      badge: "AVAILABLE IN 11 LANGUAGES",
       title: "The CRM that thinks, prospects, and collects payments for you.",
       subtitle: "The AI team that grows your business while you lead it.",
       primaryCta: "Start for free",
@@ -668,7 +668,7 @@ export const translations: Record<LanguageCode, Translation> = {
       highlights: [
         "8 specialized AI agents",
         "Security and compliance prepared",
-        "Available in 10 languages",
+        "Available in 11 languages",
       ],
       cta: "Book a demo",
       sections: [
@@ -753,7 +753,7 @@ export const translations: Record<LanguageCode, Translation> = {
       fiveStars: "5 星",
     },
     hero: {
-      badge: "支持 10 种语言",
+      badge: "支持 11 种语言",
       title: "为您思考、获客并收款的 CRM。",
       subtitle: "在您经营企业时，AI 团队持续推动业务增长。",
       primaryCta: "免费开始",
@@ -994,7 +994,7 @@ export const translations: Record<LanguageCode, Translation> = {
     },
     footer: {
       description: "一体化 AI CRM，用于自动获客、判断线索、跟踪客户并加速收款。",
-      highlights: ["8 位专业 AI 助手", "已准备安全与合规", "支持 10 种语言"],
+      highlights: ["8 位专业 AI 助手", "已准备安全与合规", "支持 11 种语言"],
       cta: "预约演示",
       sections: [
         {
@@ -1078,7 +1078,7 @@ export const translations: Record<LanguageCode, Translation> = {
       fiveStars: "5 सितारे",
     },
     hero: {
-      badge: "10 भाषाओं में उपलब्ध",
+      badge: "11 भाषाओं में उपलब्ध",
       title: "आपके लिए सोचने, ग्राहक खोजने और भुगतान लेने वाला CRM।",
       subtitle: "जब आप व्यवसाय का नेतृत्व करते हैं, आपकी AI टीम उसे बढ़ाती रहती है।",
       primaryCta: "मुफ़्त शुरू करें",
@@ -1347,7 +1347,7 @@ export const translations: Record<LanguageCode, Translation> = {
       highlights: [
         "8 specialized AI agents",
         "Security और compliance prepared",
-        "10 languages में available",
+        "11 languages में available",
       ],
       cta: "Demo book करें",
       sections: [
@@ -1433,7 +1433,7 @@ export const translations: Record<LanguageCode, Translation> = {
       fiveStars: "5 estrellas",
     },
     hero: {
-      badge: "DISPONIBLE EN 10 IDIOMAS",
+      badge: "DISPONIBLE EN 11 IDIOMAS",
       title: "El CRM que piensa, prospecta y cobra por ti.",
       subtitle: "El equipo de IA que hace crecer tu empresa mientras la diriges.",
       primaryCta: "Empezar gratis",
@@ -1714,7 +1714,7 @@ export const translations: Record<LanguageCode, Translation> = {
       highlights: [
         "8 agentes IA especializados",
         "Seguridad y cumplimiento preparados",
-        "Disponible en 10 idiomas",
+        "Disponible en 11 idiomas",
       ],
       cta: "Reservar demo",
       sections: [
@@ -2130,7 +2130,7 @@ export const translations: Record<LanguageCode, Translation> = {
       fiveStars: "5 estrelas",
     },
     hero: {
-      badge: "DISPONÍVEL EM 10 IDIOMAS",
+      badge: "DISPONÍVEL EM 11 IDIOMAS",
       title: "O CRM que pensa, prospecta e recebe por você.",
       subtitle: "A equipe de IA que faz sua empresa crescer enquanto você a lidera.",
       primaryCta: "Começar grátis",
@@ -2415,7 +2415,7 @@ export const translations: Record<LanguageCode, Translation> = {
       highlights: [
         "8 agentes de IA especializados",
         "Segurança e conformidade preparadas",
-        "Disponível em 10 idiomas",
+        "Disponível em 11 idiomas",
       ],
       cta: "Agendar demo",
       sections: [
@@ -2500,7 +2500,7 @@ export const translations: Record<LanguageCode, Translation> = {
       fiveStars: "5 звезд",
     },
     hero: {
-      badge: "ДОСТУПНО НА 10 ЯЗЫКАХ",
+      badge: "ДОСТУПНО НА 11 ЯЗЫКАХ",
       title: "CRM, которая думает, ищет клиентов и принимает оплату за вас.",
       subtitle: "ИИ-команда развивает ваш бизнес, пока вы им управляете.",
       primaryCta: "Начать бесплатно",
@@ -2770,7 +2770,7 @@ export const translations: Record<LanguageCode, Translation> = {
       highlights: [
         "8 специализированных ИИ-агентов",
         "Безопасность и соответствие подготовлены",
-        "Доступно на 10 языках",
+        "Доступно на 11 языках",
       ],
       cta: "Заказать демо",
       sections: [
@@ -2855,7 +2855,7 @@ export const translations: Record<LanguageCode, Translation> = {
       fiveStars: "5つ星",
     },
     hero: {
-      badge: "10言語対応",
+      badge: "11言語対応",
       title: "思考・営業・回収を代行するCRM。",
       subtitle: "経営に集中している間、AIチームがビジネスを成長させます。",
       primaryCta: "無料で始める",
@@ -3112,7 +3112,7 @@ export const translations: Record<LanguageCode, Translation> = {
     footer: {
       description:
         "見込み客開拓、リード選別、顧客追跡、回収加速を自動化するオールインワンAI CRMです。",
-      highlights: ["8人の専門AIエージェント", "セキュリティとコンプライアンスに対応", "10言語対応"],
+      highlights: ["8人の専門AIエージェント", "セキュリティとコンプライアンスに対応", "11言語対応"],
       cta: "デモを予約",
       sections: [
         {
@@ -3197,7 +3197,7 @@ export const translations: Record<LanguageCode, Translation> = {
       fiveStars: "5 Sterne",
     },
     hero: {
-      badge: "IN 10 SPRACHEN VERFÜGBAR",
+      badge: "IN 11 SPRACHEN VERFÜGBAR",
       title: "Das CRM, das für Sie denkt, akquiriert und Zahlungen einzieht.",
       subtitle: "Das KI-Team, das Ihr Unternehmen wachsen lässt, während Sie es führen.",
       primaryCta: "Kostenlos starten",
@@ -3471,7 +3471,7 @@ export const translations: Record<LanguageCode, Translation> = {
       highlights: [
         "8 spezialisierte KI-Agenten",
         "Sicherheit und Compliance vorbereitet",
-        "In 10 Sprachen verfügbar",
+        "In 11 Sprachen verfügbar",
       ],
       cta: "Demo buchen",
       sections: [
@@ -3524,5 +3524,506 @@ export const translations: Record<LanguageCode, Translation> = {
       submit: "Meine Demo anfragen",
       note: "Das Demo-Formular wird beim Onlinegang mit Ihrem Vertriebsteam verbunden.",
     },
+  },
+  he: {
+    "label": "עברית",
+    "seo": {
+      "title": "Heroes One | ה-CRM מבוסס AI הכל-באחד",
+      "description": "אוטומציה מלאה של איתור לידים, הסמכה, הצעות מחיר וגבייה עם 8 סוכני AI מבית Heroes One הזמינים 24/7.",
+      "ogDescription": "8 סוכני AI לאוטומציה מלאה של מחזור המכירות שלכם, מהפנייה הראשונה ועד לתשלום."
+    },
+    "nav": {
+      "agents": "8 סוכני ה-AI שלכם",
+      "results": "תוצאות",
+      "compare": "השוואה",
+      "partners": "שותפים",
+      "pricing": "מחירים"
+    },
+    "a11y": {
+      "home": "Heroes One - דף הבית",
+      "primaryNavigation": "ניווט ראשי",
+      "chooseLanguage": "בחירת שפה",
+      "openMenu": "פתיחת תפריט",
+      "close": "סגירה",
+      "crmPreview": "תצוגה מקדימה של Heroes One CRM",
+      "crmDesktop": "ממשק שולחן עבודה של Heroes One CRM",
+      "crmMobile": "ממשק מובייל של Heroes One CRM",
+      "crmAnalytics": "לוח מדדים ואנליטיקה Heroes One",
+      "integrationList": "אפליקציות מחוברות ל-Heroes One",
+      "logo": "Logo",
+      "agentPortrait": "דיוקן של",
+      "fiveStars": "5 כוכבים"
+    },
+    "hero": {
+      "badge": "זמין ב-11 שפות",
+      "title": "ה-CRM שחושב, מאתר לקוחות וגובה תשלומים עבורכם.",
+      "subtitle": "צוות ה-AI שמצמיח את העסק שלכם בזמן שאתם מנהלים אותו.",
+      "primaryCta": "התחילו בחינם",
+      "secondaryCta": "תיאום דמו",
+      "proofs": [
+        "8 סוכני AI זמינים 24/7",
+        "הטמעה מהירה בפחות מ-10 דקות",
+        "50,000 חברות ב-49 מדינות",
+        "הצוות שלכם תמיד שומר על המילה האחרונה"
+      ]
+    },
+    "agentsSection": {
+      "kicker": "הצוות הווירטואלי שלכם",
+      "title": "ה-AI שלוקח אחריות על המשימות ומאיץ את המכירות שלכם.",
+      "text": "כל סוכן מייצר אוטומציה למשימה מוגדרת: איתור לידים, מענה ללקוחות, כתיבת תוכן, פולו-אפ, גיוס עובדים או מעקב מתחרים. הצוותים שלכם חוסכים זמן, שומרים על שליטה מלאה בהחלטות ומתקדמים עם עוזר אישי הזמין 24/7.",
+      "count": "08",
+      "expertise": "תחומי מומחיות ייעודיים",
+      "items": [
+        {
+          "name": "Archer",
+          "role": "איתור לידים",
+          "description": "מזהה את החברות בעלות הסבירות הגבוהה ביותר לרכישה ומכין פנייה מותאמת אישית לכל מקבל החלטות.",
+          "kpi": "+50 לידים/שבוע"
+        },
+        {
+          "name": "Lyra",
+          "role": "אימון אנשי מכירות",
+          "description": "מקשיבה לשיחות בזמן אמת, מציעה את השאלה הבאה ועוזרת לכל איש מכירות להשתפר משיחה לשיחה.",
+          "kpi": "+15% פגישות"
+        },
+        {
+          "name": "Atlas",
+          "role": "שירות וקשרי לקוחות",
+          "description": "עונה לפניות שוטפות יום ולילה, ומעביר את הטיפול לגורם המתאים כאשר נדרשת התערבות אנושית.",
+          "kpi": "80% נפתרו"
+        },
+        {
+          "name": "Mentor",
+          "role": "כתיבה וניסוח",
+          "description": "הופך את ההערות שלכם למיילים, סיכומי פגישות והצעות מחיר חדות ומדויקות בטון המותג שלכם.",
+          "kpi": "15- שעות הזנה"
+        },
+        {
+          "name": "Tenax",
+          "role": "גבייה וניהול חובות",
+          "description": "מבצע תזכורות תשלום ברגישות ובהתאם להיסטוריית הלקוח, ומתריע במצבים המחייבים שיחה אישית.",
+          "kpi": "+25% גבייה חוזרת"
+        },
+        {
+          "name": "Legio",
+          "role": "גיוס עובדים",
+          "description": "מאתר פרופילים רלוונטיים, מכין את הראיונות ומרכז את המשובים של הצוות שלכם.",
+          "kpi": "פי 4 מהר יותר"
+        },
+        {
+          "name": "Argus",
+          "role": "מודיעין עסקי ותחרותי",
+          "description": "עוקב אחר השווקים ולקוחות המפתח שלכם כדי להציף איתותים קריטיים בזמן הנכון.",
+          "kpi": "0 הזדמנויות שהוחמצו"
+        },
+        {
+          "name": "Mythos",
+          "role": "חשיפה ומיתוג",
+          "description": "מתרגם את המומחיות שלכם לתוכן בעל ערך ועקביות כדי לבנות אמון עוד לפני השיחה הראשונה.",
+          "kpi": "+40% תנועה"
+        }
+      ]
+    },
+    "integrations": {
+      "kicker": "אינטגרציות מחוברות",
+      "title": "כל הכלים שלכם מחוברים ל-Heroes One CRM.",
+      "text": "טלפוניה, דוא\"ל, SMS, אוטומציות ומיפוי מסתנכרנים במרחב אחד כדי שכל אינטראקציה תישמר במקום הנכון."
+    },
+    "partners": {
+      "kicker": "תוכנית שותפים",
+      "title": "הכשירו את הצוותים שלכם והפכו למטמיעי Heroes One מוסמכים.",
+      "text": "שלוש רמות הסמכה ללימוד חיבור Heroes One למערכות הלקוח, הבניית נתונים ואספקת אינטגרציות אמינות בסטנדרט מקצועי מוביל.",
+      "stats": [
+        {
+          "value": "3",
+          "label": "הכשרות"
+        },
+        {
+          "value": "AI",
+          "label": "CRM וסוכנים"
+        },
+        {
+          "value": "API",
+          "label": "API ואינטגרציות"
+        }
+      ],
+      "cta": "הצטרפו כשותפים",
+      "levels": [
+        {
+          "level": "רמה 1",
+          "title": "מטמיע מוסמך",
+          "duration": "יסודות ה-CRM",
+          "text": "הגדרת סביבת Heroes One, חיבור הערוצים החיוניים ומסירת סביבת עבודה ראשונה ונקייה לצוות המכירות.",
+          "points": [
+            "הגדרות CRM ראשוניות",
+            "מיילים, שיחות ו-SMS",
+            "ייבוא ואיכות נתונים"
+          ]
+        },
+        {
+          "level": "רמה 2",
+          "title": "ארכיטקט אינטגרציות",
+          "duration": "אוטומציה מתקדמת",
+          "text": "בניית תרחישים חוצי-מערכות, הבטחת אמינות זרימת המידע והתאמת Heroes One לתהליכים העסקיים של הלקוח.",
+          "points": [
+            "תהליכי עבודה Zapier / API",
+            "סנכרון בין אפליקציות",
+            "הרשאות ואבטחה"
+          ]
+        },
+        {
+          "level": "רמה 3",
+          "title": "מומחה הטמעה",
+          "duration": "הסמכת פרימיום",
+          "text": "ניהול פריסות מורכבות עם תהליכי ממשל (Governance), הדרכת צוותים ואופטימיזציה של סוכני AI בשווקים מרובים.",
+          "points": [
+            "הטמעה רב-צוותית",
+            "סוכני AI בהתאמה אישית",
+            "ביקורת וליווי צמוד"
+          ]
+        }
+      ]
+    },
+    "collaboration": {
+      "kicker": "מותאם לצוותים בעולם האמיתי",
+      "title": "יותר מ-CRM, שותף אמיתי לצמיחה.",
+      "text": "Heroes One מרכז את התקשורת, סדרי העדיפויות והפעולות הבאות במקום אחד. כולם יודעים למי לחזור, למה ועם איזה רקע – בלי לבזבז ימים שלמים על מילוי כרטיסי לקוח.",
+      "blocks": [
+        {
+          "title": "בינה מלאכותית שמסייעת",
+          "text": "מכינה, מסכמת וממליצה. הצוותים שלכם מאשרים את ההחלטות החשובות ושומרים על הקשר האישי."
+        },
+        {
+          "title": "תמונת מצב משותפת",
+          "text": "שיווק, מכירות ושירות לקוחות פועלים מתוך אותה היסטוריה בדיוק, המתורגמת לשפת האם של כל אחד."
+        }
+      ],
+      "imageAlt": "צוות מכירות מקיים דיון סביב מערכת ה-CRM",
+      "captionLead": "מבט אחד מרכזי",
+      "captionText": "למעקב אחר השיחה, ההחלטות והשלב הבא."
+    },
+    "results": {
+      "kicker": "ההבטחה שלנו",
+      "title": "מליד ועד תשלום, במערכת אחת אחודה.",
+      "text": "הסוכנים משיבים, מסמיכים, מאתרים לקוחות, כותבים, מגייסים ועושים פולו-אפ – בזמן שהצוות שלכם מתמקד בסגירת עסקאות.",
+      "steps": [
+        {
+          "number": "01",
+          "title": "ליד חדש נכנס",
+          "text": "פרסום, אתר או LinkedIn"
+        },
+        {
+          "number": "02",
+          "title": "פנייה ראשונה תוך פחות מ-2 דקות",
+          "text": "הודעה מותאמת אישית"
+        },
+        {
+          "number": "03",
+          "title": "הסמכת ליד",
+          "text": "ציון (Score) המחושב בזמן אמת"
+        },
+        {
+          "number": "04",
+          "title": "הצעת מחיר ב-30 שניות",
+          "text": "מסמך שנוצר אוטומטית"
+        },
+        {
+          "number": "05",
+          "title": "שולם ונגבה",
+          "text": "מעקב אוטומטי"
+        }
+      ],
+      "stats": [
+        {
+          "value": "39 000 €",
+          "label": "נחסכים / לאיש מכירות / בשנה"
+        },
+        {
+          "value": "+30%",
+          "label": "המרה מליד למכירה"
+        },
+        {
+          "value": "+15%",
+          "label": "פגישות שנקבעו / שיחות"
+        },
+        {
+          "value": "50+",
+          "label": "לידים מוסמכים / שבוע"
+        }
+      ],
+      "note": "יעדים מתוך המצגת המסחרית, למדידה והתאמה בהתאם לשימוש בפועל."
+    },
+    "compare": {
+      "kicker": "השוואת שוק",
+      "title": "למה Heroes One משנה את כללי המשחק",
+      "text": "פלטפורמה מאוחדת במקום אוסף של כלים מבוזרים ותוספים.",
+      "headers": [
+        "יכולת",
+        "Heroes One",
+        "Salesforce",
+        "HubSpot",
+        "Pipedrive"
+      ],
+      "rows": [
+        [
+          "CRM שלם ומובנה",
+          "✓",
+          "✓",
+          "✓",
+          "✓"
+        ],
+        [
+          "8 סוכני AI אוטונומיים",
+          "✓",
+          "חלקי",
+          "חלקי",
+          "חלקי"
+        ],
+        [
+          "אפס הזנה ידנית",
+          "✓",
+          "חלקי",
+          "חלקי",
+          "חלקי"
+        ],
+        [
+          "אימון ומשוב בלייב במהלך שיחות",
+          "✓",
+          "חלקי",
+          "חלקי",
+          "—"
+        ],
+        [
+          "התחלת עבודה תוך פחות מ-10 דקות",
+          "✓",
+          "—",
+          "חלקי",
+          "חלקי"
+        ],
+        [
+          "תוכנית חינמית ללא צורך בכרטיס אשראי",
+          "✓",
+          "—",
+          "חלקי",
+          "—"
+        ]
+      ],
+      "note": "השוואה אינדיקטיבית על בסיס מידע פומבי מתוך החומר השיווקי ל-2025/2026. יש לאמת לפני פרסום."
+    },
+    "security": {
+      "kicker": "אבטחה ותאימות",
+      "title": "אבטחה המיועדת להגנה על נתוני מכירות רגישים.",
+      "text": "Heroes One מרכז את התקשורת, הלידים והיסטוריית הלקוחות עם בקרות גישה מחמירות, תיעוד מלא וארכיטקטורה המותאמת לסטנדרטים הארגוניים המחמירים ביותר.",
+      "badges": [
+        "GDPR / RGPD",
+        "SOC 2 ready",
+        "AES-256",
+        "ISO 27001 ready",
+        "SSO",
+        "יומני ביקורת"
+      ],
+      "controls": [
+        {
+          "title": "בקרת חשבונות מוקפדת",
+          "text": "תפקידים, הרשאות וגישה מוגדרת להגנה על מרחבי מכירות רגישים."
+        },
+        {
+          "title": "הצפנת נתונים",
+          "text": "הגנה על תכתובות ומידע באמצעות ארכיטקטורה התומכת בהצפנת AES-256."
+        },
+        {
+          "title": "תשתית מנוטרת",
+          "text": "תיעוד יומנים, הפרדת סביבות וניטור שוטף לצמצום סיכונים תפעוליים."
+        },
+        {
+          "title": "תאימות מתועדת",
+          "text": "ארגון המוכן לדרישות GDPR, SOC 2 ו-ISO בהתאם לרמת הפריסה."
+        }
+      ]
+    },
+    "pricing": {
+      "kicker": "מחירים",
+      "title": "בחרו את מסלול ההתחייבות שלכם",
+      "text": "התחייבות ארוכה יותר – משתלמת יותר.",
+      "billing": {
+        "monthly": "חודשי",
+        "annual": "שנתי 15%−",
+        "biennial": "שנתיים 25%−"
+      },
+      "recommended": "מומלץ",
+      "customPrice": "בהתאמה אישית",
+      "perUserMonth": " /משתמש/חודש",
+      "ctaFree": "התחילו בחינם",
+      "ctaCustom": "צרו קשר עם הצוות",
+      "ctaChoose": "בחרו במסלול זה",
+      "securityNote": "תשלום מאובטח וחיוב מחזורי לאחר אישור המסלול שנבחר.",
+      "plans": [
+        {
+          "name": "Solo",
+          "desc": "לעצמאיים והתנסות ראשונית",
+          "features": [
+            "סוכן AI פעיל 1",
+            "משתמש 1",
+            "500 קרדיטים לחודש",
+            "כולל CRM בסיסי"
+          ]
+        },
+        {
+          "name": "TPE",
+          "desc": "פחות מ-10 עובדים",
+          "features": [
+            "4 סוכני AI פעילים",
+            "עד 10 משתמשים",
+            "20,000 קרדיטים לחודש",
+            "כולל תמיכה"
+          ]
+        },
+        {
+          "name": "ETI / Groupe",
+          "desc": "מעל 50 עובדים",
+          "features": [
+            "קרדיטים ו-API ללא הגבלה",
+            "אבטחה מוגברת",
+            "פריסה רב-לאומית",
+            "מנהל תיק לקוח ייעודי"
+          ]
+        }
+      ]
+    },
+    "testimonial": {
+      "kicker": "שביעות רצון לקוחות",
+      "title": "המשתמשים הראשונים משתפים בחוויה שלהם",
+      "text": "משוב מתועד משלב הבטא הסגורה.",
+      "quote": "«בשבוע הראשון, ARCHER הביא לי 23 לידים מוסמכים. בשבוע השני כבר סגרתי 2 לקוחות חדשים.»",
+      "attribution": "ז'רום ד. · תחום הנדל\"ן · השם והתמונה להמחשה · עדות משלב הבטא, לאימות לפני פרסום",
+      "score": "4,9/5",
+      "scoreLabel": "שביעות רצון מדווחת בבטא"
+    },
+    "awards": {
+      "kicker": "הכרה בינלאומית",
+      "title": "חזון עולמי, עם תוצאות בשטח.",
+      "text": "במצגת מוצגות מספר תחרויות וקטגוריות בינלאומיות. שמות, שנים ואסמכתאות יאומתו סופית לפני פרסום רשמי.",
+      "items": [
+        "חדשנות ב-AI",
+        "פרודוקטיביות",
+        "מצוינות SaaS"
+      ],
+      "status": "לאימות"
+    },
+    "cta": {
+      "title": "8 סוכני ה-AI שלכם מחכים לכם.",
+      "text": "שיחה קצרה של 30 דקות כדי להתאים את Heroes One בדיוק לצרכים שלכם.",
+      "button": "תיאום פגישה"
+    },
+    "footer": {
+      "description": "ה-CRM מבוסס AI הכל-באחד לאוטומציה של איתור לידים, הסמכה, מעקב לקוחות והאצת הגבייה.",
+      "highlights": [
+        "8 סוכני AI מומחים",
+        "עמידה בתקני אבטחה ותאימות",
+        "זמין ב-11 שפות"
+      ],
+      "cta": "תיאום דמו",
+      "sections": [
+        {
+          "title": "מוצר",
+          "links": [
+            {
+              "label": "סוכני AI",
+              "href": "#agents"
+            },
+            {
+              "label": "תוצאות",
+              "href": "#results"
+            },
+            {
+              "label": "השוואת CRM",
+              "href": "#compare"
+            },
+            {
+              "label": "מחירים",
+              "href": "#pricing"
+            }
+          ]
+        },
+        {
+          "title": "פתרונות",
+          "links": [
+            {
+              "label": "איתור לידים אוטומטי",
+              "href": "#agents"
+            },
+            {
+              "label": "אימון אנשי מכירות",
+              "href": "#agents"
+            },
+            {
+              "label": "שירות לקוחות",
+              "href": "#agents"
+            },
+            {
+              "label": "גבייה וניהול חובות",
+              "href": "#agents"
+            }
+          ]
+        },
+        {
+          "title": "חברה",
+          "links": [
+            {
+              "label": "תוכנית שותפים",
+              "href": "#partners"
+            },
+            {
+              "label": "אבטחה",
+              "href": "#security"
+            },
+            {
+              "label": "דמו מותאם אישית",
+              "href": "#top"
+            },
+            {
+              "label": "אינטגרציות",
+              "href": "#integrations"
+            }
+          ]
+        },
+        {
+          "title": "משאבים",
+          "links": [
+            {
+              "label": "פרטיות",
+              "href": "#"
+            },
+            {
+              "label": "תנאי שימוש",
+              "href": "#"
+            },
+            {
+              "label": "מידע משפטי",
+              "href": "#"
+            },
+            {
+              "label": "מרכז עזרה",
+              "href": "#"
+            }
+          ]
+        }
+      ],
+      "copyright": "© 2026 Heroes One · כל הזכויות שמורות",
+      "legalLinks": [
+        "מדיניות פרטיות",
+        "עוגיות",
+        "סטטוס שירות"
+      ]
+    },
+    "contact": {
+      "title": "בואו נדבר על הפרויקט שלכם",
+      "text": "השאירו פרטים לתיאום הדגמה מותאמת אישית.",
+      "name": "שם",
+      "email": "דוא\"ל עסקי",
+      "company": "חברה",
+      "submit": "בקשת הדגמה",
+      "note": "טופס ההדגמה יחובר ישירות לצוות המכירות שלכם עם העלייה לאוויר."
+    }
   },
 };
