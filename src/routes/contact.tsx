@@ -1,14 +1,14 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
 import { z } from "zod";
-import { ArrowRight, Mail, Phone } from "lucide-react";
+import { ArrowRight, Mail, Phone, MapPin } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { supabase } from "@/integrations/supabase/client";
 import { company } from "@/lib/company";
-import heroes from "@/assets/saleshub-home-background.jpg";
+import { OfficeDirectory } from "@/components/site/OfficeDirectory";
 
 const needs = ["Démo Heroes One", "CRM", "Agents IA", "Automatisation", "Prospection", "Marketing", "Call center", "API / intégration", "Partenariat", "Programme intégrateur", "Support", "Autre"];
 const sizes = ["1", "2-10", "11-50", "51-200", "201-1000", "1000+"];
@@ -104,21 +104,29 @@ function ContactPage() {
   return (
     <div className="min-h-screen bg-background">
       <SiteHeader />
-      <main className="mx-auto max-w-7xl px-5 pb-20 pt-32 lg:px-8">
-        <div className="grid gap-10 lg:grid-cols-2">
-          <div>
+      <main className="pt-18">
+        <section className="border-b border-border bg-primary/5 py-12 sm:py-16">
+          <div className="mx-auto max-w-7xl px-5 lg:px-8">
             <p className="text-sm font-semibold uppercase tracking-wide text-primary">Contact</p>
             <h1 className="mt-3 text-4xl font-bold sm:text-5xl">Parlons de vos superpouvoirs.</h1>
-            <p className="mt-5 text-lg text-muted-foreground">
-              Une question, une démonstration, un projet d'intégration ou un partenariat ? Notre équipe est à votre écoute.
-            </p>
-            <div className="mt-8 overflow-hidden rounded-lg border border-border">
-              <img src={heroes} alt="Les héros Heroes One" className="aspect-[16/10] w-full object-cover" loading="lazy" />
-            </div>
-            <p className="mt-6 font-display text-xl font-semibold">Parlons de votre prochain superpouvoir.</p>
+            <p className="mt-5 max-w-2xl text-lg text-muted-foreground">Une question, une démonstration, un projet d'intégration ou un partenariat ? Notre équipe est à votre écoute.</p>
           </div>
+        </section>
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+        <div className="grid gap-10 py-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+          <section aria-labelledby="contact-details-title">
+            <h2 id="contact-details-title" className="text-3xl font-semibold">Nos coordonnées</h2>
+            <address className="mt-8 grid gap-6 not-italic">
+              {cards.map(({ title, value, href, Icon }) => <div key={title}>
+                <p className="text-xs uppercase tracking-wide text-muted-foreground">{title}</p>
+                <a href={href} className="mt-2 inline-flex items-center gap-2 text-sm hover:text-primary"><Icon className="size-4 shrink-0 text-primary" />{value}</a>
+              </div>)}
+              <div><p className="text-xs uppercase tracking-wide text-muted-foreground">Adresse</p><p className="mt-2 flex items-start gap-2 text-sm leading-relaxed"><MapPin className="mt-0.5 size-4 shrink-0 text-primary" />{company.address}</p></div>
+              <div><p className="text-xs uppercase tracking-wide text-muted-foreground">Immatriculation</p><p className="mt-2 text-sm">NIF {company.nif}<br />STAT {company.stat}</p></div>
+            </address>
+          </section>
 
-          <form onSubmit={onSubmit} noValidate className="rounded-lg border border-border bg-card p-6 shadow-sm sm:p-8">
+          <form onSubmit={onSubmit} noValidate>
             <h2 className="text-2xl font-semibold">Vous souhaitez activer vos superpouvoirs ?</h2>
             {sent && <p className="mt-4 rounded-md bg-primary/10 p-3 text-sm text-primary">Merci ! Votre demande a bien été envoyée.</p>}
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -160,16 +168,10 @@ function ContactPage() {
           </form>
         </div>
 
-        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {cards.map(({ title, value, href, Icon }) => (
-            <a key={title} href={href} className="group rounded-lg border border-border bg-card p-6 transition hover:border-primary">
-              <p className="font-semibold">{title}</p>
-              <p className="mt-1 inline-flex items-center gap-2 text-primary"><Icon className="size-4" /> {value}</p>
-            </a>
-          ))}
+        <OfficeDirectory />
         </div>
-
-        <div className="mt-10 flex flex-col items-start justify-between gap-4 rounded-lg bg-foreground p-8 text-primary-foreground sm:flex-row sm:items-center">
+        <div className="bg-foreground text-primary-foreground">
+        <div className="mx-auto flex max-w-7xl flex-col items-start justify-between gap-4 px-5 py-10 sm:flex-row sm:items-center lg:px-8">
           <div>
             <h2 className="text-2xl font-semibold">Besoin d'une démo ?</h2>
             <p className="mt-1 text-primary-foreground/75">Réservez une présentation personnalisée de Heroes One.</p>
@@ -177,6 +179,7 @@ function ContactPage() {
           <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
             <a href={`${company.emailHref}?subject=${encodeURIComponent("Demande de démo Heroes One")}`}>Réserver une démo <ArrowRight className="size-4" /></a>
           </Button>
+        </div>
         </div>
       </main>
       <SiteFooter />
