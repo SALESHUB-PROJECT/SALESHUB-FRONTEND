@@ -10,7 +10,7 @@ import { apiGroups, families, heroOrder, heroes, jobs, journey, sectors, type St
 import { cn } from "@/lib/utils";
 
 const TITLE = "Heroes One — CRM IA, automatisation, agents IA, API & intégrations";
-const DESC = "Votre CRM sous stéroïdes : 8 agents IA, use cases par métier et secteur, API et intégrations. CRM commercial, CRM PME, CRM call center, CRM immobilier, énergie, e-commerce.";
+const DESC = "Votre CRM sous stéroïdes : agents IA illimités, use cases par métier et secteur, API et intégrations. CRM commercial, CRM PME, CRM call center, CRM immobilier, énergie, e-commerce.";
 
 export const Route = createFileRoute("/superpouvoirs")({
   head: () => ({

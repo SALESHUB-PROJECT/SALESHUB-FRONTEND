@@ -11,3 +11,6 @@
 
 Legal documents live in `src/content/legal` and use `LegalMarkdownPage` with `legalHead` in dedicated routes; the DPA is linked from the CGV and shared footer so contractual annexes remain directly accessible.
 Brand identity (name, contacts, legal identifiers) is read from `src/lib/company.ts`; brand artwork is served through `src/assets/*.asset.json` pointers, and the browser-tab icon is a square crop kept in `public/favicon.png`.
+
+Validated commercial entitlements live in `src/lib/commercial-policy.ts` with focused tests, so translated offer copy stays aligned with the approved rules.
+The international contact directory is shared by the office cards and interactive map, so selecting a city always displays the matching address.
