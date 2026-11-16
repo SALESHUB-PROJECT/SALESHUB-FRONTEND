@@ -1,18 +1,19 @@
-import { describe, expect, test } from 'bun:test';
+import { describe, it as test } from 'node:test';
+import { deepStrictEqual } from 'node:assert/strict';
 import { commercialPolicy as policy } from './commercial-policy';
 
 describe('Validated offer entitlements', () => {
   test('Solo includes all options, API and 1000 contacts', () => {
-    expect(policy.solo).toEqual({ optionsIncluded: true, apiIncluded: true, contacts: 1000 });
+    deepStrictEqual(policy.solo, { optionsIncluded: true, apiIncluded: true, contacts: 1000 });
   });
   test('TPE includes everything without a record limit', () => {
-    expect(policy.tpe).toEqual({ allIncluded: true, recordLimit: null });
+    deepStrictEqual(policy.tpe, { allIncluded: true, recordLimit: null });
   });
   test('Enterprise includes integration manager, independent server and free preliminary audit', () => {
-    expect(policy.enterprise).toEqual({ dedicatedIntegrationManager: true, independentServer: true, preliminaryAuditFree: true });
+    deepStrictEqual(policy.enterprise, { dedicatedIntegrationManager: true, independentServer: true, preliminaryAuditFree: true });
   });
-  test('AI agents are unlimited', () => { expect(policy.agents.limit).toBeNull(); });
-  test('Partner training is free and unlimited', () => { expect(policy.partners.training).toEqual({ price: 0, limit: null }); });
-  test('Partner certification is free and unlimited', () => { expect(policy.partners.certification).toEqual({ price: 0, limit: null }); });
-  test('Partner access is free and unlimited', () => { expect(policy.partners.access).toEqual({ price: 0, limit: null }); });
+  test('AI agents are unlimited', () => { deepStrictEqual(policy.agents.limit, null); });
+  test('Partner training is free and unlimited', () => { deepStrictEqual(policy.partners.training, { price: 0, limit: null }); });
+  test('Partner certification is free and unlimited', () => { deepStrictEqual(policy.partners.certification, { price: 0, limit: null }); });
+  test('Partner access is free and unlimited', () => { deepStrictEqual(policy.partners.access, { price: 0, limit: null }); });
 });
