@@ -50,7 +50,7 @@ export const fr = {
       "Communication unifiée (Mail, SMS, Appels, ...)",
       "Automatisation totale (Mailing, Commandes, PDF, ...)",
       "Prise en main en moins de 10 min",
-      "Plus de 2 millions d'utilisateurs heureux, dans 49 pays",
+      "Plus de 2 millions d'utilisateurs heureux, dans 52 pays",
     ],
   },
   agentsSection: {
@@ -410,7 +410,7 @@ export const translations: Record<LanguageCode, Translation> = {
         "Unified communication (Email, SMS, Calls, ...)",
         "Total automation (mailing, orders, PDF, ...)",
         "Ready in under 10 min",
-        "Over 2 million happy users in 49 countries",
+        "Over 2 million happy users in 52 countries",
       ],
     },
     agentsSection: {
@@ -765,7 +765,7 @@ export const translations: Record<LanguageCode, Translation> = {
         "统一沟通（邮件、短信、电话……）",
         "全面自动化（邮件营销、订单、PDF……）",
         "不到 10 分钟即可上手",
-        "49 个国家超过 200 万满意用户",
+        "52 个国家超过 200 万满意用户",
       ],
     },
     agentsSection: {
@@ -1091,7 +1091,7 @@ export const translations: Record<LanguageCode, Translation> = {
         "एकीकृत संचार (ईमेल, SMS, कॉल, ...)",
         "पूर्ण ऑटोमेशन (मेलिंग, ऑर्डर, PDF, ...)",
         "10 मिनट से कम में शुरुआत",
-        "49 देशों में 20 लाख से अधिक खुश उपयोगकर्ता",
+        "52 देशों में 20 लाख से अधिक खुश उपयोगकर्ता",
       ],
     },
     agentsSection: {
@@ -1447,7 +1447,7 @@ export const translations: Record<LanguageCode, Translation> = {
         "Comunicación unificada (Email, SMS, Llamadas, ...)",
         "Automatización total (mailing, pedidos, PDF, ...)",
         "Puesta en marcha en menos de 10 min",
-        "Más de 2 millones de usuarios felices en 49 países",
+        "Más de 2 millones de usuarios felices en 52 países",
       ],
     },
     agentsSection: {
@@ -1814,7 +1814,7 @@ export const translations: Record<LanguageCode, Translation> = {
         "تواصل موحّد (بريد، رسائل نصية، مكالمات، ...)",
         "أتمتة شاملة (البريد الجماعي، الطلبات، PDF، ...)",
         "بدء الاستخدام في أقل من 10 دقائق",
-        "أكثر من مليوني مستخدم سعيد في 49 دولة",
+        "أكثر من مليوني مستخدم سعيد في 52 دولة",
       ],
     },
     agentsSection: {
@@ -2146,7 +2146,7 @@ export const translations: Record<LanguageCode, Translation> = {
         "Comunicação unificada (E-mail, SMS, Chamadas, ...)",
         "Automação total (mailing, pedidos, PDF, ...)",
         "Uso inicial em menos de 10 min",
-        "Mais de 2 milhões de usuários felizes em 49 países",
+        "Mais de 2 milhões de usuários felizes em 52 países",
       ],
     },
     agentsSection: {
@@ -2517,7 +2517,7 @@ export const translations: Record<LanguageCode, Translation> = {
         "Единая коммуникация (почта, SMS, звонки, ...)",
         "Полная автоматизация (рассылки, заказы, PDF, ...)",
         "Запуск менее чем за 10 минут",
-        "Более 2 миллионов довольных пользователей в 49 странах",
+        "Более 2 миллионов довольных пользователей в 52 странах",
       ],
     },
     agentsSection: {
@@ -2873,7 +2873,7 @@ export const translations: Record<LanguageCode, Translation> = {
         "コミュニケーション統合（メール、SMS、電話…）",
         "完全自動化（メール配信、注文、PDF…）",
         "10分未満で利用開始",
-        "49カ国で200万人以上の満足ユーザー",
+        "52カ国で200万人以上の満足ユーザー",
       ],
     },
     agentsSection: {
@@ -3216,7 +3216,7 @@ export const translations: Record<LanguageCode, Translation> = {
         "Einheitliche Kommunikation (E-Mail, SMS, Anrufe, ...)",
         "Totale Automatisierung (Mailing, Bestellungen, PDF, ...)",
         "Start in weniger als 10 Minuten",
-        "Über 2 Millionen zufriedene Nutzer in 49 Ländern",
+        "Über 2 Millionen zufriedene Nutzer in 52 Ländern",
       ],
     },
     agentsSection: {
@@ -3575,7 +3575,7 @@ export const translations: Record<LanguageCode, Translation> = {
         "תקשורת מאוחדת (מייל, SMS, שיחות, ...)",
         "אוטומציה מלאה (דיוור, הזמנות, PDF, ...)",
         "הטמעה מהירה בפחות מ-10 דקות",
-        "יותר מ-2 מיליון משתמשים מרוצים ב-49 מדינות"
+        "יותר מ-2 מיליון משתמשים מרוצים ב-52 מדינות"
       ]
     },
     "agentsSection": {
