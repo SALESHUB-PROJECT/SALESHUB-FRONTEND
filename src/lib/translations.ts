@@ -15,9 +15,9 @@ export const fr = {
   seo: {
     title: "Heroes One | CRM IA tout-en-un",
     description:
-      "Automatisez prospection, qualification, devis et encaissement avec Agents IA illimités Heroes One disponibles 24h/24.",
+      "Automatisez prospection, qualification, devis et encaissement avec des agents IA illimités Heroes One disponibles 24h/24.",
     ogDescription:
-      "Agents IA illimités pour automatiser votre cycle de vente, du premier contact au paiement.",
+      "Des agents IA illimités pour automatiser votre cycle de vente, du premier contact au paiement.",
   },
   nav: {
     agents: "Agents IA illimités",
@@ -366,7 +366,7 @@ export const translations: Record<LanguageCode, Translation> = {
     seo: {
       title: "Heroes One | All-in-one AI CRM",
       description:
-        "Automate prospecting, qualification, quotes, and collection with Unlimited AI agents available 24/7.",
+        "Automate prospecting, qualification, quotes, and collection with unlimited AI agents available 24/7.",
       ogDescription: "Unlimited AI agents to automate your sales cycle, from first contact to payment.",
     },
     nav: {
@@ -1382,7 +1382,7 @@ export const translations: Record<LanguageCode, Translation> = {
     seo: {
       title: "Heroes One | CRM con IA todo en uno",
       description:
-        "Automatiza prospección, calificación, presupuestos y cobros con Agentes IA ilimitados Heroes One disponibles 24/7.",
+        "Automatiza prospección, calificación, presupuestos y cobros con agentes IA ilimitados Heroes One disponibles 24/7.",
       ogDescription:
         "Agentes IA ilimitados para automatizar tu ciclo de ventas, del primer contacto al pago.",
     },
@@ -2066,7 +2066,7 @@ export const translations: Record<LanguageCode, Translation> = {
     seo: {
       title: "Heroes One | CRM com IA tudo em um",
       description:
-        "Automatize prospecção, qualificação, propostas e cobranças com Agentes IA ilimitados Heroes One disponíveis 24/7.",
+        "Automatize prospecção, qualificação, propostas e cobranças com agentes IA ilimitados Heroes One disponíveis 24/7.",
       ogDescription:
         "Agentes IA ilimitados para automatizar seu ciclo de vendas, do primeiro contato ao pagamento.",
     },
@@ -2423,7 +2423,7 @@ export const translations: Record<LanguageCode, Translation> = {
     seo: {
       title: "Heroes One | CRM с ИИ все в одном",
       description:
-        "Автоматизируйте поиск клиентов, квалификацию, предложения и взыскание с Неограниченные ИИ-агенты Heroes One, доступными 24/7.",
+        "Автоматизируйте поиск клиентов, квалификацию, предложения и взыскание с неограниченными ИИ-агентами Heroes One, доступными 24/7.",
       ogDescription: "Неограниченные ИИ-агенты автоматизируют ваш цикл продаж от первого контакта до оплаты.",
     },
     nav: {
@@ -3096,7 +3096,7 @@ export const translations: Record<LanguageCode, Translation> = {
     seo: {
       title: "Heroes One | All-in-one KI-CRM",
       description:
-        "Automatisieren Sie Akquise, Qualifizierung, Angebote und Zahlungseinzug mit Unbegrenzte KI-Agenten, verfügbar rund um die Uhr.",
+        "Automatisieren Sie Akquise, Qualifizierung, Angebote und Zahlungseinzug mit unbegrenzten KI-Agenten, verfügbar rund um die Uhr.",
       ogDescription:
         "Unbegrenzte KI-Agenten automatisieren Ihren Verkaufszyklus vom Erstkontakt bis zur Zahlung.",
     },
