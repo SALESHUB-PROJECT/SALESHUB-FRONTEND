@@ -3,6 +3,8 @@
  * Keep every language object in sync with the French reference (`fr`),
  * which defines the `Translation` shape.
  */
+import { commercialPolicy } from "@/lib/commercial-policy";
+
 export type BillingCycle = "monthly" | "annual" | "biennial";
 export type LanguageCode = "fr" | "en" | "zh" | "hi" | "es" | "ar" | "pt" | "ru" | "ja" | "de" | "he";
 
@@ -13,12 +15,12 @@ export const fr = {
   seo: {
     title: "Heroes One | CRM IA tout-en-un",
     description:
-      "Automatisez prospection, qualification, devis et encaissement avec 8 agents IA Heroes One disponibles 24h/24.",
+      "Automatisez prospection, qualification, devis et encaissement avec des agents IA illimités Heroes One disponibles 24h/24.",
     ogDescription:
-      "8 agents IA pour automatiser votre cycle de vente, du premier contact au paiement.",
+      "Des agents IA illimités pour automatiser votre cycle de vente, du premier contact au paiement.",
   },
   nav: {
-    agents: "Vos 8 agents IA",
+    agents: "Agents IA illimités",
     results: "Résultats",
     compare: "Comparatif",
     partners: "Partenaires",
@@ -126,7 +128,7 @@ export const fr = {
   partners: {
     kicker: "PROGRAMME PARTENAIRE",
     title: "Formez vos équipes pour devenir intégrateur Heroes One certifié.",
-    text: "Trois niveaux de qualification pour apprendre à connecter Heroes One aux outils clients, structurer les données et livrer des intégrations fiables avec un standard professionnel.",
+    text: "Trois niveaux de qualification pour apprendre à connecter Heroes One aux outils clients, structurer les données et livrer des intégrations fiables avec un standard professionnel. Formations, certifications et accès gratuits et illimités.",
     stats: [
       { value: "3", label: "formations" },
       { value: "IA", label: "CRM & agents" },
@@ -205,7 +207,7 @@ export const fr = {
     headers: ["Fonctionnalité", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
     rows: [
       ["CRM complet intégré", "✓", "✓", "✓", "✓"],
-      ["8 agents IA autonomes", "✓", "Partiel", "Partiel", "Partiel"],
+      ["Agents IA illimités", "✓", "Partiel", "Partiel", "Partiel"],
       ["Zéro saisie manuelle", "✓", "Partiel", "Partiel", "Partiel"],
       ["Coaching en direct pendant les appels", "✓", "Partiel", "Partiel", "—"],
       ["Prise en main en moins de 10 minutes", "✓", "—", "Partiel", "Partiel"],
@@ -257,34 +259,24 @@ export const fr = {
       {
         name: "Solo",
         desc: "Indépendant et découverte",
-        features: ["1 agent IA actif", "1 utilisateur", "500 crédits/mois", "CRM essentiel inclus"],
+        features: [`Toutes les options et API incluses et offertes, ${commercialPolicy.solo.contacts} leads, prospects, clients inclus`],
       },
       {
         name: "TPE",
         desc: "Moins de 10 salariés",
-        features: [
-          "4 agents IA actifs",
-          "Jusqu’à 10 utilisateurs",
-          "20 000 crédits/mois",
-          "Support inclus",
-        ],
+        features: ["Tout inclus et nombre de lignes illimitées"],
       },
       {
         name: "ETI / Groupe",
         desc: "Plus de 50 salariés",
-        features: [
-          "Crédits et API illimités",
-          "Sécurité renforcée",
-          "Déploiement multi-pays",
-          "Responsable de compte dédié",
-        ],
+        features: ["Responsable intégration dédié", "Serveur indépendant", "Audit offert préalable"],
       },
     ],
   },
   testimonial: {
     kicker: "SATISFACTION CLIENT",
     title: "Les premiers utilisateurs racontent leur expérience",
-    text: "Un retour documenté de la phase bêta fermée.",
+    text: "",
     quote:
       "« La première semaine, ARCHER m’a apporté 23 leads qualifiés. J’ai signé 2 clients la deuxième semaine. »",
     attribution:
@@ -295,12 +287,12 @@ export const fr = {
   awards: {
     kicker: "DISTINCTIONS INTERNATIONALES",
     title: "Une ambition mondiale, des preuves à publier.",
-    text: "La présentation indique plusieurs concours internationaux et catégories. Les noms, années et justificatifs doivent être confirmés avant d’afficher des trophées officiels.",
+    text: "",
     items: ["Innovation IA", "Productivité", "Excellence SaaS"],
     status: "À confirmer",
   },
   cta: {
-    title: "Vos 8 agents IA n’attendent que vous.",
+    title: "Agents IA illimités",
     text: "Échangeons 30 minutes pour adapter Heroes One à votre métier.",
     button: "Prendre rendez-vous",
   },
@@ -308,7 +300,7 @@ export const fr = {
     description:
       "Le CRM IA tout-en-un pour automatiser la prospection, qualifier les leads, suivre les clients et accélérer l’encaissement.",
     highlights: [
-      "8 agents IA spécialisés",
+      "Agents IA illimités",
       "Sécurité et conformité préparées",
       "Disponible en 11 langues",
     ],
@@ -374,11 +366,11 @@ export const translations: Record<LanguageCode, Translation> = {
     seo: {
       title: "Heroes One | All-in-one AI CRM",
       description:
-        "Automate prospecting, qualification, quotes, and collection with 8 Heroes One AI agents available 24/7.",
-      ogDescription: "8 AI agents to automate your sales cycle, from first contact to payment.",
+        "Automate prospecting, qualification, quotes, and collection with unlimited AI agents available 24/7.",
+      ogDescription: "Unlimited AI agents to automate your sales cycle, from first contact to payment.",
     },
     nav: {
-      agents: "Your 8 AI agents",
+      agents: "Unlimited AI agents",
       results: "Results",
       compare: "Comparison",
       partners: "Partners",
@@ -486,7 +478,7 @@ export const translations: Record<LanguageCode, Translation> = {
     partners: {
       kicker: "PARTNER PROGRAM",
       title: "Train your teams to become certified Heroes One integrators.",
-      text: "Three qualification levels to learn how to connect Heroes One to customer tools, structure data, and deliver reliable integrations with a professional standard.",
+      text: "Three qualification levels to learn how to connect Heroes One to customer tools, structure data, and deliver reliable integrations with a professional standard. Training, certifications and access are free and unlimited.",
       stats: [
         { value: "3", label: "trainings" },
         { value: "AI", label: "CRM & agents" },
@@ -565,7 +557,7 @@ export const translations: Record<LanguageCode, Translation> = {
       headers: ["Feature", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
       rows: [
         ["Complete integrated CRM", "✓", "✓", "✓", "✓"],
-        ["8 autonomous AI agents", "✓", "Partial", "Partial", "Partial"],
+        ["Unlimited AI agents", "✓", "Partial", "Partial", "Partial"],
         ["Zero manual entry", "✓", "Partial", "Partial", "Partial"],
         ["Live coaching during calls", "✓", "Partial", "Partial", "—"],
         ["Onboarding in under 10 minutes", "✓", "—", "Partial", "Partial"],
@@ -617,34 +609,24 @@ export const translations: Record<LanguageCode, Translation> = {
         {
           name: "Solo",
           desc: "Independent and discovery",
-          features: ["1 active AI agent", "1 user", "500 credits/month", "Essential CRM included"],
+          features: ["All options and APIs included free of charge, 1000 leads, prospects and customers included"],
         },
         {
           name: "Small Business",
           desc: "Fewer than 10 employees",
-          features: [
-            "4 active AI agents",
-            "Up to 10 users",
-            "20,000 credits/month",
-            "Support included",
-          ],
+          features: ["Everything included and unlimited records"],
         },
         {
           name: "Mid-market / Group",
           desc: "More than 50 employees",
-          features: [
-            "Unlimited credits and API",
-            "Enhanced security",
-            "Multi-country deployment",
-            "Dedicated account manager",
-          ],
+          features: ["Dedicated integration manager", "Independent server", "Free preliminary audit"],
         },
       ],
     },
     testimonial: {
       kicker: "CUSTOMER SATISFACTION",
       title: "Early users share their experience",
-      text: "Documented feedback from the closed beta phase.",
+      text: "",
       quote:
         "“In the first week, ARCHER brought me 23 qualified leads. I signed 2 clients in the second week.”",
       attribution:
@@ -655,12 +637,12 @@ export const translations: Record<LanguageCode, Translation> = {
     awards: {
       kicker: "INTERNATIONAL RECOGNITION",
       title: "Global ambition, proof to publish.",
-      text: "The presentation mentions several international competitions and categories. Names, years, and evidence must be confirmed before official trophies are displayed.",
+      text: "",
       items: ["AI innovation", "Productivity", "SaaS excellence"],
       status: "To confirm",
     },
     cta: {
-      title: "Your 8 AI agents are waiting for you.",
+      title: "Unlimited AI agents",
       text: "Let’s spend 30 minutes adapting Heroes One to your business.",
       button: "Book a meeting",
     },
@@ -668,7 +650,7 @@ export const translations: Record<LanguageCode, Translation> = {
       description:
         "The all-in-one AI CRM for automating prospecting, qualifying leads, tracking customers, and accelerating collections.",
       highlights: [
-        "8 specialized AI agents",
+        "Unlimited AI agents",
         "Security and compliance prepared",
         "Available in 11 languages",
       ],
@@ -729,11 +711,11 @@ export const translations: Record<LanguageCode, Translation> = {
     seo: {
       title: "Heroes One | 一体化 AI CRM",
       description:
-        "使用 Heroes One 的 8 位 AI 助手全天候自动完成获客、资格判断、报价和收款。",
-      ogDescription: "8 位 AI 助手自动化您的销售周期，从首次联系到付款。",
+        "使用 Heroes One 的 无限 AI 助手全天候自动完成获客、资格判断、报价和收款。",
+      ogDescription: "无限 AI 助手自动化您的销售周期，从首次联系到付款。",
     },
     nav: {
-      agents: "您的 8 位 AI 助手",
+      agents: "无限 AI 助手",
       results: "成果",
       compare: "对比",
       partners: "合作伙伴",
@@ -833,7 +815,7 @@ export const translations: Record<LanguageCode, Translation> = {
     partners: {
       kicker: "合作伙伴计划",
       title: "培训团队，成为认证 Heroes One 集成商。",
-      text: "三个资格等级，帮助您学习把 Heroes One 连接到客户工具、组织数据，并以专业标准交付可靠集成。",
+      text: "三个资格等级，帮助您学习把 Heroes One 连接到客户工具、组织数据，并以专业标准交付可靠集成。 培训、认证和访问均免费且无限制。",
       stats: [
         { value: "3", label: "培训" },
         { value: "AI", label: "CRM 与助手" },
@@ -908,7 +890,7 @@ export const translations: Record<LanguageCode, Translation> = {
       headers: ["功能", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
       rows: [
         ["完整集成 CRM", "✓", "✓", "✓", "✓"],
-        ["8 位自主 AI 助手", "✓", "部分", "部分", "部分"],
+        ["无限 AI 助手", "✓", "部分", "部分", "部分"],
         ["零手动录入", "✓", "部分", "部分", "部分"],
         ["通话中实时辅导", "✓", "部分", "部分", "—"],
         ["不到 10 分钟上手", "✓", "—", "部分", "部分"],
@@ -960,24 +942,24 @@ export const translations: Record<LanguageCode, Translation> = {
         {
           name: "Solo",
           desc: "个人和体验",
-          features: ["1 位活跃 AI 助手", "1 位用户", "500 积分/月", "包含基础 CRM"],
+          features: ["所有选项和 API 均免费包含，包含 1000 个线索、潜在客户和客户"],
         },
         {
           name: "小型企业",
           desc: "少于 10 名员工",
-          features: ["4 位活跃 AI 助手", "最多 10 位用户", "20,000 积分/月", "包含支持"],
+          features: ["全部包含，记录数量无限制"],
         },
         {
           name: "中型企业 / 集团",
           desc: "超过 50 名员工",
-          features: ["不限积分和 API", "增强安全", "多国家部署", "专属客户经理"],
+          features: ["专属集成负责人", "独立服务器", "免费前期审计"],
         },
       ],
     },
     testimonial: {
       kicker: "客户满意度",
       title: "首批用户分享体验",
-      text: "来自封闭测试阶段的记录反馈。",
+      text: "",
       quote: "“第一周，ARCHER 为我带来了 23 条合格线索。第二周我签下了 2 位客户。”",
       attribution: "Jérôme D. · 房地产行业 · 身份和头像为示意 · 测试评价发布前需确认",
       score: "4.9/5",
@@ -986,18 +968,18 @@ export const translations: Record<LanguageCode, Translation> = {
     awards: {
       kicker: "国际荣誉",
       title: "全球雄心，证据待发布。",
-      text: "演示资料提到多个国际比赛和类别。显示官方奖项前，名称、年份和证明材料必须确认。",
+      text: "",
       items: ["AI 创新", "生产力", "SaaS 卓越"],
       status: "待确认",
     },
     cta: {
-      title: "您的 8 位 AI 助手正在等待。",
+      title: "无限 AI 助手",
       text: "用 30 分钟让 Heroes One 适配您的业务。",
       button: "预约会议",
     },
     footer: {
       description: "一体化 AI CRM，用于自动获客、判断线索、跟踪客户并加速收款。",
-      highlights: ["8 位专业 AI 助手", "已准备安全与合规", "支持 11 种语言"],
+      highlights: ["无限 AI 助手", "已准备安全与合规", "支持 11 种语言"],
       cta: "预约演示",
       sections: [
         {
@@ -1055,11 +1037,11 @@ export const translations: Record<LanguageCode, Translation> = {
     seo: {
       title: "Heroes One | ऑल-इन-वन AI CRM",
       description:
-        "Heroes One के 8 AI एजेंटों के साथ prospecting, qualification, quotes और collections को 24/7 ऑटोमेट करें।",
-      ogDescription: "पहले संपर्क से भुगतान तक, आपके sales cycle को ऑटोमेट करने वाले 8 AI एजेंट।",
+        "Heroes One के असीमित AI एजेंट के साथ prospecting, qualification, quotes और collections को 24/7 ऑटोमेट करें।",
+      ogDescription: "पहले संपर्क से भुगतान तक, आपके sales cycle को ऑटोमेट करने वाले असीमित AI एजेंट।",
     },
     nav: {
-      agents: "आपके 8 AI एजेंट",
+      agents: "असीमित AI एजेंट",
       results: "परिणाम",
       compare: "तुलना",
       partners: "पार्टनर",
@@ -1167,7 +1149,7 @@ export const translations: Record<LanguageCode, Translation> = {
     partners: {
       kicker: "PARTNER PROGRAM",
       title: "अपनी teams को certified Heroes One integrator बनने के लिए train करें।",
-      text: "तीन qualification levels जिनसे आप Heroes One को customer tools से connect करना, data structure करना और professional standard के साथ reliable integrations deliver करना सीखते हैं।",
+      text: "तीन qualification levels जिनसे आप Heroes One को customer tools से connect करना, data structure करना और professional standard के साथ reliable integrations deliver करना सीखते हैं। प्रशिक्षण, प्रमाणन और एक्सेस मुफ़्त और असीमित हैं।",
       stats: [
         { value: "3", label: "trainings" },
         { value: "AI", label: "CRM & agents" },
@@ -1246,7 +1228,7 @@ export const translations: Record<LanguageCode, Translation> = {
       headers: ["Feature", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
       rows: [
         ["Complete integrated CRM", "✓", "✓", "✓", "✓"],
-        ["8 autonomous AI agents", "✓", "Partial", "Partial", "Partial"],
+        ["Unlimited AI agents", "✓", "Partial", "Partial", "Partial"],
         ["Zero manual entry", "✓", "Partial", "Partial", "Partial"],
         ["Live coaching during calls", "✓", "Partial", "Partial", "—"],
         ["10 मिनट से कम में onboarding", "✓", "—", "Partial", "Partial"],
@@ -1298,34 +1280,24 @@ export const translations: Record<LanguageCode, Translation> = {
         {
           name: "Solo",
           desc: "Independent और discovery",
-          features: ["1 active AI agent", "1 user", "500 credits/month", "Essential CRM included"],
+          features: ["सभी विकल्प और API मुफ़्त शामिल, 1000 लीड, संभावित ग्राहक और ग्राहक शामिल"],
         },
         {
           name: "Small Business",
           desc: "10 से कम employees",
-          features: [
-            "4 active AI agents",
-            "Up to 10 users",
-            "20,000 credits/month",
-            "Support included",
-          ],
+          features: ["सब कुछ शामिल और असीमित रिकॉर्ड"],
         },
         {
           name: "Mid-market / Group",
           desc: "50 से अधिक employees",
-          features: [
-            "Unlimited credits and API",
-            "Enhanced security",
-            "Multi-country deployment",
-            "Dedicated account manager",
-          ],
+          features: ["समर्पित इंटीग्रेशन प्रबंधक", "स्वतंत्र सर्वर", "मुफ़्त प्रारंभिक ऑडिट"],
         },
       ],
     },
     testimonial: {
       kicker: "CUSTOMER SATISFACTION",
       title: "Early users अपना experience बताते हैं",
-      text: "Closed beta phase से documented feedback।",
+      text: "",
       quote:
         "“पहले week में ARCHER ने मुझे 23 qualified leads दिए। दूसरे week में मैंने 2 clients sign किए।”",
       attribution:
@@ -1336,12 +1308,12 @@ export const translations: Record<LanguageCode, Translation> = {
     awards: {
       kicker: "INTERNATIONAL RECOGNITION",
       title: "Global ambition, proof publish करना बाकी।",
-      text: "Presentation कई international competitions और categories बताती है। Official trophies दिखाने से पहले names, years और proof confirm होने चाहिए।",
+      text: "",
       items: ["AI innovation", "Productivity", "SaaS excellence"],
       status: "To confirm",
     },
     cta: {
-      title: "आपके 8 AI agents आपका इंतज़ार कर रहे हैं।",
+      title: "असीमित AI एजेंट",
       text: "Heroes One को आपके business के अनुसार adapt करने के लिए 30 मिनट बात करें।",
       button: "Meeting book करें",
     },
@@ -1349,7 +1321,7 @@ export const translations: Record<LanguageCode, Translation> = {
       description:
         "Prospecting automate करने, leads qualify करने, customers track करने और collections accelerate करने वाला all-in-one AI CRM।",
       highlights: [
-        "8 specialized AI agents",
+        "Unlimited AI agents",
         "Security और compliance prepared",
         "11 languages में available",
       ],
@@ -1410,12 +1382,12 @@ export const translations: Record<LanguageCode, Translation> = {
     seo: {
       title: "Heroes One | CRM con IA todo en uno",
       description:
-        "Automatiza prospección, calificación, presupuestos y cobros con 8 agentes de IA Heroes One disponibles 24/7.",
+        "Automatiza prospección, calificación, presupuestos y cobros con agentes IA ilimitados Heroes One disponibles 24/7.",
       ogDescription:
-        "8 agentes de IA para automatizar tu ciclo de ventas, del primer contacto al pago.",
+        "Agentes IA ilimitados para automatizar tu ciclo de ventas, del primer contacto al pago.",
     },
     nav: {
-      agents: "Tus 8 agentes IA",
+      agents: "Agentes IA ilimitados",
       results: "Resultados",
       compare: "Comparativa",
       partners: "Socios",
@@ -1523,7 +1495,7 @@ export const translations: Record<LanguageCode, Translation> = {
     partners: {
       kicker: "PROGRAMA DE SOCIOS",
       title: "Forma a tus equipos para convertirse en integradores Heroes One certificados.",
-      text: "Tres niveles de cualificación para aprender a conectar Heroes One con las herramientas del cliente, estructurar datos y entregar integraciones fiables con estándar profesional.",
+      text: "Tres niveles de cualificación para aprender a conectar Heroes One con las herramientas del cliente, estructurar datos y entregar integraciones fiables con estándar profesional. Formaciones, certificaciones y acceso gratuitos e ilimitados.",
       stats: [
         { value: "3", label: "formaciones" },
         { value: "IA", label: "CRM y agentes" },
@@ -1602,7 +1574,7 @@ export const translations: Record<LanguageCode, Translation> = {
       headers: ["Funcionalidad", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
       rows: [
         ["CRM completo integrado", "✓", "✓", "✓", "✓"],
-        ["8 agentes IA autónomos", "✓", "Parcial", "Parcial", "Parcial"],
+        ["Agentes IA ilimitados", "✓", "Parcial", "Parcial", "Parcial"],
         ["Cero captura manual", "✓", "Parcial", "Parcial", "Parcial"],
         ["Coaching en directo durante llamadas", "✓", "Parcial", "Parcial", "—"],
         ["Puesta en marcha en menos de 10 minutos", "✓", "—", "Parcial", "Parcial"],
@@ -1661,39 +1633,24 @@ export const translations: Record<LanguageCode, Translation> = {
         {
           name: "Solo",
           desc: "Independiente y descubrimiento",
-          features: [
-            "1 agente IA activo",
-            "1 usuario",
-            "500 créditos/mes",
-            "CRM esencial incluido",
-          ],
+          features: ["Todas las opciones y API incluidas y gratuitas, 1000 leads, prospectos y clientes incluidos"],
         },
         {
           name: "Pequeña empresa",
           desc: "Menos de 10 empleados",
-          features: [
-            "4 agentes IA activos",
-            "Hasta 10 usuarios",
-            "20 000 créditos/mes",
-            "Soporte incluido",
-          ],
+          features: ["Todo incluido y registros ilimitados"],
         },
         {
           name: "Empresa / Grupo",
           desc: "Más de 50 empleados",
-          features: [
-            "Créditos y API ilimitados",
-            "Seguridad reforzada",
-            "Despliegue multi-país",
-            "Responsable de cuenta dedicado",
-          ],
+          features: ["Responsable de integración dedicado", "Servidor independiente", "Auditoría previa gratuita"],
         },
       ],
     },
     testimonial: {
       kicker: "SATISFACCIÓN DEL CLIENTE",
       title: "Los primeros usuarios cuentan su experiencia",
-      text: "Feedback documentado de la fase beta cerrada.",
+      text: "",
       quote:
         "“La primera semana, ARCHER me aportó 23 leads calificados. Firmé 2 clientes la segunda semana.”",
       attribution:
@@ -1704,12 +1661,12 @@ export const translations: Record<LanguageCode, Translation> = {
     awards: {
       kicker: "DISTINCIONES INTERNACIONALES",
       title: "Una ambición mundial, pruebas por publicar.",
-      text: "La presentación indica varios concursos internacionales y categorías. Los nombres, años y justificantes deben confirmarse antes de mostrar trofeos oficiales.",
+      text: "",
       items: ["Innovación IA", "Productividad", "Excelencia SaaS"],
       status: "Por confirmar",
     },
     cta: {
-      title: "Tus 8 agentes IA te están esperando.",
+      title: "Agentes IA ilimitados",
       text: "Hablemos 30 minutos para adaptar Heroes One a tu negocio.",
       button: "Agendar reunión",
     },
@@ -1717,7 +1674,7 @@ export const translations: Record<LanguageCode, Translation> = {
       description:
         "El CRM con IA todo en uno para automatizar la prospección, calificar leads, seguir clientes y acelerar cobros.",
       highlights: [
-        "8 agentes IA especializados",
+        "Agentes IA ilimitados",
         "Seguridad y cumplimiento preparados",
         "Disponible en 11 idiomas",
       ],
@@ -1778,11 +1735,11 @@ export const translations: Record<LanguageCode, Translation> = {
     seo: {
       title: "Heroes One | نظام CRM شامل بالذكاء الاصطناعي",
       description:
-        "أتمت التنقيب والتأهيل وعروض الأسعار والتحصيل مع 8 وكلاء ذكاء اصطناعي من Heroes One يعملون على مدار الساعة.",
-      ogDescription: "8 وكلاء ذكاء اصطناعي لأتمتة دورة البيع من أول تواصل حتى الدفع.",
+        "أتمت التنقيب والتأهيل وعروض الأسعار والتحصيل مع وكلاء ذكاء اصطناعي غير محدودين من Heroes One يعملون على مدار الساعة.",
+      ogDescription: "وكلاء ذكاء اصطناعي غير محدودين لأتمتة دورة البيع من أول تواصل حتى الدفع.",
     },
     nav: {
-      agents: "وكلاؤك الثمانية",
+      agents: "وكلاء ذكاء اصطناعي غير محدودين",
       results: "النتائج",
       compare: "المقارنة",
       partners: "الشركاء",
@@ -1884,7 +1841,7 @@ export const translations: Record<LanguageCode, Translation> = {
     partners: {
       kicker: "برنامج الشركاء",
       title: "درّب فرقك لتصبح جهات تكامل Heroes One معتمدة.",
-      text: "ثلاثة مستويات تأهيل لتعلم ربط Heroes One بأدوات العملاء، تنظيم البيانات، وتسليم تكاملات موثوقة بمعيار احترافي.",
+      text: "ثلاثة مستويات تأهيل لتعلم ربط Heroes One بأدوات العملاء، تنظيم البيانات، وتسليم تكاملات موثوقة بمعيار احترافي. التدريب والشهادات والوصول مجانية وغير محدودة.",
       stats: [
         { value: "3", label: "تدريبات" },
         { value: "AI", label: "CRM ووكلاء" },
@@ -1959,7 +1916,7 @@ export const translations: Record<LanguageCode, Translation> = {
       headers: ["الميزة", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
       rows: [
         ["CRM كامل ومتكامل", "✓", "✓", "✓", "✓"],
-        ["8 وكلاء AI مستقلون", "✓", "جزئي", "جزئي", "جزئي"],
+        ["وكلاء ذكاء اصطناعي غير محدودين", "✓", "جزئي", "جزئي", "جزئي"],
         ["لا إدخال يدوي", "✓", "جزئي", "جزئي", "جزئي"],
         ["تدريب مباشر أثناء المكالمات", "✓", "جزئي", "جزئي", "—"],
         ["بدء الاستخدام في أقل من 10 دقائق", "✓", "—", "جزئي", "جزئي"],
@@ -2011,24 +1968,24 @@ export const translations: Record<LanguageCode, Translation> = {
         {
           name: "Solo",
           desc: "مستقل وتجربة",
-          features: ["وكيل AI نشط واحد", "مستخدم واحد", "500 رصيد/شهر", "CRM أساسي مضمّن"],
+          features: ["جميع الخيارات وواجهات API مشمولة ومجانية، مع 1000 عميل محتمل وعميل مشمول"],
         },
         {
           name: "شركة صغيرة",
           desc: "أقل من 10 موظفين",
-          features: ["4 وكلاء AI نشطون", "حتى 10 مستخدمين", "20,000 رصيد/شهر", "الدعم مضمّن"],
+          features: ["كل شيء مشمول وعدد سجلات غير محدود"],
         },
         {
           name: "شركة متوسطة / مجموعة",
           desc: "أكثر من 50 موظفاً",
-          features: ["رصيد وAPI غير محدودين", "أمان معزز", "نشر متعدد البلدان", "مدير حساب مخصص"],
+          features: ["مسؤول تكامل مخصص", "خادم مستقل", "تدقيق أولي مجاني"],
         },
       ],
     },
     testimonial: {
       kicker: "رضا العملاء",
       title: "المستخدمون الأوائل يروون تجربتهم",
-      text: "تغذية راجعة موثقة من مرحلة بيتا المغلقة.",
+      text: "",
       quote:
         "“في الأسبوع الأول، جلب لي ARCHER عدد 23 عميلاً محتملاً مؤهلاً. وقّعت عميلين في الأسبوع الثاني.”",
       attribution:
@@ -2039,19 +1996,19 @@ export const translations: Record<LanguageCode, Translation> = {
     awards: {
       kicker: "تميّز دولي",
       title: "طموح عالمي، وأدلة ستُنشر.",
-      text: "يشير العرض إلى عدة مسابقات وفئات دولية. يجب تأكيد الأسماء والسنوات والأدلة قبل عرض جوائز رسمية.",
+      text: "",
       items: ["ابتكار AI", "الإنتاجية", "تميز SaaS"],
       status: "قيد التأكيد",
     },
     cta: {
-      title: "وكلاؤك الثمانية ينتظرونك.",
+      title: "وكلاء ذكاء اصطناعي غير محدودين",
       text: "لنتحدث 30 دقيقة لتكييف Heroes One مع عملك.",
       button: "احجز موعداً",
     },
     footer: {
       description:
         "CRM شامل بالذكاء الاصطناعي لأتمتة التنقيب وتأهيل العملاء وتتبعهم وتسريع التحصيل.",
-      highlights: ["8 وكلاء AI متخصصون", "أمان وامتثال جاهزان", "متاح بعشر لغات"],
+      highlights: ["وكلاء ذكاء اصطناعي غير محدودين", "أمان وامتثال جاهزان", "متاح بعشر لغات"],
       cta: "احجز عرضاً",
       sections: [
         {
@@ -2109,12 +2066,12 @@ export const translations: Record<LanguageCode, Translation> = {
     seo: {
       title: "Heroes One | CRM com IA tudo em um",
       description:
-        "Automatize prospecção, qualificação, propostas e cobranças com 8 agentes de IA Heroes One disponíveis 24/7.",
+        "Automatize prospecção, qualificação, propostas e cobranças com agentes IA ilimitados Heroes One disponíveis 24/7.",
       ogDescription:
-        "8 agentes de IA para automatizar seu ciclo de vendas, do primeiro contato ao pagamento.",
+        "Agentes IA ilimitados para automatizar seu ciclo de vendas, do primeiro contato ao pagamento.",
     },
     nav: {
-      agents: "Seus 8 agentes de IA",
+      agents: "Agentes IA ilimitados",
       results: "Resultados",
       compare: "Comparação",
       partners: "Parceiros",
@@ -2222,7 +2179,7 @@ export const translations: Record<LanguageCode, Translation> = {
     partners: {
       kicker: "PROGRAMA DE PARCEIROS",
       title: "Treine suas equipes para se tornarem integradores Heroes One certificados.",
-      text: "Três níveis de qualificação para aprender a conectar o Heroes One às ferramentas do cliente, estruturar dados e entregar integrações confiáveis com padrão profissional.",
+      text: "Três níveis de qualificação para aprender a conectar o Heroes One às ferramentas do cliente, estruturar dados e entregar integrações confiáveis com padrão profissional. Formações, certificações e acesso gratuitos e ilimitados.",
       stats: [
         { value: "3", label: "treinamentos" },
         { value: "IA", label: "CRM e agentes" },
@@ -2305,7 +2262,7 @@ export const translations: Record<LanguageCode, Translation> = {
       headers: ["Funcionalidade", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
       rows: [
         ["CRM completo integrado", "✓", "✓", "✓", "✓"],
-        ["8 agentes de IA autônomos", "✓", "Parcial", "Parcial", "Parcial"],
+        ["Agentes IA ilimitados", "✓", "Parcial", "Parcial", "Parcial"],
         ["Zero entrada manual", "✓", "Parcial", "Parcial", "Parcial"],
         ["Coaching ao vivo durante chamadas", "✓", "Parcial", "Parcial", "—"],
         ["Início em menos de 10 minutos", "✓", "—", "Parcial", "Parcial"],
@@ -2364,39 +2321,24 @@ export const translations: Record<LanguageCode, Translation> = {
         {
           name: "Solo",
           desc: "Independente e descoberta",
-          features: [
-            "1 agente de IA ativo",
-            "1 usuário",
-            "500 créditos/mês",
-            "CRM essencial incluído",
-          ],
+          features: ["Todas as opções e APIs incluídas e gratuitas, 1000 leads, prospectos e clientes incluídos"],
         },
         {
           name: "Pequena empresa",
           desc: "Menos de 10 funcionários",
-          features: [
-            "4 agentes de IA ativos",
-            "Até 10 usuários",
-            "20.000 créditos/mês",
-            "Suporte incluído",
-          ],
+          features: ["Tudo incluído e registros ilimitados"],
         },
         {
           name: "Empresa / Grupo",
           desc: "Mais de 50 funcionários",
-          features: [
-            "Créditos e API ilimitados",
-            "Segurança reforçada",
-            "Implantação multi-país",
-            "Gerente de conta dedicado",
-          ],
+          features: ["Responsável de integração dedicado", "Servidor independente", "Auditoria prévia gratuita"],
         },
       ],
     },
     testimonial: {
       kicker: "SATISFAÇÃO DO CLIENTE",
       title: "Os primeiros usuários contam sua experiência",
-      text: "Feedback documentado da fase beta fechada.",
+      text: "",
       quote:
         "“Na primeira semana, ARCHER trouxe 23 leads qualificados. Fechei 2 clientes na segunda semana.”",
       attribution:
@@ -2407,12 +2349,12 @@ export const translations: Record<LanguageCode, Translation> = {
     awards: {
       kicker: "DISTINÇÕES INTERNACIONAIS",
       title: "Ambição mundial, provas a publicar.",
-      text: "A apresentação menciona várias competições internacionais e categorias. Nomes, anos e comprovantes devem ser confirmados antes de exibir troféus oficiais.",
+      text: "",
       items: ["Inovação em IA", "Produtividade", "Excelência SaaS"],
       status: "A confirmar",
     },
     cta: {
-      title: "Seus 8 agentes de IA esperam por você.",
+      title: "Agentes IA ilimitados",
       text: "Vamos conversar 30 minutos para adaptar Heroes One ao seu negócio.",
       button: "Marcar reunião",
     },
@@ -2420,7 +2362,7 @@ export const translations: Record<LanguageCode, Translation> = {
       description:
         "O CRM com IA tudo em um para automatizar prospecção, qualificar leads, acompanhar clientes e acelerar cobranças.",
       highlights: [
-        "8 agentes de IA especializados",
+        "Agentes IA ilimitados",
         "Segurança e conformidade preparadas",
         "Disponível em 11 idiomas",
       ],
@@ -2481,11 +2423,11 @@ export const translations: Record<LanguageCode, Translation> = {
     seo: {
       title: "Heroes One | CRM с ИИ все в одном",
       description:
-        "Автоматизируйте поиск клиентов, квалификацию, предложения и взыскание с 8 ИИ-агентами Heroes One, доступными 24/7.",
-      ogDescription: "8 ИИ-агентов автоматизируют ваш цикл продаж от первого контакта до оплаты.",
+        "Автоматизируйте поиск клиентов, квалификацию, предложения и взыскание с неограниченными ИИ-агентами Heroes One, доступными 24/7.",
+      ogDescription: "Неограниченные ИИ-агенты автоматизируют ваш цикл продаж от первого контакта до оплаты.",
     },
     nav: {
-      agents: "Ваши 8 ИИ-агентов",
+      agents: "Неограниченные ИИ-агенты",
       results: "Результаты",
       compare: "Сравнение",
       partners: "Партнеры",
@@ -2593,7 +2535,7 @@ export const translations: Record<LanguageCode, Translation> = {
     partners: {
       kicker: "ПАРТНЕРСКАЯ ПРОГРАММА",
       title: "Обучите команды и станьте сертифицированным интегратором Heroes One.",
-      text: "Три уровня квалификации, чтобы научиться подключать Heroes One к инструментам клиентов, структурировать данные и поставлять надежные интеграции на профессиональном уровне.",
+      text: "Три уровня квалификации, чтобы научиться подключать Heroes One к инструментам клиентов, структурировать данные и поставлять надежные интеграции на профессиональном уровне. Обучение, сертификация и доступ бесплатны и не ограничены.",
       stats: [
         { value: "3", label: "обучения" },
         { value: "ИИ", label: "CRM и агенты" },
@@ -2668,7 +2610,7 @@ export const translations: Record<LanguageCode, Translation> = {
       headers: ["Функция", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
       rows: [
         ["Полная встроенная CRM", "✓", "✓", "✓", "✓"],
-        ["8 автономных ИИ-агентов", "✓", "Частично", "Частично", "Частично"],
+        ["Неограниченные ИИ-агенты", "✓", "Частично", "Частично", "Частично"],
         ["Ноль ручного ввода", "✓", "Частично", "Частично", "Частично"],
         ["Коучинг во время звонков", "✓", "Частично", "Частично", "—"],
         ["Запуск менее чем за 10 минут", "✓", "—", "Частично", "Частично"],
@@ -2720,39 +2662,24 @@ export const translations: Record<LanguageCode, Translation> = {
         {
           name: "Solo",
           desc: "Для самостоятельной работы и знакомства",
-          features: [
-            "1 активный ИИ-агент",
-            "1 пользователь",
-            "500 кредитов/мес.",
-            "Базовая CRM включена",
-          ],
+          features: ["Все опции и API включены бесплатно, 1000 лидов, потенциальных клиентов и клиентов включены"],
         },
         {
           name: "Малый бизнес",
           desc: "Менее 10 сотрудников",
-          features: [
-            "4 активных ИИ-агента",
-            "До 10 пользователей",
-            "20 000 кредитов/мес.",
-            "Поддержка включена",
-          ],
+          features: ["Всё включено, количество записей не ограничено"],
         },
         {
           name: "Средний бизнес / Группа",
           desc: "Более 50 сотрудников",
-          features: [
-            "Неограниченные кредиты и API",
-            "Усиленная безопасность",
-            "Международное внедрение",
-            "Выделенный менеджер",
-          ],
+          features: ["Выделенный руководитель интеграции", "Независимый сервер", "Бесплатный предварительный аудит"],
         },
       ],
     },
     testimonial: {
       kicker: "УДОВЛЕТВОРЕННОСТЬ КЛИЕНТОВ",
       title: "Первые пользователи делятся опытом",
-      text: "Документированный отзыв закрытой беты.",
+      text: "",
       quote:
         "«За первую неделю ARCHER принес мне 23 квалифицированных лида. На второй неделе я подписал 2 клиентов».",
       attribution:
@@ -2763,12 +2690,12 @@ export const translations: Record<LanguageCode, Translation> = {
     awards: {
       kicker: "МЕЖДУНАРОДНЫЕ ОТЛИЧИЯ",
       title: "Мировая амбиция, доказательства к публикации.",
-      text: "В презентации указаны несколько международных конкурсов и категорий. Названия, годы и подтверждения нужно проверить перед показом официальных наград.",
+      text: "",
       items: ["Инновации ИИ", "Продуктивность", "SaaS excellence"],
       status: "Подтвердить",
     },
     cta: {
-      title: "Ваши 8 ИИ-агентов ждут вас.",
+      title: "Неограниченные ИИ-агенты",
       text: "Обсудим за 30 минут, как адаптировать Heroes One к вашему бизнесу.",
       button: "Назначить встречу",
     },
@@ -2776,7 +2703,7 @@ export const translations: Record<LanguageCode, Translation> = {
       description:
         "CRM с ИИ все в одном для автоматизации поиска клиентов, квалификации лидов, сопровождения клиентов и ускорения взысканий.",
       highlights: [
-        "8 специализированных ИИ-агентов",
+        "Неограниченные ИИ-агенты",
         "Безопасность и соответствие подготовлены",
         "Доступно на 11 языках",
       ],
@@ -2837,11 +2764,11 @@ export const translations: Record<LanguageCode, Translation> = {
     seo: {
       title: "Heroes One | オールインワンAI CRM",
       description:
-        "24時間365日稼働するHeroes Oneの8人のAIエージェントで、見込み客開拓、選別、見積、回収を自動化します。",
-      ogDescription: "初回接触から支払いまで、販売サイクルを自動化する8人のAIエージェント。",
+        "24時間365日稼働するHeroes Oneの無制限のAIエージェントで、見込み客開拓、選別、見積、回収を自動化します。",
+      ogDescription: "初回接触から支払いまで、販売サイクルを自動化する無制限のAIエージェント。",
     },
     nav: {
-      agents: "8人のAIエージェント",
+      agents: "無制限のAIエージェント",
       results: "成果",
       compare: "比較",
       partners: "パートナー",
@@ -2945,7 +2872,7 @@ export const translations: Record<LanguageCode, Translation> = {
     partners: {
       kicker: "パートナープログラム",
       title: "チームをHeroes One認定インテグレーターに育成。",
-      text: "Heroes Oneを顧客ツールに接続し、データを整理し、プロ品質の信頼できる連携を提供するための3段階の資格制度です。",
+      text: "Heroes Oneを顧客ツールに接続し、データを整理し、プロ品質の信頼できる連携を提供するための3段階の資格制度です。 研修、認定、アクセスは無料かつ無制限です。",
       stats: [
         { value: "3", label: "トレーニング" },
         { value: "AI", label: "CRMとエージェント" },
@@ -3020,7 +2947,7 @@ export const translations: Record<LanguageCode, Translation> = {
       headers: ["機能", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
       rows: [
         ["完全統合CRM", "✓", "✓", "✓", "✓"],
-        ["8人の自律AIエージェント", "✓", "一部", "一部", "一部"],
+        ["無制限のAIエージェント", "✓", "一部", "一部", "一部"],
         ["手入力ゼロ", "✓", "一部", "一部", "一部"],
         ["通話中のライブコーチング", "✓", "一部", "一部", "—"],
         ["10分未満で利用開始", "✓", "—", "一部", "一部"],
@@ -3072,34 +2999,24 @@ export const translations: Record<LanguageCode, Translation> = {
         {
           name: "Solo",
           desc: "個人利用とお試し",
-          features: ["有効なAIエージェント 1人", "1ユーザー", "500クレジット/月", "基本CRM込み"],
+          features: ["すべてのオプションとAPIが無料で含まれ、1000件のリード、見込み客、顧客を含みます"],
         },
         {
           name: "小規模企業",
           desc: "10名未満",
-          features: [
-            "有効なAIエージェント 4人",
-            "最大10ユーザー",
-            "20,000クレジット/月",
-            "サポート込み",
-          ],
+          features: ["すべて込み、レコード数は無制限"],
         },
         {
           name: "中堅企業 / グループ",
           desc: "50名超",
-          features: [
-            "クレジットとAPI無制限",
-            "強化セキュリティ",
-            "複数国展開",
-            "専任アカウント担当",
-          ],
+          features: ["専任の連携担当者", "独立サーバー", "無料の事前監査"],
         },
       ],
     },
     testimonial: {
       kicker: "顧客満足度",
       title: "初期ユーザーの体験",
-      text: "クローズドベータ段階の記録されたフィードバックです。",
+      text: "",
       quote:
         "「最初の週にARCHERが23件の有望リードを届けてくれました。2週目には2社と契約しました。」",
       attribution: "Jérôme D. · 不動産業界 · 身元と肖像はイメージ · ベータ証言は公開前確認が必要",
@@ -3109,19 +3026,19 @@ export const translations: Record<LanguageCode, Translation> = {
     awards: {
       kicker: "国際的な評価",
       title: "世界への志、公開すべき証拠。",
-      text: "資料には複数の国際コンテストとカテゴリーが記載されています。公式トロフィーを表示する前に、名称、年、根拠の確認が必要です。",
+      text: "",
       items: ["AIイノベーション", "生産性", "SaaS Excellence"],
       status: "確認予定",
     },
     cta: {
-      title: "8人のAIエージェントがあなたを待っています。",
+      title: "無制限のAIエージェント",
       text: "30分でHeroes Oneをあなたの業務に合わせましょう。",
       button: "面談を予約",
     },
     footer: {
       description:
         "見込み客開拓、リード選別、顧客追跡、回収加速を自動化するオールインワンAI CRMです。",
-      highlights: ["8人の専門AIエージェント", "セキュリティとコンプライアンスに対応", "11言語対応"],
+      highlights: ["無制限のAIエージェント", "セキュリティとコンプライアンスに対応", "11言語対応"],
       cta: "デモを予約",
       sections: [
         {
@@ -3179,12 +3096,12 @@ export const translations: Record<LanguageCode, Translation> = {
     seo: {
       title: "Heroes One | All-in-one KI-CRM",
       description:
-        "Automatisieren Sie Akquise, Qualifizierung, Angebote und Zahlungseinzug mit 8 Heroes One KI-Agenten, verfügbar rund um die Uhr.",
+        "Automatisieren Sie Akquise, Qualifizierung, Angebote und Zahlungseinzug mit unbegrenzten KI-Agenten, verfügbar rund um die Uhr.",
       ogDescription:
-        "8 KI-Agenten automatisieren Ihren Verkaufszyklus vom Erstkontakt bis zur Zahlung.",
+        "Unbegrenzte KI-Agenten automatisieren Ihren Verkaufszyklus vom Erstkontakt bis zur Zahlung.",
     },
     nav: {
-      agents: "Ihre 8 KI-Agenten",
+      agents: "Unbegrenzte KI-Agenten",
       results: "Ergebnisse",
       compare: "Vergleich",
       partners: "Partner",
@@ -3292,7 +3209,7 @@ export const translations: Record<LanguageCode, Translation> = {
     partners: {
       kicker: "PARTNERPROGRAMM",
       title: "Bilden Sie Ihre Teams zu zertifizierten Heroes One Integratoren aus.",
-      text: "Drei Qualifikationsstufen, um Heroes One mit Kundentools zu verbinden, Daten zu strukturieren und zuverlässige Integrationen auf professionellem Niveau zu liefern.",
+      text: "Drei Qualifikationsstufen, um Heroes One mit Kundentools zu verbinden, Daten zu strukturieren und zuverlässige Integrationen auf professionellem Niveau zu liefern. Schulungen, Zertifizierungen und Zugang sind kostenlos und unbegrenzt.",
       stats: [
         { value: "3", label: "Schulungen" },
         { value: "KI", label: "CRM & Agenten" },
@@ -3371,7 +3288,7 @@ export const translations: Record<LanguageCode, Translation> = {
       headers: ["Funktion", "Heroes One", "Salesforce", "HubSpot", "Pipedrive"],
       rows: [
         ["Vollständig integriertes CRM", "✓", "✓", "✓", "✓"],
-        ["8 autonome KI-Agenten", "✓", "Teilweise", "Teilweise", "Teilweise"],
+        ["Unbegrenzte KI-Agenten", "✓", "Teilweise", "Teilweise", "Teilweise"],
         ["Keine manuelle Eingabe", "✓", "Teilweise", "Teilweise", "Teilweise"],
         ["Live-Coaching während Anrufen", "✓", "Teilweise", "Teilweise", "—"],
         ["Start in weniger als 10 Minuten", "✓", "—", "Teilweise", "Teilweise"],
@@ -3423,39 +3340,24 @@ export const translations: Record<LanguageCode, Translation> = {
         {
           name: "Solo",
           desc: "Selbstständig und Einstieg",
-          features: [
-            "1 aktiver KI-Agent",
-            "1 Nutzer",
-            "500 Credits/Monat",
-            "Essentielles CRM enthalten",
-          ],
+          features: ["Alle Optionen und APIs kostenlos enthalten, 1000 Leads, Interessenten und Kunden inklusive"],
         },
         {
           name: "Kleinunternehmen",
           desc: "Weniger als 10 Mitarbeitende",
-          features: [
-            "4 aktive KI-Agenten",
-            "Bis zu 10 Nutzer",
-            "20.000 Credits/Monat",
-            "Support enthalten",
-          ],
+          features: ["Alles inklusive und unbegrenzte Datensätze"],
         },
         {
           name: "Mittelstand / Gruppe",
           desc: "Mehr als 50 Mitarbeitende",
-          features: [
-            "Unbegrenzte Credits und API",
-            "Erhöhte Sicherheit",
-            "Multi-Länder-Deployment",
-            "Dedizierter Account Manager",
-          ],
+          features: ["Dedizierter Integrationsmanager", "Unabhängiger Server", "Kostenloses Voraudit"],
         },
       ],
     },
     testimonial: {
       kicker: "KUNDENZUFRIEDENHEIT",
       title: "Erste Nutzer berichten von ihrer Erfahrung",
-      text: "Dokumentiertes Feedback aus der geschlossenen Beta.",
+      text: "",
       quote:
         "„In der ersten Woche brachte mir ARCHER 23 qualifizierte Leads. In der zweiten Woche habe ich 2 Kunden abgeschlossen.“",
       attribution:
@@ -3466,12 +3368,12 @@ export const translations: Record<LanguageCode, Translation> = {
     awards: {
       kicker: "INTERNATIONALE AUSZEICHNUNGEN",
       title: "Globale Ambition, Nachweise zur Veröffentlichung.",
-      text: "Die Präsentation nennt mehrere internationale Wettbewerbe und Kategorien. Namen, Jahre und Belege müssen bestätigt werden, bevor offizielle Trophäen angezeigt werden.",
+      text: "",
       items: ["KI-Innovation", "Produktivität", "SaaS Excellence"],
       status: "Zu bestätigen",
     },
     cta: {
-      title: "Ihre 8 KI-Agenten warten auf Sie.",
+      title: "Unbegrenzte KI-Agenten",
       text: "Lassen Sie uns 30 Minuten sprechen, um Heroes One an Ihr Geschäft anzupassen.",
       button: "Termin buchen",
     },
@@ -3479,7 +3381,7 @@ export const translations: Record<LanguageCode, Translation> = {
       description:
         "Das All-in-one KI-CRM für automatisierte Akquise, Lead-Qualifizierung, Kundenverfolgung und schnelleren Zahlungseinzug.",
       highlights: [
-        "8 spezialisierte KI-Agenten",
+        "Unbegrenzte KI-Agenten",
         "Sicherheit und Compliance vorbereitet",
         "In 11 Sprachen verfügbar",
       ],
@@ -3539,11 +3441,11 @@ export const translations: Record<LanguageCode, Translation> = {
     "label": "עברית",
     "seo": {
       "title": "Heroes One | ה-CRM מבוסס AI הכל-באחד",
-      "description": "אוטומציה מלאה של איתור לידים, הסמכה, הצעות מחיר וגבייה עם 8 סוכני AI מבית Heroes One הזמינים 24/7.",
-      "ogDescription": "8 סוכני AI לאוטומציה מלאה של מחזור המכירות שלכם, מהפנייה הראשונה ועד לתשלום."
+      "description": "אוטומציה מלאה של איתור לידים, הסמכה, הצעות מחיר וגבייה עם סוכני AI ללא הגבלה מבית Heroes One הזמינים 24/7.",
+      "ogDescription": "סוכני AI ללא הגבלה לאוטומציה מלאה של מחזור המכירות שלכם, מהפנייה הראשונה ועד לתשלום."
     },
     "nav": {
-      "agents": "8 סוכני ה-AI שלכם",
+      "agents": "סוכני AI ללא הגבלה",
       "results": "תוצאות",
       "compare": "השוואה",
       "partners": "שותפים",
@@ -3643,7 +3545,7 @@ export const translations: Record<LanguageCode, Translation> = {
     "partners": {
       "kicker": "תוכנית שותפים",
       "title": "הכשירו את הצוותים שלכם והפכו למטמיעי Heroes One מוסמכים.",
-      "text": "שלוש רמות הסמכה ללימוד חיבור Heroes One למערכות הלקוח, הבניית נתונים ואספקת אינטגרציות אמינות בסטנדרט מקצועי מוביל.",
+      "text": "שלוש רמות הסמכה ללימוד חיבור Heroes One למערכות הלקוח, הבניית נתונים ואספקת אינטגרציות אמינות בסטנדרט מקצועי מוביל. ההדרכות, ההסמכות והגישה בחינם וללא הגבלה.",
       "stats": [
         {
           "value": "3",
@@ -3784,7 +3686,7 @@ export const translations: Record<LanguageCode, Translation> = {
           "✓"
         ],
         [
-          "8 סוכני AI אוטונומיים",
+          "סוכני AI ללא הגבלה",
           "✓",
           "חלקי",
           "חלקי",
@@ -3872,39 +3774,24 @@ export const translations: Record<LanguageCode, Translation> = {
         {
           "name": "Solo",
           "desc": "לעצמאיים והתנסות ראשונית",
-          "features": [
-            "סוכן AI פעיל 1",
-            "משתמש 1",
-            "500 קרדיטים לחודש",
-            "כולל CRM בסיסי"
-          ]
+          features: ["כל האפשרויות וממשקי API כלולים בחינם, כולל 1000 לידים, לקוחות פוטנציאליים ולקוחות"]
         },
         {
           "name": "TPE",
           "desc": "פחות מ-10 עובדים",
-          "features": [
-            "4 סוכני AI פעילים",
-            "עד 10 משתמשים",
-            "20,000 קרדיטים לחודש",
-            "כולל תמיכה"
-          ]
+          features: ["הכול כלול ומספר הרשומות ללא הגבלה"]
         },
         {
           "name": "ETI / Groupe",
           "desc": "מעל 50 עובדים",
-          "features": [
-            "קרדיטים ו-API ללא הגבלה",
-            "אבטחה מוגברת",
-            "פריסה רב-לאומית",
-            "מנהל תיק לקוח ייעודי"
-          ]
+          features: ["מנהל אינטגרציה ייעודי", "שרת עצמאי", "ביקורת מקדימה בחינם"]
         }
       ]
     },
     "testimonial": {
       "kicker": "שביעות רצון לקוחות",
       "title": "המשתמשים הראשונים משתפים בחוויה שלהם",
-      "text": "משוב מתועד משלב הבטא הסגורה.",
+      "text": "",
       "quote": "«בשבוע הראשון, ARCHER הביא לי 23 לידים מוסמכים. בשבוע השני כבר סגרתי 2 לקוחות חדשים.»",
       "attribution": "ז'רום ד. · תחום הנדל\"ן · השם והתמונה להמחשה · עדות משלב הבטא, לאימות לפני פרסום",
       "score": "4,9/5",
@@ -3913,7 +3800,7 @@ export const translations: Record<LanguageCode, Translation> = {
     "awards": {
       "kicker": "הכרה בינלאומית",
       "title": "חזון עולמי, עם תוצאות בשטח.",
-      "text": "במצגת מוצגות מספר תחרויות וקטגוריות בינלאומיות. שמות, שנים ואסמכתאות יאומתו סופית לפני פרסום רשמי.",
+      "text": "",
       "items": [
         "חדשנות ב-AI",
         "פרודוקטיביות",
@@ -3922,14 +3809,14 @@ export const translations: Record<LanguageCode, Translation> = {
       "status": "לאימות"
     },
     "cta": {
-      "title": "8 סוכני ה-AI שלכם מחכים לכם.",
+      "title": "סוכני AI ללא הגבלה",
       "text": "שיחה קצרה של 30 דקות כדי להתאים את Heroes One בדיוק לצרכים שלכם.",
       "button": "תיאום פגישה"
     },
     "footer": {
       "description": "ה-CRM מבוסס AI הכל-באחד לאוטומציה של איתור לידים, הסמכה, מעקב לקוחות והאצת הגבייה.",
       "highlights": [
-        "8 סוכני AI מומחים",
+        "סוכני AI ללא הגבלה",
         "עמידה בתקני אבטחה ותאימות",
         "זמין ב-11 שפות"
       ],

@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Heroes One | CRM IA" },
-      { name: "description", content: "Heroes One, CRM tout-en-un piloté par 8 agents IA." },
+      { name: "description", content: "Heroes One, CRM tout-en-un piloté par des agents IA illimités." },
       { name: "author", content: "Heroes One" },
       { property: "og:title", content: "Heroes One" },
       { property: "og:description", content: "Le CRM IA qui automatise votre cycle commercial." },

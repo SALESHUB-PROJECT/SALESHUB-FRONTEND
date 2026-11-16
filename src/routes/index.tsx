@@ -392,85 +392,6 @@ function LandingPage() {
         </div>
       </section>
 
-      <section id="partners" className="border-b border-border bg-background py-24">
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[0.82fr_1.18fr] lg:px-8">
-          <div className="rounded-lg border border-border bg-foreground p-8 text-primary-foreground shadow-2xl lg:p-10">
-            <div className="flex size-12 items-center justify-center rounded-md bg-accent text-accent-foreground">
-              <Handshake className="size-6" />
-            </div>
-            <p className="mt-8 text-xs font-extrabold text-accent">{t.partners.kicker}</p>
-            <h2 className="mt-4 text-balance text-4xl font-bold sm:text-5xl">{t.partners.title}</h2>
-            <p className="mt-6 text-lg leading-relaxed text-primary-foreground/75">
-              {t.partners.text}
-            </p>
-            <div className="mt-8 grid gap-3 text-sm sm:grid-cols-3">
-              {t.partners.stats.map(({ value, label }) => (
-                <div
-                  key={`${value}-${label}`}
-                  className="border-t border-primary-foreground/18 pt-4"
-                >
-                  <strong className="block text-2xl text-accent">{value}</strong>
-                  <span className="text-primary-foreground/70">{label}</span>
-                </div>
-              ))}
-            </div>
-            <Button
-              size="lg"
-              className="mt-10 bg-accent text-accent-foreground hover:bg-accent/90"
-              onClick={() => setContactOpen(true)}
-            >
-              {t.partners.cta}
-              <ArrowRight className="size-4" />
-            </Button>
-          </div>
-
-          <div className="grid gap-4">
-            {t.partners.levels.map(({ level, title, duration, text, points }, index) => {
-              const Icon = partnerLevelIcons[index] ?? BadgeCheck;
-              return (
-                <article
-                  key={level}
-                  className="group grid gap-5 rounded-lg border border-border bg-card p-6 shadow-sm transition hover:-translate-y-1 hover:border-primary/50 hover:shadow-xl md:grid-cols-[auto_1fr]"
-                >
-                  <div className="flex items-start gap-4 md:block">
-                    <div className="grid size-14 place-items-center rounded-md bg-primary text-primary-foreground">
-                      <Icon className="size-7" />
-                    </div>
-                    <span className="mt-4 hidden font-display text-5xl font-bold text-primary/12 md:block">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                  </div>
-                  <div>
-                    <div className="flex flex-wrap items-center gap-3">
-                      <span className="rounded-md bg-primary/10 px-3 py-1 text-[11px] font-extrabold uppercase text-primary">
-                        {level}
-                      </span>
-                      <span className="text-xs font-bold uppercase text-muted-foreground">
-                        {duration}
-                      </span>
-                    </div>
-                    <h3 className="mt-4 text-2xl font-bold">{title}</h3>
-                    <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                      {text}
-                    </p>
-                    <div className="mt-5 flex flex-wrap gap-2">
-                      {points.map((point) => (
-                        <span
-                          key={point}
-                          className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold text-muted-foreground"
-                        >
-                          <Check className="size-3.5 text-primary" />
-                          {point}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </article>
-              );
-            })}
-          </div>
-        </div>
-      </section>
 
       <section className="border-b border-border bg-card py-28">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
@@ -638,7 +559,8 @@ function LandingPage() {
           </div>
           <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {t.pricing.plans.map((plan, index) => {
-              const priceConfig = planPrices[index] ?? planPrices[0]!;
+              const priceConfig = planPrices[index];
+              if (!priceConfig) return null;
               const price = priceConfig[billing];
               return (
                 <article
@@ -745,7 +667,7 @@ function LandingPage() {
             <div>
               <p className="text-xs font-extrabold text-gold">{t.awards.kicker}</p>
               <h2 className="mt-3 text-3xl font-bold sm:text-5xl">{t.awards.title}</h2>
-              <p className="mt-5 text-muted-foreground">{t.awards.text}</p>
+
             </div>
             <div className="grid grid-cols-3 gap-3">
               {t.awards.items.map((award, index) => (
@@ -778,6 +700,87 @@ function LandingPage() {
           </Button>
         </div>
       </section>
+
+      <section id="partners" className="border-b border-border bg-background py-24">
+        <div className="mx-auto grid max-w-7xl gap-10 px-5 lg:grid-cols-[0.82fr_1.18fr] lg:px-8">
+          <div className="rounded-lg border border-border bg-foreground p-8 text-primary-foreground shadow-2xl lg:p-10">
+            <div className="flex size-12 items-center justify-center rounded-md bg-accent text-accent-foreground">
+              <Handshake className="size-6" />
+            </div>
+            <p className="mt-8 text-xs font-extrabold text-accent">{t.partners.kicker}</p>
+            <h2 className="mt-4 text-balance text-4xl font-bold sm:text-5xl">{t.partners.title}</h2>
+            <p className="mt-6 text-lg leading-relaxed text-primary-foreground/75">
+              {t.partners.text}
+            </p>
+            <div className="mt-8 grid gap-3 text-sm sm:grid-cols-3">
+              {t.partners.stats.map(({ value, label }) => (
+                <div
+                  key={`${value}-${label}`}
+                  className="border-t border-primary-foreground/18 pt-4"
+                >
+                  <strong className="block text-2xl text-accent">{value}</strong>
+                  <span className="text-primary-foreground/70">{label}</span>
+                </div>
+              ))}
+            </div>
+            <Button
+              size="lg"
+              className="mt-10 bg-accent text-accent-foreground hover:bg-accent/90"
+              onClick={() => setContactOpen(true)}
+            >
+              {t.partners.cta}
+              <ArrowRight className="size-4" />
+            </Button>
+          </div>
+
+          <div className="grid gap-4">
+            {t.partners.levels.map(({ level, title, duration, text, points }, index) => {
+              const Icon = partnerLevelIcons[index] ?? BadgeCheck;
+              return (
+                <article
+                  key={level}
+                  className="group grid gap-5 rounded-lg border border-border bg-card p-6 shadow-sm transition hover:-translate-y-1 hover:border-primary/50 hover:shadow-xl md:grid-cols-[auto_1fr]"
+                >
+                  <div className="flex items-start gap-4 md:block">
+                    <div className="grid size-14 place-items-center rounded-md bg-primary text-primary-foreground">
+                      <Icon className="size-7" />
+                    </div>
+                    <span className="mt-4 hidden font-display text-5xl font-bold text-primary/12 md:block">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                  </div>
+                  <div>
+                    <div className="flex flex-wrap items-center gap-3">
+                      <span className="rounded-md bg-primary/10 px-3 py-1 text-[11px] font-extrabold uppercase text-primary">
+                        {level}
+                      </span>
+                      <span className="text-xs font-bold uppercase text-muted-foreground">
+                        {duration}
+                      </span>
+                    </div>
+                    <h3 className="mt-4 text-2xl font-bold">{title}</h3>
+                    <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+                      {text}
+                    </p>
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {points.map((point) => (
+                        <span
+                          key={point}
+                          className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-3 py-2 text-xs font-semibold text-muted-foreground"
+                        >
+                          <Check className="size-3.5 text-primary" />
+                          {point}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
 
       <SiteFooter />
 
@@ -851,7 +854,7 @@ function SectionTitle({ kicker, title, text }: { kicker: string; title: string; 
     <div className="max-w-3xl">
       <p className="text-xs font-extrabold text-primary">{kicker}</p>
       <h2 className="mt-3 text-balance text-3xl font-bold sm:text-5xl">{title}</h2>
-      <p className="mt-5 max-w-2xl text-muted-foreground">{text}</p>
+      {text && <p className="mt-5 max-w-2xl text-muted-foreground">{text}</p>}
     </div>
   );
 }
