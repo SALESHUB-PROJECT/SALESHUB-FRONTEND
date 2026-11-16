@@ -1,5 +1,10 @@
 # Roadmap
 
+- [ ] Corriger les offres Solo, TPE et ETI / Groupe et les mentions d’agents illimités
+- [ ] Préciser la gratuité illimitée du programme partenaire et le placer juste avant le pied de page
+- [ ] Supprimer les deux phrases demandées et reprendre l’agencement, la carte et les adresses Contact
+- [ ] Vérifier ces changements sur ordinateur et téléphone
+
 - [x] Charger et intégrer le nouveau logo Heroes One partout (en-tête, pied de page, icône du navigateur)
 - [x] Renommer la marque en Heroes One dans les textes, le SEO et les pages légales
 - [x] Retirer les drapeaux du pied de page et de la page Contact (rendu non concluant)
